@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Page De Contact</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+	<hgroup class="Nom_Librairie"> 
+		<h1 class= "Ma">        Ma           </h1> 
+		<h1 class="Librairie">  Librairie    </h1>
+	</hgroup>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+	<nav class="Menus_1">
+
+		<h1> <a href="page_d_accueil.html" 		title="Page D'Accueil'" 	class="Page_D_Accueil">		Page D'Accueil  		</a> </h1>		
+		<h1> <a href="page_de_librairie.html" 	title="Page De Librairie" 	class="Page_De_Librairie">	Page De Librairie  		</a> </h1>	
+		<h1> <a href="page_employé.html" 		title="Page employés" 		class="Page_Employés">		Page Employés		    </a> </h1>
+		<h1> <a href="page_de_contact.html" 	title="Page De Contact" 	class="Page_De_Contact">	Page De Contact			</a> </h1>
+		<h1> <a href="page_de_stockage.html" 	title="Page De Stockage" 	class="Page_De_Stockage">	Page De Stockage		</a> </h1>
+		<h1> <a href="page_d_offre.html" 		title="Page d'Offre" 		class="Page_D_Offre">		Page D'Offre			</a> </h1>
+		
+	</nav>	
+
+
+	<article class="Article_1">
+	
+		<h1> Formulaire de Contact </h1>
+
+		 <form action="/action_page.php" class="Formulaire_Contact">
+
+	  		 <label for="Nom"> Nom: </label> <br>
+	  		 <input type="text"  id="Nom"  name="Nom" required > <br><br>
+
+
+	  		 <label for="Prénom" id="Prénom_1"> Prénom: </label>	<br>
+	 		 <input type="text"  id="Prénom_2" name="Prénom" required> <br><br>
+	 		
+
+	 		 <label for="Email" id="Email_1"> Email: </label> <br>
+	 		 <input type="Email" id="Email_2"  pattern=".+@globex\.com" required> <br><br>
+
+
+       		 <label for="Téléphone" id="Téléphone_1"> Numéro de téléphone : </label> <br>
+			 <input type="Téléphone" id="Téléphone_2" name="Téléphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br><br>
+
+
+			 <label for="Sujet_du_Message" id="Sujet_du_Message_1"> Sujet du Message:</label> <br>
+			 <input list="Sujets" id="Sujet_du_Message_2" name="Sujet_du_Message" required/>
+
+
+			 <datalist id="Sujets">
+			     <option value="Demande">
+			     <option value="Proposition">
+			     <option value="Problème">
+			     <option value="Autre">
+			 </datalist> <br><br>
+
+
+			 <label for="Message" id="Message_1"> Message: </label><br>
+	  		 <input type="text" id="Message_2" name="Message"> <br><br>
+
+
+       		 <input type="submit" value="Envoyer" id="Envoyer" onclick="Alert()">
+
+		</form> 
+	</article>
+
+	<article class="Article_2">
+			
+		<div> 
+
+			<h1> FAQ </h1>
+
+			<button id=Question_1>		Comment avoir accès aux livres disponibles? 																	</button>
+			<p id="Reponse_1">			Pour avoir accès à nos livres il vous suffit de cliquer sur Page de Stockage situé sur le menu					</p>
+
+
+			<button id="Question_2"> 	Comment entrer en contact avec nous?  																			</button>
+			<p id="Reponse_2">			Pour entrer en contact avec nous il vous suffit de cliquer sur Page de Contact situé sur le menu 				</p>
+
+
+			<button id="Question_3">	Comment signaler un livre déféctueux? 																			</button>
+			<p id="Reponse_3">			Pour nous signaler un livre d'effectueux il vous suffit de remplir le formulaire situé à gauche de la page		</p>
+			
+
+			<button id="Question_4">	Comment rejoindre l'équipe de MaLibrairie.com 																	</button>
+			<p id="Reponse_4">			Pour rejoindre notre équipe il vous suffit de cliquer sur Page d'Ofre situé sur le menu							</p>	
+
+
+			<button id="Question_5"> 	Comment nous suggéré des livres? 																				</button>
+			<p id="Reponse_5">			Pour nous sugérer un livre il vous suffit de remplir le formulaire situé à gauche de la page					</p>
+
+
+			<button id=Question_6>		Comment avoir accès aux livres disponibles? 																	</button>
+			<p id="Reponse_6">			Pour avoir accès à nos livres il vous suffit de cliquer sur Page de Stockage situé sur le menu					</p>
+
+
+			<button id="Question_7"> 	Comment entrer en contact avec nous?  																			</button>
+			<p id="Reponse_7">			Pour entrer en contact avec nous il vous suffit de cliquer sur Page de Contact situé sur le menu 				</p>
+
+
+			<button id="Question_8">	Comment signaler un livre déféctueux? 																			</button>
+			<p id="Reponse_8">			Pour nous signaler un livre d'effectueux il vous suffit de remplir le formulaire situé à gauche de la page		</p>
+			
+
+			<button id="Question_9">	Comment rejoindre l'équipe de MaLibrairie.com 																	</button>
+			<p id="Reponse_9">			Pour rejoindre notre équipe il vous suffit de cliquer sur Page d'Ofre situé sur le menu							</p>	
+
+
+			<button id="Question_10"> 	Comment nous suggéré des livres? 																				</button>
+			<p id="Reponse_10">			Pour nous sugérer un livre il vous suffit de remplir le formulaire situé à gauche de la page					</p>
+			
+		</div>
+
+
+
+
+
+	</article>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+/ /////////////////////////////////////////////////////////////////////	   DEBUT PARTIE JAVASCRIPT      ////////////////////////////////////////////////////////////////////
+
+/// Afficher les réponses    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+   
+   Reponse_1.style.display = "none";
+   Reponse_2.style.display = "none";
+   Reponse_3.style.display = "none";
+   Reponse_4.style.display = "none";
+   Reponse_5.style.display = "none";
+   Reponse_6.style.display = "none";
+   Reponse_7.style.display = "none";
+   Reponse_8.style.display = "none";
+   Reponse_9.style.display = "none";
+   Reponse_10.style.display = "none";
+    
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Question_1.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_1).display != "block"){
+	    Reponse_1.style.display = "block";
+	  } else {
+	    Reponse_1.style.display = "none";
+	  }
+	}) 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Question_2.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_2).display != "block"){
+	    Reponse_2.style.display = "block";
+	  } else {
+	    Reponse_2.style.display = "none";
+	  }
+	}) 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Question_3.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_3).display != "block"){
+	    Reponse_3.style.display = "block";
+	  } else {
+	    Reponse_3.style.display = "none";
+	  }
+	}) 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Question_4.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_4).display != "block"){
+	    Reponse_4.style.display = "block";
+	  } else {
+	    Reponse_4.style.display = "none";
+	  }
+	})
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+	Question_5.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_5).display != "block"){
+	    Reponse_5.style.display = "block";
+	  } else {
+	    Reponse_5.style.display = "none";
+	  }
+	})  
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+
+	Question_6.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_6).display != "block"){
+	    Reponse_6.style.display = "block";
+	  } else {
+	    Reponse_6.style.display = "none";
+	  }
+	}) 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Question_7.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_7).display != "block"){
+	    Reponse_7.style.display = "block";
+	  } else {
+	    Reponse_7.style.display = "none";
+	  }
+	}) 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Question_8.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_8).display != "block"){
+	    Reponse_8.style.display = "block";
+	  } else {
+	    Reponse_8.style.display = "none";
+	  }
+	}) 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Question_9.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_9).display != "block"){
+	    Reponse_9.style.display = "block";
+	  } else {
+	    Reponse_9.style.display = "none";
+	  }
+	})
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+	Question_10.addEventListener("click", () => {
+	  if(getComputedStyle(Reponse_10).display != "block"){
+	    Reponse_10.style.display = "block";
+	  } else {
+	    Reponse_10.style.display = "none";
+	  }
+	})  
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	function Alert() {
+  		alert("Votre Formulaire à bien été envoyé!");
+  	}
+</script>
+
+<style type="text/css">
+	
+/************************************************************************	   DEBUT PARTIE CSS      **********************************************************************/
+
+	html {
+
+		background-color:	#F9F2B7;
+		padding-bottom: 	50%;
+		font-family: 		Didots, serif;
+
+	}
+	
+
+/**************************************************************************************************************************************************************************/
+
+	.Nom_Librairie {
+
+		float: 				none;
+		padding: 			4em 1em;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+
+	.Ma {
+
+		position: 			absolute;
+		top: 				-7%;
+		left: 				0.5%;
+		color: 				#E6B201;
+		font-size: 			600%;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+
+	.Librairie {
+
+		position: 			absolute;
+		top: 				-7%;
+		left: 				7.1%;
+		color: 				#78021B;
+		font-size: 			600%;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+
+
+	.Page_D_Accueil {
+
+		background-color: 	#E6B200;
+		color: 				#78021B;
+		text-align: 		center;
+		padding: 			0.5em 2.9em;
+
+
+		position: 			absolute;
+		display: 			inline;
+		top: 				15%;
+		left: 				0.5%;
+		font-size: 			110%;
+		font-weight: 		900;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+		
+	.Page_De_Librairie  {
+
+		background-color: 	#E6B201;
+		color: 				#78021B;
+		text-align: 		center;
+		padding: 			0.5em 2.5em;
+
+
+		position: 			absolute;
+		display: 			inline;
+		top: 				15%;
+		left: 				17%;
+		font-size: 			110%;
+		font-weight: 		900;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	.Page_Employés {
+
+		background-color: 	#E6B200;
+		color: 				#78021B;
+		text-align: 		center;
+		padding: 			0.5em 2.5em;
+
+
+		position: 			absolute;
+		display: 			inline;
+		top: 				15%;
+		left: 				33.7%;
+		font-size: 			110%;
+		font-weight: 		900;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	.Page_De_Contact {
+
+		background-color: 	#78021B;
+		color: 				#E6B200;
+		text-align: 		center;
+		padding: 			0.5em 2.6em;
+
+
+		position: 			absolute;
+		display: 			inline;
+		top: 				15%;
+		left: 				48.9%;
+		font-size: 			110%;
+		font-weight: 		900;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+
+	.Page_De_Stockage {
+
+		background-color: 	#E6B201;
+		color: 				#78021B;
+		text-align: 		center;
+		padding: 			0.5em 3em;
+
+
+		position: 			absolute;
+		display: 			inline;
+		top: 				15%;
+		left: 				65.2%;
+		font-size: 			110%;
+		font-weight: 		900;
+
+		}
+
+/**************************************************************************************************************************************************************************/
+
+	.Page_D_Offre {
+
+		background-color: 	#E6B201;
+		color: 				#78021B;	
+		padding: 			0.5em 3.5em;
+
+
+		position: 			absolute;
+		display: 			inline;
+		top: 				15%;
+		left: 				83.2%;
+		font-size: 			110%;
+		font-weight: 		900;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	.Article_1 {
+
+		position: 			absolute;
+		top: 				20%;
+		left: 				3%;
+
+		font-size: 			219.5%;
+	}
+
+/**************************************************************************************************************************************************************************/
+
+	.Article_1 input {
+
+		position: 			absolute;
+		height: 			4%;
+		width: 				95%;
+
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	.Article_1 h1 {
+
+		text-align: center;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Envoyer {
+
+		height: 			7%;
+	}
+
+/**************************************************************************************************************************************************************************/
+
+	.Article_2 h1 {
+
+		font-size: 			219.5%;
+	}
+
+/**************************************************************************************************************************************************************************/
+
+	.Article_2 {
+
+		position: 			absolute;
+		top: 				20%;
+		left: 				50%;
+
+		font-size: 			150%;
+	}
+
+/**************************************************************************************************************************************************************************/
+
+	.Article_2 button {
+
+		padding: 			20px 180px;
+		font-size: 			120%;
+	}	
+
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_1 {
+
+		padding-right: 		110px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_2 {
+
+		padding-right: 		181px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_3 {
+
+		padding-right: 		186px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_4 {
+
+		padding-right: 		82px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_5 {
+
+		padding-right: 		233px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_6 {
+
+		padding-right: 		110px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_7 {
+
+		padding-right: 		181px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_8 {
+
+		padding-right: 		186px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_9 {
+
+		padding-right: 		82px;
+	}
+
+/**************************************************************************************************************************************************************************/
+	
+	#Question_10 {
+
+		padding-right: 		233px;
+	}
+/****************************************************************************     FIN PARTIE CSS     **********************************************************************/
+	
+
+</style>

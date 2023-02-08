@@ -1,0 +1,14 @@
+CREATE TABLE SALARIE (
+
+NUMERO_SECURITE_SOCIALE varchar(50),
+NOM varchar(50),
+PRENOM varchar(50),
+ADRESSE varchar(100),
+SALAIRE varchar(50),
+NUMERO_LICENCE varchar(50),
+DATE_DE_VALIDITE_DE_LA_LICENCE date,
+FONCTION varchar(50),
+
+primary key (NUMERO_SECURITE_SOCIALE)
+
+);

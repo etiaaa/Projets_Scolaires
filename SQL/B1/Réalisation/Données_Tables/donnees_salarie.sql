@@ -1,7 +1,7 @@
-#Pilote:
+--Pilote:
 
-insert into SALARIE (NUMERO_SECURITE_SOCIALE, NOM, PRENOM, ADRESSE, SALAIRE, NUMERO_LICENCE, DATE_DE_VALIDITE_DE_LA_LICENCE, FONCTION)
-values ("1 92 09 12 415 001 32", "Chauvino",   "Gilbert",   "15 cours Franklin Roosevelt 69006",   "7 800€",   "92151600N7492", "2026-12-04", "Pilote"),
+INSERT INTO SALARIE (NUMERO_SECURITE_SOCIALE, NOM, PRENOM, ADRESSE, SALAIRE, NUMERO_LICENCE, DATE_DE_VALIDITE_DE_LA_LICENCE, FONCTION)
+VALUES ("1 92 09 12 415 001 32", "Chauvino",   "Gilbert",   "15 cours Franklin Roosevelt 69006",   "7 800€",   "92151600N7492", "2026-12-04", "Pilote"),
 	   ("1 97 05 22 615 025 33", "Lecocq",     "Gregory",   "64 Rue de la Pompe 75 116",           "9 300€",   "051227308989",  "2028-09-15", "Pilote"),
 	   ("1 72 02 36 820 035 14", "Carbonneau", "Remy",      "46 Rue Roussy 93130",                 "10 430€",  "49643901RE378", "2025-06-19", "Pilote"),
 	   ("1 76 12 78 130 008 32", "Maret",      "Clement",   "41 Quai des Belgese 13500",           "7 315€",   "19J593P96X05N", "2026-06-02", "Pilote"),
@@ -13,10 +13,10 @@ values ("1 92 09 12 415 001 32", "Chauvino",   "Gilbert",   "15 cours Franklin R
 	   ("2 00 01 94 097 642 54", "Chardin",    "Angeline",  "43 boulevard de la Liberation 13014", "9 800€",   "45GK09L52QA",   "2026-08-04", "Pilote");
 
 
-#Hôtesse:
+--Hôtesse:
 
-insert into SALARIE (NUMERO_SECURITE_SOCIALE, NOM, PRENOM, ADRESSE, SALAIRE, NUMERO_LICENCE, DATE_DE_VALIDITE_DE_LA_LICENCE, FONCTION)
-values ("2 98 12 66 890 012 42", "Cuvier",     "Solene",  "18 rue du Clair Bocage 85000",       "3 000€", NULL, NULL, "Hôtesse"),
+INSERT INTO SALARIE (NUMERO_SECURITE_SOCIALE, NOM, PRENOM, ADRESSE, SALAIRE, NUMERO_LICENCE, DATE_DE_VALIDITE_DE_LA_LICENCE, FONCTION)
+VALUES ("2 98 12 66 890 012 42", "Cuvier",     "Solene",  "18 rue du Clair Bocage 85000",       "3 000€", NULL, NULL, "Hôtesse"),
 	   ("2 00 10 77 300 009 66", "Chagnon",    "Adeline", "43 rue de l'Epeule 59100",           "4 000€", NULL, NULL, "Hôtesse"),
 	   ("2 97 08 77 130 012 43", "Delcroix",   "Sylvie",  "30 rue Descartes 67000",             "2 900€", NULL, NULL, "Hôtesse"),
        ("2 92 12 92 213 042 53", "Serre",      "Carla",   "64 Cours Marechal-Joffre 59220",     "4 600€", NULL, NULL, "Hôtesse"),
@@ -27,10 +27,10 @@ values ("2 98 12 66 890 012 42", "Cuvier",     "Solene",  "18 rue du Clair Bocag
 	   ("2 99 09 93 439 044 13", "Bourbeau",   "Eleonore","26 rue du Paille en queue 92300",    "2 180€", NULL, NULL, "Hôtesse"),
 	   ("2 97 02 91 943 093 45", "Gerald",     "Romane",  "4 rue des six frères Ruellan 95200", "3 700€", NULL, NULL, "Hôtesse");
 
-#Steward: 
+--Steward: 
 
-insert into SALARIE (NUMERO_SECURITE_SOCIALE, NOM, PRENOM, ADRESSE, SALAIRE, NUMERO_LICENCE, DATE_DE_VALIDITE_DE_LA_LICENCE, FONCTION)
-values ("1 99 12 64 206 013 87", "Besson",    "Celeste",   "19 avenue du Marechal Juin 91300",     "2 100€", NULL, NULL, "Steward"),
+INSERT INTO SALARIE (NUMERO_SECURITE_SOCIALE, NOM, PRENOM, ADRESSE, SALAIRE, NUMERO_LICENCE, DATE_DE_VALIDITE_DE_LA_LICENCE, FONCTION)
+VALUES ("1 99 12 64 206 013 87", "Besson",    "Celeste",   "19 avenue du Marechal Juin 91300",     "2 100€", NULL, NULL, "Steward"),
 	   ("1 86 12 78 727 029 99", "Granet",    "Etienne",   "7 rue Charles Corbeau 76400",          "5 310€", NULL, NULL, "Steward"),
 	   ("1 95 07 95 340 034 80", "Auvray",    "Amaury",    "67 Place du Jeu de Paume 38200",       "4 250€", NULL, NULL, "Steward"),
 	   ("1 96 09 94 690 422 65", "Blanc",     "Alexis",    "27 Faubourg Saint Honoré 75116",       "3 400€", NULL, NULL, "Steward"),

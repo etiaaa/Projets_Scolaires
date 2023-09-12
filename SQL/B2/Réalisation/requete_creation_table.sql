@@ -10,7 +10,7 @@ date_of_birth DATE,
 phone_number INT
 );
 
-
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Address (
 id_address INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -24,6 +24,7 @@ id_user INT,
 FOREIGN KEY (id_user) REFERENCES User(id_user)
 ); 
 
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Payment(
 id_payment INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -38,6 +39,7 @@ FOREIGN KEY (id_user) REFERENCES User(id_user),
 FOREIGN KEY (id_command) REFERENCES Command(id_command)
 );
 
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Product(
 id_product INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -50,7 +52,7 @@ id_category INT,
 FOREIGN KEY (id_category) REFERENCES Category(id_category)
 );
 
-
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Rate(
 id_rate INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -62,7 +64,7 @@ FOREIGN KEY (id_product) REFERENCES Product(id_product),
 FOREIGN KEY (id_user) REFERENCES User(id_user)
 );
 
-
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Photo(
 id_photo INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -73,6 +75,7 @@ FOREIGN KEY (id_product) REFERENCES Product(id_product),
 FOREIGN KEY (id_user) REFERENCES User(id_user)
 );
 
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Cart(
 id_cart INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -86,6 +89,7 @@ FOREIGN KEY (id_product) REFERENCES Product(id_product),
 FOREIGN KEY (id_user)    REFERENCES User(id_user)
 );
 
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Command(
 id_command INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -104,6 +108,7 @@ FOREIGN KEY (id_user)    REFERENCES User(id_user),
 FOREIGN KEY (id_address) REFERENCES Address(id_address)
 );
 
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Command_line(
 id_command_line INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -119,6 +124,7 @@ FOREIGN KEY (id_command) REFERENCES Command(id_command)
 
 );
 
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Invoices(
 id_invoices INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -134,6 +140,7 @@ FOREIGN KEY (id_command_line) REFERENCES Command_line(id_command_line)
 
 );
 
+---------------------------------------------------------------------------------------
 
 CREATE TABLE Category(
 id_category INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,

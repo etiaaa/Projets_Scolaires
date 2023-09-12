@@ -1,5 +1,5 @@
-insert into ROUTE (NUMERO_DE_VOL,VILLE_D_ORIGINE,VILLE_DE_DESTINATION)
-values	
+INSERT INTO ROUTE (NUMERO_DE_VOL,VILLE_D_ORIGINE,VILLE_DE_DESTINATION)
+VALUES	
 		("ALL 105",	"Paris",		"Berlin"),
         ("ESP 196",	"Paris",		"Madrid"),
         ("ITL 134",	"Paris",		"Romes"),

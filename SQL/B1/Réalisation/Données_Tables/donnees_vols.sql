@@ -1,12 +1,12 @@
-insert into VOL (NUMERO_DU_VOL,HEURE_DEPART,HEURE_ARRIVEE)
-values 
+INSERT INTO VOL (NUMERO_DU_VOL,HEURE_DEPART,HEURE_ARRIVEE)
+VALUES 
 
-#Vol pour l'Europe:
+--Vol pour l'Europe:
 
-	   ("ALL 105", "6:15",  "7:45"),
+	("ALL 105", "6:15",  "7:45"),
        ("ALL 153", "7:00",  "8:40"),
        
-	   ("ESP 196", "8:30",  "10:30"),
+	("ESP 196", "8:30",  "10:30"),
        ("ESP 118", "10:00", "12:00"),
        
        ("ITL 134", "13:00", "15:00"),
@@ -17,10 +17,10 @@ values
        
        
        ("BLG 150", "20:00", "22:00"),
-	   ("BLG 585", "15:00", "17:00"),
+	("BLG 585", "15:00", "17:00"),
        
        
-#Vol pour l'Amérique Latine:
+--Vol pour l'Amérique Latine:
        
        ("BRS 293",  "11:00",  "13:00"),
        ("BRS 468",  "18:00",  "20:00"),
@@ -35,7 +35,7 @@ values
        
        ("SGP 282",  "20:00",  "01:30"),
        
-#Vol pour l'Afrique:
+--Vol pour l'Afrique:
        
        ("CI 383", 	"05:40", "14:20"),
        ("CGN 312", 	"07:30", "12:00"),
@@ -43,7 +43,7 @@ values
        ("ALG 382",  "12:30", "22:30"),
        ("MRC 350",  "10:30", "00:00"),
        
-#Vol pour l'Asie: 
+--Vol pour l'Asie: 
        
        ("CHN 405",  "22:00", "01:00"),
        ("JPN 402",  "04:20", "07:00"),

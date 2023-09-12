@@ -1,5 +1,5 @@
-insert into PASSAGER (NOM,PRENOM,ADRESSE,PROFESSION,BANQUE)
-values 
+INSERT INTO PASSAGER (NOM,PRENOM,ADRESSE,PROFESSION,BANQUE)
+VALUES 
 
 #Passagers Masculins:
 	   ("Castex",       "Maxence",		"25 Rue du Palais 91150",				"Ethnologue",					"Société Générale"),

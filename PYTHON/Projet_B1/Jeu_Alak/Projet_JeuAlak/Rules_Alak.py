@@ -36,27 +36,35 @@ class Alak:
 
     def captured(self):
         """
-        Fonction qui permet d'établir la règle des pions à capturer,
-        c.a.d si 
+        Fonction qui si les deux pions d'un même joueur encercle le pion du joueur 
+        adverse, alors le pion adverse est capturé et le joueur ne pourra pas 
+        rejouer sur la case où son pion as été capturé au tour précédent
         """
-        i = self.user_choice
-        for case in self.board:
-            if self.player == 1:
-                if i-2 == self.p1_case and i-1 == self.p2_case:
-                    self.removed.append(i-1) 
-            if self.player == 2:
-                if i-2 == self.p2_case and i-1 == self.p1_case:
-                    self.removed.append(i-1)
-                self.removed.remove(i-1)
-        return "Liste des éléments supprimées" + str(self.removed) + "." +"\n Voici le nouveau plateau" + str(self.board)
+        if self.player == 1:
+            if self.board[self.user_choice-2] == self.p1_case and self.board[self.user_choice-1] == self.p2_case:
+                self.removed.append(self.board[self.user_choice-1])
+                self.board.remove(self.board[self.user_choice-1])
+                return True 
+            return False
+        
+        if self.player == 2:
+            if self.board[self.user_choice-2] == self.p2_case and self.board[self.user_choice-1] == self.p1_case:
+                self.removed.append(self.board[self.user_choice-1])
+                self.board.remove(self.board[self.user_choice-1])
+                return True
+            return False
+        
 
-    def possible(self,i):
+
+    def possible(self):
         """
         Fonction permettant de déterminer si OUI ou NON il est possible pour le joueur de jouer
         sur une case i choisi.
         """
-        for case in self.board: #Pour toutes les cases dans le tableau, si
-            if case == self.empty_case:
+        self.player = 1
+        self.user_choice = int(input("Choose a number to put your pawn: "))
+        for case in self.board: #Pour toutes les cases dans le tableau,
+            if self.board[self.user_choice] == self.empty_case and Alak.captured(self) == False: #Si la case est vide et que
                 return True
         return False
 
@@ -64,14 +72,13 @@ class Alak:
     def select(self):
         """
         Fonction permettant au joueur d'indiquer la case sur laquelle il souhaite
-        jouer. S'il est impossible d'y joueur alors on lui demande de choisir une autre case
-        sinon la case séléctionner est valide.
+        jouer. S'il est impossible d'y jouer alors on lui demande de choisir une autre case
+        sinon la case sélectionnée est valide.
         """
-        self.user_choice = int(input("Choose a number to put your pawn: "))
-        for case in self.board:
-            while Alak.possible(self,self.user_choice) != True:
-                self.user_choice = int(input("Sorry you can't choose this place, please choose a other number to put your pawn: "))
-        return "Well, you choosed the number " + str(self.user_choice)
+        while Alak.possible(self) != True:
+            self.user_choice = int(input("Sorry you can't choose this place, please choose another number to put your pawn: "))
+        self.choice = self.user_choice
+        return "Well, you chose the number " + str(self.choice)
 
 
     def put(self):

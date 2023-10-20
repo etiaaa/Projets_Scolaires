@@ -1,12 +1,13 @@
 from Rules_Alak import *
 
+#Test de chaque fonction au cours de la programmation du jeu
 Jouer = Alak(9)
 
 print("Fonction Board: ", Jouer.newBoard())
 Jouer.display()
-# print("Fonction Possible: ", Jouer.possible())
+print("Fonction Possible: ", Jouer.possible())
 print("Fonction Selection: ", Jouer.select())
-# print("Fonction Put: ", Jouer.put())
-# print("Fonction Captured: ", Jouer.captured(2))
-# print("Fonction Again: ", Jouer.again())
-# print("Fonction Win: ", Jouer.win())
+print(Jouer.put())
+print("Fonction Again: ", Jouer.again())
+print("Fonction Win: ", Jouer.win())
+

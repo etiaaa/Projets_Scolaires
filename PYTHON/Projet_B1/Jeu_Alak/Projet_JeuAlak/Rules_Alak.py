@@ -69,7 +69,7 @@ class Alak:
         sinon la case sélectionnée est valide.
         """
         while Alak.possible(self) != True:
-            self.user_choice = int(input("Sorry you can't choose this place, please choose another number to put your pawn: "))
+            print("Sorry you can't choose this place, please choose another number to put your pawn")
         self.choice = self.user_choice
         return "Well, you chose the number " + str(self.choice)
 
@@ -95,12 +95,12 @@ class Alak:
         
 
 
-    def again(self):
+    def again(self): #A revoir car cette fonction ne fonctionne pas
         """
         Fonction qui permet de vérifier si le 
         joueur peut encore poser un pion sur le plateau
         """
-        while Alak.put(self) != False:
+        if Alak.possible(self) == True:
             return True
         return False
 

@@ -28,7 +28,8 @@ class Alak:
         line_display = "| " + " | ".join(self.board) + " |" #Ligne représentant les éléments du plateau du jeu
         line_indice = "| " + " | ".join(map(str, range(self.n))) + " |" #Ligne représentant les indices des éléments du plateau du jeu
 
-        print(separator)
+        #On affiche le tableau dans la console du jeu
+        print(separator) 
         print(line_display)
         print(separator)
         print(line_indice)

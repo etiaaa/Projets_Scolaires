@@ -6,8 +6,7 @@ Jouer.newBoard()
 Jouer.display()
 
 while Jouer.again() == True:  # Boucle de jeu
-    print(Jouer.put())
+    Jouer.put()
     Jouer.player = 3 - Jouer.player  # Permet de basculer entre les joueurs 1 et 2
-
 print(Jouer.win())
  

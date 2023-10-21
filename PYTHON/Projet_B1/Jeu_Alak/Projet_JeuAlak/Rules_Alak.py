@@ -20,11 +20,19 @@ class Alak:
             self.board.append(self.empty_case) #Ajout des cases vides 
 
 
-    def display(self): #Fonction display qui permet l'affichage de la fonction du jeu
+    def display(self):  
         """
-        Fonction d'affichage du plateau du jeu dans la console.
+        Fonction display qui permet l'affichage de la fonction du jeu
         """
-        print(self.board) #On affiche le plateau du jeu
+        separator = "+---" * self.n + "+" #Mise en place de séparateur pour un meilleur visuel du jeu
+        line_display = "| " + " | ".join(self.board) + " |" #Ligne représentant les éléments du plateau du jeu
+        line_indice = "| " + " | ".join(map(str, range(self.n))) + " |" #Ligne représentant les indices des éléments du plateau du jeu
+
+        print(separator)
+        print(line_display)
+        print(separator)
+        print(line_indice)
+        print(separator)
 
 
     def captured(self):
@@ -80,29 +88,26 @@ class Alak:
         """
         Alak.select(self) 
 
-        i = self.user_choice
+        self.choice = self.user_choice
         if self.player == 1:
-            self.board[i] = "x"
+            self.board[self.choice] = "x"
             Alak.display(self)
             return True
             
         if self.player == 2:
-            self.board[i] = "o"
+            self.board[self.choice] = "o"
             Alak.display(self)
             return True
         Alak.display(self)
         return False, "Impossibe de poser un pion" 
         
 
-
     def again(self): #A revoir car cette fonction ne fonctionne pas
         """
         Fonction qui permet de vérifier si le 
         joueur peut encore poser un pion sur le plateau
         """
-        if Alak.possible(self) == True:
-            return True
-        return False
+        return Alak.possible(self)   
 
 
     def win(self):

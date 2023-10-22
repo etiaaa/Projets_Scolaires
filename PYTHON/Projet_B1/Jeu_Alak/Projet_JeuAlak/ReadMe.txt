@@ -6,7 +6,6 @@ Difficultés rencontrés et à améliorer:
       car elle ne possède pas de case suivante le problème se répétera donc avec la première case
       qui ne possède pas de case avant elle.
 
-
     - Je n'ai pas encore implémenté la condition selon laquelle un joueur dont le pion a été capturé
       au tour précédent ne peut pas reposer son pion sur la même case au tour qui suivante
 

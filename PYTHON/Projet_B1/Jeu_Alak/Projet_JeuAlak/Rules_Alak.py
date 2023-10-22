@@ -52,19 +52,22 @@ class Alak:
                 return True #Si la condition est vrai on renvoie vrai pour dire que c'est une condition de capture
             
             #On analyse la case d'avant et la case après
-            if self.board[self.user_choice-1] == self.p2_case and self.board[self.user_choice+1] == self.p2_case:
+            elif self.board[self.user_choice-1] == self.p2_case and self.board[self.user_choice+1] == self.p2_case:
                 #Si les pions du joueur 1 encercle les pions du joueur 2
                 self.removed.append(self.board[self.user_choice]) #Alors on capture le pion du joueur 2 en l'ajoutant a la liste des pions capturés
                 self.board[self.user_choice] = self.empty_case #Et en le supprimant du plateau du jeu
                 return True #Si la condition est vrai on renvoie vrai pour dire que c'est une condition de capture
 
             #On analyse les deux cases d'avant
-            if self.board[self.user_choice-1] == self.p2_case and self.board[self.user_choice-2] == self.p1_case:
+            elif self.board[self.user_choice-1] == self.p2_case and self.board[self.user_choice-2] == self.p1_case:
                 #Si les pions du joueur 1 encercle les pions du joueur 2
                 self.removed.append(self.board[self.user_choice-1]) #Alors on capture le pion du joueur 2 en l'ajoutant a la liste des pions capturés
                 self.board[self.user_choice-1] = self.empty_case #Et en le supprimant du plateau du jeu
                 return True #Si la condition est vrai on renvoie vrai pour dire que c'est une condition de capture
-            return False #Sinon faux
+            
+            #Sinon faux
+            else:
+                return False 
         
         #On fait pareil pour le joueur 2
         if self.player == 2: 
@@ -76,19 +79,22 @@ class Alak:
                 return True #Si la condition est vrai on renvoie vrai pour dire que c'est une condition de capture
             
             #On analyse la case d'avant et la case après
-            if self.board[self.user_choice-1] == self.p1_case and self.board[self.user_choice+1] == self.p1_case:
+            elif self.board[self.user_choice-1] == self.p1_case and self.board[self.user_choice+1] == self.p1_case:
                 #Si les pions du joueur 1 encercle les pions du joueur 2
                 self.removed.append(self.board[self.user_choice]) #Alors on capture le pion du joueur 2 en l'ajoutant a la liste des pions capturés
                 self.board[self.user_choice] = self.empty_case #Et en le supprimant du plateau du jeu
                 return True #Si la condition est vrai on renvoie vrai pour dire que c'est une condition de capture
 
             #On analyse les deux cases d'avant
-            if self.board[self.user_choice-1] == self.p1_case and self.board[self.user_choice-2] == self.p2_case:
+            elif self.board[self.user_choice-1] == self.p1_case and self.board[self.user_choice-2] == self.p2_case:
                 #Si les pions du joueur 1 encercle les pions du joueur 2
                 self.removed.append(self.board[self.user_choice-1]) #Alors on capture le pion du joueur 2 en l'ajoutant a la liste des pions capturés
                 self.board[self.user_choice-1] = self.empty_case #Et en le supprimant du plateau du jeu
                 return True #Si la condition est vrai on renvoie vrai pour dire que c'est une condition de capture
-            return False #Sinon faux        
+            
+            #Sinon faux 
+            else:
+                return False        
         
 
     def possible(self):

@@ -78,13 +78,63 @@ class JustGenTen:
         """
         JustGenTen.newGrid(self) #On utilise la fonction qui as généré la Grille c.a.d newBoard
         horizontal_line = "+ " + "-" * (4 * len(self.grid[0]) -3) + " +" #On définit les traits qui marqueront la séparation des éléments de la grille
-        print(horizontal_line) #On affiche la premiere ligne de démarquation
+        print(horizontal_line) #On affiche la ligne de démarcation sur le haut du tableau
         for ligne in self.grid: #On affiche les différentes lignes de la grille
-            for case in ligne: 
-                print(f"| {case} ", end="") #En veillant à les séparer correctement
-            print("|")
-            print(horizontal_line)
-        for _ in range(len(self.grid), len(self.grid[0])): #On démarque également le bas de la grille
-            print(horizontal_line)
+            for case in ligne: #Pour chaque case sur une ligne
+                print(f"| {case} ", end="") #On sépare les cases par des traits
+            print("|") #On ajoute une ligne de démarcation sur le bas du tableau
+            print(horizontal_line) #On l'affiche
 
-        
+
+    def MouseContact(self):
+        """
+        Fonction qui permet de séléctionner les cases grâce à la souris
+        """
+
+    def StateCase(self): 
+        """
+        Fonction qui permet de vérifier l'état des cases adjacentes d'une case choisi
+        """
+        # self.choice_case = int(input("Please, choose a case on the grid: "))
+        # total = 0
+        # for ligne in self.grid:
+        #     for case in self.grid:
+        #         None
+        None
+                 
+
+    def MergeCase(self):
+        """
+        Fonction qui permet de fusionner les cases de même valeur
+        """
+        None
+
+    
+    def FallCase(self):
+        """
+        Fonction qui permet de remplacer et générer de nouvelles cases
+        """
+        None
+    
+
+    def UpdateGrid(self):
+        """
+        Fonction qui met à jour la grille du jeu
+        """
+        None
+
+
+    def UserScore(self):
+        """
+        Fonction qui informe le joueur de son score actuelle
+        """
+        None
+
+
+    def Again(self):
+        """
+        Fonction qui en cas d'échec affiche les score du joueur 
+        et ainsi lui propose de rejouer
+        """
+        None
+

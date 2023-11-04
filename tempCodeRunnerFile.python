@@ -1,5 +1,0 @@
-for i in range(4):
-    ligne = []  # Créez une sous-liste vide pour chaque ligne
-    for j in range(4):
-        ligne.append(0)  # Dans cet exemple, nous ajoutons des zéros
-    tableau_4x4.append(ligne)

@@ -1,0 +1,12 @@
+-- SQLite
+
+CREATE TABLE User (
+id_user INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+gender VARCHAR(100),
+lastname VARCHAR(100),
+firstname VARCHAR(100),
+email VARCHAR(100),
+age INT NOT NULL,
+origine VARCHAR(100),
+cause VARCHAR(100)
+);

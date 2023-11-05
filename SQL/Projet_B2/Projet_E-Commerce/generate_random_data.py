@@ -48,7 +48,7 @@ class Ecommerce(): #Classe Ecommerce représentant la base de données e-commerc
     def payment_table(self):
         for _ in range(50):
             hamid = "INSERT INTO Payment VALUES (NULL, '"+'FR'+str(random.randint(2670,3000)+random.randint(1153,3004))+"','"+str(random.randint(2670,3000)+random.randint(1153,3004))+"','"+str(random.randint(100,999))+"','"+faker.date()+"', '"+faker.name()+"', '"+str(random.randint(1,50))+"', '"+str(random.randint(1,50))+"')";
-            self.connected.execute(hamid);
+            self.connected.execute(hamid)
 
 ################################################################################################
 

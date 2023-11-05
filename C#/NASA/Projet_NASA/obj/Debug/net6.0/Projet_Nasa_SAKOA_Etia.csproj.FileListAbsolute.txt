@@ -8,3 +8,8 @@ D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\Projet_Nasa\obj\Debug\ne
 D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\Projet_Nasa\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.AssemblyInfoInputs.cache
 D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\Projet_Nasa\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.AssemblyInfo.cs
 D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\Projet_Nasa\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.csproj.CoreCompileInputs.cache
+D:\Etia\CURSUS_SCOLAIRE\PROJETS_SCOLAIRES\C#\NASA\Projet_NASA\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.csproj.AssemblyReference.cache
+D:\Etia\CURSUS_SCOLAIRE\PROJETS_SCOLAIRES\C#\NASA\Projet_NASA\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.GeneratedMSBuildEditorConfig.editorconfig
+D:\Etia\CURSUS_SCOLAIRE\PROJETS_SCOLAIRES\C#\NASA\Projet_NASA\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.AssemblyInfoInputs.cache
+D:\Etia\CURSUS_SCOLAIRE\PROJETS_SCOLAIRES\C#\NASA\Projet_NASA\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.AssemblyInfo.cs
+D:\Etia\CURSUS_SCOLAIRE\PROJETS_SCOLAIRES\C#\NASA\Projet_NASA\obj\Debug\net6.0\Projet_Nasa_SAKOA_Etia.csproj.CoreCompileInputs.cache

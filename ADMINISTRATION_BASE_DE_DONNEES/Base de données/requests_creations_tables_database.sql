@@ -11,15 +11,32 @@ CREATE TABLE Terrorist_Attack (
     TARGET_TYPE VARCHAR(100)
 );
 
-CREATE TABLE Person_Traumatised (
+/***************************************************************************/
+
+CREATE TABLE  Person_Traumatised (
     ID_PERSON INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     GENDER VARCHAR(100),
     LASTNAME VARCHAR(100),
     FIRSTNAME VARCHAR(100),
     ADDRESS VARCHAR(100),
+    CITY VARCHAR(100),
+    POSTAL_CODE VARCHAR(20),
     EMAIL VARCHAR(100),
     AGE INT NOT NULL,
     ORIGIN VARCHAR(100),
     CAUSE VARCHAR(100),
     FOREIGN KEY(CAUSE) REFERENCES Terrorist_Attack(CITY)
 );
+
+/***************************************************************************/
+
+CREATE TABLE Psychologist (
+    ID_PSYCHOLOGIST INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "NAME" VARCHAR(200),
+    WORK_CITY VARCHAR(200),
+    WORK_POSTAL_CODE VARCHAR(100),
+    SPECIALISATIONS VARCHAR(300),
+    PSYCOLOGIST_INFORMATION VARCHAR(300)
+);
+
+/***************************************************************************/

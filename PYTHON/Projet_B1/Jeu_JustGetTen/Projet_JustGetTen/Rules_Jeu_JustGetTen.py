@@ -1,19 +1,19 @@
 from random import *
 from numpy import *
 
-class JustGenTen:
+class JustGetTen:
 
     def __init__(self):
         self.grid = [] #On initialise la grille vide
-        #On a une case qui vaut entre 1 et 4 avec les probabilités définit
+        self.choice_grid = int(input("Please, choose a number between 1 and 5 for the size of your game grid: "))
+        #La ligne ci-dessus demande au joueur de choisir entre 5 choix de grilles (de la plus petite à la plus grande taille)
+        self.select_case = int(input("Please select a number to Ge:"))
+        #La ligne ci-dessus demande au joueur de choisir une case à séléctionner pour commencer les règles de fusion
 
-
-    def newGrid(self): #
+    def newGrid(self): 
         """
         Fonction qui as pour but d'initialiser la taille de la grille en fonction du choix du joueur
         """
-        self.choice_grid = int(input("Please, choose a number between 1 and 5 for the size of your game grid: "))
-        #La ligne ci-dessus demande au joueur de choisir entre 5 choix de grilles (de la plus petite à la plus grande taille)
         while self.choice_grid < 1 or self.choice_grid > 5:
             print("I'm sorry, the number choose is not between 1 and 5, please restart")        
             self.choice_grid = int(input("Please, choose a number between 1 and 5 for the size of your game grid: "))
@@ -76,7 +76,7 @@ class JustGenTen:
         """
         Fonction qui permet d'afficher la Grille de jeu
         """
-        JustGenTen.newGrid(self) #On utilise la fonction qui as généré la Grille c.a.d newBoard
+        JustGetTen.newGrid(self) #On utilise la fonction qui as généré la Grille c.a.d newBoard
         horizontal_line = "+ " + "-" * (4 * len(self.grid[0]) -3) + " +" #On définit les traits qui marqueront la séparation des éléments de la grille
         print(horizontal_line) #On affiche la ligne de démarcation sur le haut du tableau
         for ligne in self.grid: #On affiche les différentes lignes de la grille

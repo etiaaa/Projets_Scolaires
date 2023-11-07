@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MENTALHEAL Login</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-  
-  <div class="wrapper">
-      <form action="">
-         <h1>SEARCH</h1>
-         <div class="input-box">
-              <input type="text" placeholder="TYPE MY CITY" required>
-         </div>
-    
-         <button type="submit" class="btn">VALIDATE</button>
-         </div>
-	
-      </form>
-  </div>
-  
-</body>
-
-<style>
-     @import url("https://fonts.googleleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
@@ -104,5 +79,3 @@ body {
     
 }
 
-</style>
-</html>

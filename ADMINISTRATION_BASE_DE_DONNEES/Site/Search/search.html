@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MENTALHEAL Login</title>
+  <link rel="stylesheet" type="text/css" href="search.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <h2 class="logo">MENTALHEAL</h2>
+    <nav class="navigation">
+        <a href="accueil.html">HOME</a>
+        <a href="search.html">SEARCH</a>
+        <a href="../Contact/contact.html">CONTACT</a>
+        <a href="../Login/login.html"> <button class="btnlogin_popup">Login</button> </a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <form action="/" method="POST"> <!-- Modifiez l'attribut action pour qu'il pointe vers "/" -->
+      <h1>SEARCH</h1>
+      <div class="input-box">
+        <input type="text" name="selection_user" placeholder="Type your CITY or your POSTAL CODE" required>
+      </div>
+      <button type="submit" class="btn">VALIDATE</button>
+      <div id="result-container">
+        <!-- Les résultats seront affichés ici -->
+      </div>
+      
+    </form>
+  </div>
+
+  <script src="search.js"></script> <!-- fichier JavaScript ici -->
+
+</body>
+</html>

@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       body: `selection_user=${userInput}`,
     })
-    .then(response => response.text()) // Attend une réponse texte du serveur
+    .then(response => response.text()) 
     .then(data => {
-      resultContainer.innerHTML = data; // Affichez les résultats dans un conteneur HTML
+      resultContainer.innerHTML = data; 
     });
   });
 });

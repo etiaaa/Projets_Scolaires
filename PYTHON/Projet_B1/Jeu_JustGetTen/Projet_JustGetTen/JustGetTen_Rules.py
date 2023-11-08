@@ -1,19 +1,21 @@
 from random import *
 from numpy import *
+import pyautogui
+import time  
 
 class JustGetTen:
 
     def __init__(self):
         self.grid = [] #On initialise la grille vide
-        self.choice_grid = int(input("Please, choose a number between 1 and 5 for the size of your game grid: "))
-        #La ligne ci-dessus demande au joueur de choisir entre 5 choix de grilles (de la plus petite à la plus grande taille)
-        self.select_case = int(input("Please select a number to Ge:"))
-        #La ligne ci-dessus demande au joueur de choisir une case à séléctionner pour commencer les règles de fusion
+        self.newGrid()
 
     def newGrid(self): 
         """
         Fonction qui as pour but d'initialiser la taille de la grille en fonction du choix du joueur
         """
+        self.choice_grid = int(input("Please, choose a number between 1 and 5 for the size of your game grid: "))
+        #La ligne ci-dessus demande au joueur de choisir entre 5 choix de grilles (de la plus petite à la plus grande taille)
+        
         while self.choice_grid < 1 or self.choice_grid > 5:
             print("I'm sorry, the number choose is not between 1 and 5, please restart")        
             self.choice_grid = int(input("Please, choose a number between 1 and 5 for the size of your game grid: "))
@@ -90,12 +92,26 @@ class JustGetTen:
         """
         Fonction qui permet de séléctionner les cases grâce à la souris
         """
+        for case in self.grid:
+            None
+
+        time.sleep(2)
+        # Obtenez les coordonnées actuelles de la souris
+        x, y = pyautogui.position()
+        print(f"Position actuelle de la souris : ({x}, {y})")
+        # Effectuez un clic de souris en utilisant les coordonnées obtenues
+        pyautogui.click(x, y, button='left')
+        # # Effectuez un double-clic de souris
+        # pyautogui.doubleClick(x, y)
+        # # Effectuez un clic droit de souris
+        # pyautogui.click(x, y, button='right')
 
     def StateCase(self): 
         """
         Fonction qui permet de vérifier l'état des cases adjacentes d'une case choisi
         """
-        # self.choice_case = int(input("Please, choose a case on the grid: "))
+        self.select_case = int(input("Please select a number to Ge:"))
+        #La ligne ci-dessus demande au joueur de choisir une case à séléctionner pour commencer les règles de fusion
         # total = 0
         # for ligne in self.grid:
         #     for case in self.grid:
@@ -138,3 +154,12 @@ class JustGetTen:
         """
         None
 
+
+
+#Session Test:
+
+Test = JustGetTen()
+
+# print(Test.newGrid())
+Test.displayGrid()
+Test.MouseContact()

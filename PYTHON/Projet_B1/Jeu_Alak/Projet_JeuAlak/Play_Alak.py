@@ -1,4 +1,4 @@
-from Rules_Alak import *
+from Alak_Rules import *
 
 #Mise en place du jeu
 Jouer = Alak(9)  # Création de l'instance du jeu

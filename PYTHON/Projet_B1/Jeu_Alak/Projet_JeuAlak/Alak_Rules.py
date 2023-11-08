@@ -163,3 +163,16 @@ class Alak:
                 return "CONGRATULATIONS Player 2 you've won the part !" #Il a gagné
             else: #Sinon
                 return "CONGRATULATIONS you've both won the part ! " #Egalité
+            
+
+#Session Test:
+
+Test = Alak(9)
+
+Test.newBoard()
+Test.display()
+print("Fonction Possible: ", Test.possible())
+print("Fonction Selection: ", Test.select())
+print(Test.put())
+print("Fonction Again: ", Test.again())
+print("Fonction Win: ", Test.win())

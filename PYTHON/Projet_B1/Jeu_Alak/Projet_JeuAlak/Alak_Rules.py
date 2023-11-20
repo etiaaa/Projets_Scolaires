@@ -167,12 +167,12 @@ class Alak:
 
 #Session Test:
 
-Test = Alak(9)
+# Test = Alak(9)
 
-Test.newBoard()
-Test.display()
-print("Fonction Possible: ", Test.possible())
-print("Fonction Selection: ", Test.select())
-print(Test.put())
-print("Fonction Again: ", Test.again())
-print("Fonction Win: ", Test.win())
+# Test.newBoard()
+# Test.display()
+# print("Fonction Possible: ", Test.possible())
+# print("Fonction Selection: ", Test.select())
+# print(Test.put())
+# print("Fonction Again: ", Test.again())
+# print("Fonction Win: ", Test.win())

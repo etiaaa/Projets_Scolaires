@@ -88,36 +88,7 @@ class JustGetTen:
             print(horizontal_line) #On l'affiche
 
 
-    def MouseContact(self):
-        """
-        Fonction qui permet de séléctionner les cases grâce à la souris
-        """
-        for case in self.grid:
-            None
 
-        time.sleep(2)
-        # Obtenez les coordonnées actuelles de la souris
-        x, y = pyautogui.position()
-        print(f"Position actuelle de la souris : ({x}, {y})")
-        # Effectuez un clic de souris en utilisant les coordonnées obtenues
-        pyautogui.click(x, y, button='left')
-        # # Effectuez un double-clic de souris
-        # pyautogui.doubleClick(x, y)
-        # # Effectuez un clic droit de souris
-        # pyautogui.click(x, y, button='right')
-
-    def StateCase(self): 
-        """
-        Fonction qui permet de vérifier l'état des cases adjacentes d'une case choisi
-        """
-        self.select_case = int(input("Please select a number to Ge:"))
-        #La ligne ci-dessus demande au joueur de choisir une case à séléctionner pour commencer les règles de fusion
-        # total = 0
-        # for ligne in self.grid:
-        #     for case in self.grid:
-        #         None
-        None
-                 
 
     def MergeCase(self):
         """
@@ -157,9 +128,8 @@ class JustGetTen:
 
 
 #Session Test:
+# Test = JustGetTen()
 
-Test = JustGetTen()
-
-# print(Test.newGrid())
-Test.displayGrid()
-Test.MouseContact()
+# # print(Test.newGrid())
+# Test.displayGrid()
+# Test.MouseContact()

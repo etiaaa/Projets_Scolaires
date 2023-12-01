@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5ZNlbpzF7qt31w8k/cvaCqsZDSrFBaGKCF5KHk8Waf6RCzXlZqGf5nn74GL2IrMPC0loDjRM3KvRQXmnXEHahA==",
+  "dgSpecHash": "LV57p0GMIzdvOaFvBJQ+LFL+32JE5YvEz2iaHGSoKcWoUJ+ZQDcudYTym62o5pkL0Yp236o8tb8GR1HFVVp38A==",
   "success": true,
-  "projectFilePath": "D:\\Etia\\CURSUS_SCOLAIRE\\PROJETS_SCOLAIRES\\C#\\NASA\\Projet_NASA\\Projet_Nasa_SAKOA_Etia.csproj",
+  "projectFilePath": "C:\\Users\\konan\\OneDrive\\Documents\\PROJETS_SCOLAIRES\\C#\\NASA\\Projet_NASA\\Projet_Nasa_SAKOA_Etia.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Etia\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
-    "C:\\Users\\Etia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
-    "C:\\Users\\Etia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
-    "C:\\Users\\Etia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
+    "C:\\Users\\konan\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\konan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\konan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\konan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }

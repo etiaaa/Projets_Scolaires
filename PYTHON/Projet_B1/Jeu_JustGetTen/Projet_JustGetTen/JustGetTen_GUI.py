@@ -61,19 +61,15 @@ class GUI_JustGetTen: #Création de la classe d'interface graphique du jeu JustG
                 elif value_case == 4:
                     self.button.configure(bg="#D64A68")
     
-
     def StateCase(self): 
-        """
-        Fonction qui permet de vérifier l'état des cases adjacentes d'une case choisi
-        """
+        #Fonction qui permet de vérifier l'état des cases adjacentes d'une case choisi
         merge_case = []
-        for lignes in self.JustGetTen.grid:
-            if lignes == lignes[0]:
-                for self.button in self.grid:
-                    if lignes[self.button+1] == lignes[self.button]:
-                        merge_case.append(self.button)
-        print(merge_case)    
-
+        # for lignes in self.JustGetTen.grid:
+        #     if lignes == lignes[0]:
+        #         for self.button in self.grid:
+        #             if lignes[self.button+1] == lignes[self.button]:
+        #                 merge_case.append(self.button)
+        # print(merge_case)    
 
     def displayGameBoard(self): 
         """

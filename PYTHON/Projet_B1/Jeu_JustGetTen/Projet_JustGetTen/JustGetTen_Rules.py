@@ -88,6 +88,8 @@ class JustGetTen:
             print(horizontal_line) #On l'affiche
 
 
+
+
     def MergeCase(self):
         """
         Fonction qui permet de fusionner les cases de même valeur

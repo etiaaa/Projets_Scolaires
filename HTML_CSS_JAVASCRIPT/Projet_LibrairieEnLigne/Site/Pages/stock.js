@@ -1,6 +1,6 @@
 $.ajax({
    type: "GET",
-   url: "projet_stocks_csv.csv",
+   url: "stocks_livres.csv",
    headers: { 
         Accept : "text/csv; charset=utf-8",
         "Content-Type": "text/csv; charset=utf-8"

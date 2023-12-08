@@ -6,7 +6,7 @@ import streamlit as st
 import plotly.express as px
 
 #Création d'une variable conn pour configurer une connexion à la base de données SQLite.
-conn = sqlite3.connect('script2.db')
+conn = sqlite3.connect('.\script2.db')
 
 #Création d'une variable bd qui permet la lecture des données depuis la base de données
 bd = pd.read_sql_query("SELECT * from Tableau", conn)

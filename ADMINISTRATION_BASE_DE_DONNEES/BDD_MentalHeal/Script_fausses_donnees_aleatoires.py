@@ -18,7 +18,7 @@ class MentalHeal():
     """
     def __init__(self):
         #Ci-dessous connexion a la base de données
-        self.connected = sqlite3.connect('D:\Etia\CURSUS_SCOLAIRE\PROJETS_SCOLAIRES\ADMINISTRATION_BASE_DE_DONNEES\mental-heal.db')
+        self.connected = sqlite3.connect('D:\Etia\CURSUS_SCOLAIRE\PROJETS_SCOLAIRES\ADMINISTRATION_BASE_DE_DONNEES\MentalHeal.db')
         
         self.create_table() #Fonction qui génèrera la table Person_Traumatised si elle n'existe pas
         self.Person_Traumatised() #Fonction qui génèrera les fausses donnéees aléatoires de la table Person_Traumatised

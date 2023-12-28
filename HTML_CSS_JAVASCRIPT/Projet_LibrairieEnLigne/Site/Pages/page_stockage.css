@@ -1,0 +1,120 @@
+/***********************************************************************   DEBUT PARTIE CSS   ********************************************************************/
+html {
+    background-color: #E8E8E8;
+    font-family: 'Nunito', sans-serif;
+    color: #333333;
+}
+
+/*************************************************************************************************************************************************************************/
+
+#logo {
+    position: relative;
+    margin-top: -85px;
+    width: 230px;
+    height: 230px;
+}
+
+/*************************************************************************************************************************************************************************/
+
+#menu {
+    position: absolute;
+    top: -5px;
+    left: 155px;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: block;
+    padding: 14px 40px;
+    margin: 2px;
+    font-size: 95%;
+    font-weight: 1000;
+    text-decoration: none;
+    background-color: #333333;
+    color: #FFD700;
+    border-radius: 5px; /* Ajout d'arrondis pour un aspect plus moderne */
+}
+
+#menu a:hover {
+    background-color: #FFD700;
+    color: #333333;
+}
+
+/*************************************************************************************************************************************************************************/
+
+#nav-research {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+#search-input {
+    padding: 15px 1px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+}
+
+#search-icon {
+    padding: 12px 4px;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #FFD700;
+}
+
+.Debrifing_Stock, .Operation {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.Debrifing_Stock, .Operation th, .Debrifing_Stock, .Operation td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.Recherche {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.Ajouter {
+    background-color: #fff;
+    padding: 20px;
+}
+
+input[type="button"] {
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Debrifing_Stock th, .Debrifing_Stock td {
+    background-color: #f2f2f2;
+}
+
+.Operation th, .Operation td {
+    background-color: #e6e6e6;
+}
+
+

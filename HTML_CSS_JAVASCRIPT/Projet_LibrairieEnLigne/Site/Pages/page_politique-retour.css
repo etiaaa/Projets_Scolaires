@@ -1,0 +1,84 @@
+/***********************************************************************   DEBUT PARTIE CSS   ********************************************************************/
+html {
+    background-color: #E8E8E8;
+    font-family: 'Nunito', sans-serif;
+    color: #333333;
+}
+
+/*************************************************************************************************************************************************************************/
+
+#logo {
+    position: relative;
+    margin-top: -85px;
+    width: 230px;
+    height: 230px;
+}
+
+/*************************************************************************************************************************************************************************/
+
+#menu {
+    position: absolute;
+    top: -5px;
+    left: 155px;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    display: block;
+    padding: 14px 40px;
+    margin: 2px;
+    font-size: 95%;
+    font-weight: 1000;
+    text-decoration: none;
+    background-color: #333333;
+    color: #FFD700;
+    border-radius: 5px; /* Ajout d'arrondis pour un aspect plus moderne */
+}
+
+#menu a:hover {
+    background-color: #FFD700;
+    color: #333333;
+}
+
+/*************************************************************************************************************************************************************************/
+
+#nav-research {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+#search-input {
+    padding: 15px 1px;
+    border: 1px solid #FFD700; /* Ajout d'une bordure pour un meilleur contraste */
+    border-radius: 5px; /* Ajout d'arrondis */
+}
+
+#search-icon {
+    padding: 12px 4px;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #FFD700; /* Couleur de l'icône de recherche */
+}
+
+/*************************************************************************************************************************************************************************/
+
+.ma {
+    color: #E6B201;
+}
+
+h1 {
+    color: #333333;
+    border-bottom: 2px solid #FFD700; /* Ajout d'une bordure sous les titres */
+    padding-bottom: 5px; /* Espace entre le titre et la bordure */
+}
+
+p {
+    line-height: 1.6;
+}
+
+/*************************************************************************************************************************************************************************/

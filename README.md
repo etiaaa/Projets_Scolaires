@@ -5,9 +5,8 @@ Cependant, voici une liste des projets que j'ai eu à réaliser au cours de mon 
 
 * DEVELOPPEMENT WEB:
   - HTML/CSS/JS:
-      - Conception et développement d'un site web représentant une librairie en ligne, incluant 5 pages essentielles
-        (articles, présentation, employés, contact, stockage).
-      - Conception et développement d'un site web encyclopédique traitant des sujets au choix.
+    - Conception et développement d'un site web représentant une librairie en ligne, incluant 5 pages essentielles (articles, présentation, employés, contact, stockage).
+    - Conception et développement d'un site web encyclopédique traitant des sujets au choix.
   - WordPress: Conception d'un site sur la NASA.
 
 * DATA:
@@ -17,8 +16,12 @@ Cependant, voici une liste des projets que j'ai eu à réaliser au cours de mon 
          d'optimiser l'économie d'énergie dans les "smart cities".
 
 * PROGRAMMATION:
-  - PYTHON: Programmation d'un jeu de stratégie nommé Alak en Python, où deux joueurs   
-            placent des pions sur un plateau, suivant des règles précises de placement et de capture.  L' objectif d'avoir le plus de pions à la fin de la partie
+  - PYTHON: 
+      - Programmation d'un jeu de stratégie nommé Alak en Python, où deux joueurs   
+        placent des pions sur un plateau, suivant des règles précises de placement et de capture.  L' objectif d'avoir le plus de pions à la fin de la partie.
+      - Implémentation en Python d'algorithmes de cryptographie et stéganographie pour  
+        le chiffrement/déchiffrement d'images, le masquage/démastiquage avec une clé, et le masquage/démastiquage de texte derrière une image. A l'aide de Pillow et Tkinter.
+
   - C: Développement d'une version console en C du jeu de puzzle "Cardinal Chains" avec 
        30 niveaux de difficulté différente, permettant l'ajout aisé de nouveaux niveaux.
 

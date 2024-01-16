@@ -22,4 +22,6 @@ Cependant, voici une liste des projets que j'ai eu à réaliser au cours de mon 
   - C: Développement d'une version console en C du jeu de puzzle "Cardinal Chains" avec 
        30 niveaux de difficulté différente, permettant l'ajout aisé de nouveaux niveaux.
 
+* RESEAUX:
+  - LINUX/WINDOWS: Configuration d'un réseau (DHCP/DNS, stockage RAID, base de données, etc.) pour le détournement d'usine semi-conducteurs.
 

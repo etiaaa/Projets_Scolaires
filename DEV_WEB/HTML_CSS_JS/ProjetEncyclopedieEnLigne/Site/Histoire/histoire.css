@@ -1,0 +1,438 @@
+
+/* Styles de base */
+html,
+body,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    background-color: #f7e0d5;
+}
+
+body{
+    margin: 0;
+    color: #42302e;
+}
+
+/* Section header et menu supérieur */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main > header {
+    display: flex;
+    flex-direction: column;
+}
+
+header > .top-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu{
+    padding: 26px;
+    border-bottom: 1px solid #9c6b3b;
+}
+.logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.input-search{
+    display: flex;
+}
+.input-search > input {
+    border: none;
+    padding: 8px;
+}
+
+.input-search > button{
+    display: block;
+    padding: 8px;
+    margin-left: 4px;
+    border: 1px solid #134f10;
+    background-color: #134f10;
+    color: white;
+    border-radius: 2px;
+}
+
+/* Section liens des menus */
+.menu-links{
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.menu-links > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+ul li > a{
+    text-decoration: none;
+    color: #15a30d;
+    font-weight: bold;
+}
+
+ul li > a:hover{
+    color:#9c6b3b;
+}
+
+/*  Section main */
+.main-content {
+    border-top: 1px solid #9c6b3b;
+}
+
+.article:not(:first-of-type){
+    border-bottom: 1px solid #9c6b3b;
+}
+
+.article.final{
+    border: none;
+}
+
+.article > h3 > a{
+    color: inherit;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main-image{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #42302e;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.main-image > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+p.sujets {
+    text-align: center;
+
+}
+
+.article1:not(:first-of-type){
+    border-bottom: 1px solid #aba96a;
+ }
+
+.article.final1{
+    border: none;
+}
+
+.article1 > h3 > a{
+    color: inherit;
+}
+
+/*section sous-partie frise historique du theme histoire*/
+
+
+.blue.box{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid #04154d;
+    background: #001b4a;
+  }
+  
+.line{
+    position: relative;
+    border-bottom: 2px solid #10753c;
+    bottom: -18px;
+  }
+
+
+.list-description{
+    display: flex;
+}  
+.main-image-1{
+    width: 500px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+
+}
+
+.main-image-1 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.sommaire-1, .sommaire-2{
+    list-style: none;
+}
+
+.sommaire-1{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.sommaire-1 li, .sommaire-2 li{
+    margin-bottom: 30px;
+}
+
+.sommaire-1 li, .sommaire-2 li{
+    display: flex;
+}
+
+.sommaire-1 li > a, .sommaire-2 li > a {
+    display: block;
+    padding: 20px;
+}
+
+/*section sous-partie projet terre*/
+
+.blue.box1{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid blue;
+    background: #103475;
+}
+  
+.line1{
+    position: relative;
+    border-bottom: 2px solid #706c6b;
+    bottom: -18px;
+}
+
+.list-description1{
+    display: flex;
+}
+.main-image-2{
+    width: 500px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.main-image-2 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sommaire-3, .sommaire-4{
+    list-style: none;
+}
+
+.sommaire-3{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.sommaire-3 li, .sommaire-4 li{
+    margin-bottom: 30px;
+}
+
+.sommaire-3 li, .sommaire-4 li{
+    display: flex;
+}
+
+.sommaire-3 > li > .sujet, .sommaire-4 > li > .sujet {
+    display: block;
+    padding: 20px;
+    
+}
+/*section sous-partie Ancienne civilisation*/
+
+.blue.box2{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid blue;
+    background: #103475;
+}
+  
+.line2{
+    position: relative;
+    border-bottom: 2px solid #706c6b;
+    bottom: -18px;
+}
+
+.list-description2{
+    display: flex;
+}
+.main-image-3{
+    width: 450px;
+    height: 450px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.main-image-3 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sommaire-5, .sommaire-6{
+    list-style: none;
+}
+
+.sommaire-5{
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.sommaire-5 li, .sommaire-6 li{
+    margin-bottom: 30px;
+}
+
+.sommaire-5 li, .sommaire-6 li{
+    display: flex;
+}
+
+.sommaire-5 > li > .sujet, .sommaire-6 > li > .sujet {
+    display: block;
+    padding: 20px;
+    
+}
+
+/*section sous-partie Age sombre*/
+
+.blue.box3{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid blue;
+    background: #103475;
+}
+  
+.line3{
+    position: relative;
+    border-bottom: 2px solid #706c6b;
+    bottom: -18px;
+}
+
+.list-description3{
+    display: flex;
+}
+.main-image-4{
+    width: 450px;
+    height: 450px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.main-image-4 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sommaire-7, .sommaire-8{
+    list-style: none;
+}
+
+.sommaire-7{
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.sommaire-7 li, .sommaire-8 li{
+    margin-bottom: 30px;
+}
+
+.sommaire-7 li, .sommaire-8 li{
+    display: flex;
+}
+
+.sommaire-7 > li > .sujet, .sommaire-8 > li > .sujet {
+    display: block;
+    padding: 20px;
+    
+}
+
+/*section sous-partie Age moderne*/
+
+.blue.box4{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid blue;
+    background: #103475;
+}
+  
+.line4{
+    position: relative;
+    border-bottom: 2px solid #706c6b;
+    bottom: -18px;
+}
+
+.list-description4{
+    display: flex;
+}
+.main-image-5{
+    width: 450px;
+    height: 600px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.main-image-5 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sommaire-9, .sommaire-10{
+    list-style: none;
+}
+
+.sommaire-10{
+    margin-right: 400px;
+    margin-top: 20px;
+}
+
+.sommaire-9 li, .sommaire-10 li{
+    margin-bottom: 30px;
+}
+
+.sommaire-9 li, .sommaire-10 li{
+    display: flex;
+}
+
+.sommaire-9 > li > .sujet, .sommaire-10 > li > .sujet {
+    display: block;
+    padding: 20px;
+    
+}
+
+
+.paragraphe{
+    max-width: 400px;
+    margin-left: 350px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo-image{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-image > img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.brand-name{
+    display: block;
+    margin-left: 20px;
+}

@@ -1,0 +1,286 @@
+html,
+body,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0px;
+  overflow-x: hidden;
+  background: #ebc634;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section header */
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+main > header {
+  display: flex;
+  flex-direction: column;
+}
+
+header > .top-menu{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.top-menu{
+  padding: 26px;
+  border-bottom: 1px solid #9c6b3b;
+}
+.logo{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.input-search{
+  display: flex;
+}
+.input-search > input {
+  border: none;
+  padding: 8px;
+}
+
+.input-search > button{
+  display: block;
+  padding: 8px;
+  margin-left: 4px;
+  border: 1px solid #134f10;
+  background-color: #134f10;
+  color: white;
+  border-radius: 2px;
+}
+
+
+.main-menu > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.main-menu > ul li:not(:last-of-type) {
+  margin-right: 8px;
+}
+.main-menu > ul li {
+  font-weight: bold;
+}
+
+.main-menu > ul li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section Carousel */
+
+.carousel .image-container {
+  width: 50%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 1px 20px hsl(0deg 0% 0%/0.2);
+}
+
+.image-container > .label {
+  width: 50%;
+  background: white;
+  padding: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 410%;
+  left: 0%;
+}
+
+/* Section Main */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 1px 20px hsl(0deg 0% 0%/0.2);
+  padding: 16px 24px;
+  padding-top: 0px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.card > .image-subject {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  padding: 8px;
+  border: 1px solid #ebc634;
+  background: #ebc634;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0px 1px 20px hsl(0deg 0% 0%/0.2);
+}
+
+.card button > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  border-color: deeppink;
+  background-color: deeppink;
+}
+.image-subject > img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+footer {
+  padding: 45px;
+  height: 20%;
+  width: 100%;
+  background-color: #2f332d;
+  color: white;
+  font-weight: bold;
+}
+
+/* Trusted section  */
+.trusted {
+  padding: 48px;
+  width: 100%;
+  height: 20%;
+  background: #4537bf;
+}
+
+.testimonies {
+  margin-left: auto;
+  margin-right: auto;
+}
+.people {
+  display: flex;
+  justify-content: center;
+}
+
+.person {
+  width: 100px;
+  height: 100px;
+  margin-right: 45px;
+  border-radius: 50%;
+}
+
+.person > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.testimonies {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0px;
+}
+
+/* Section footer  */
+footer > ul {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: center;
+  list-style: none;
+}
+
+ul li {
+  margin-right: 12px;
+}
+
+footer > span {
+  font-size: 0.8rem;
+}
+
+
+.logo{
+    display: flex;
+}
+
+.logo-image{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-image > img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.brand-name{
+    display: block;
+    margin-left: 20px;
+}
+
+* Section liens des menus */
+.menu-links{
+   width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.menu-links > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+ul li > a{
+    text-decoration: none;
+    color:#15a30d;
+    font-weight: bold;
+}
+
+ul li > a:hover{
+    color:#9c6b3b;
+}

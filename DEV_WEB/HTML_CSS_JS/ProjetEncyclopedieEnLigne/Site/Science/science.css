@@ -1,0 +1,384 @@
+
+/* Styles de base */
+html,
+body,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    background-color: lightgray;
+    
+}
+
+body{
+    margin: 0;
+    color: #42302e;
+}
+
+/* Section header et menu supérieur */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main > header {
+    display: flex;
+    flex-direction: column;
+}
+
+header > .top-menu{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.top-menu{
+    padding: 26px;
+    border-bottom: 1px solid #9c6b3b;
+}
+.logo{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.input-search{
+    display: flex;
+}
+.input-search > input {
+    border: none;
+    padding: 8px;
+}
+
+.input-search > button{
+    display: block;
+    padding: 8px;
+    margin-left: 4px;
+    border: 1px solid #134f10;
+    background-color: #134f10;
+    color: white;
+    border-radius: 2px;
+}
+
+/* Section liens des menus */
+.menu-links{
+   width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.menu-links > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+ul li > a{
+    text-decoration: none;
+    color:#15a30d;
+    font-weight: bold;
+}
+
+ul li > a:hover{
+    color:#9c6b3b;
+}
+
+/*  Section main */
+.main-content {
+    border-top: 1px solid #9c6b3b;
+}
+
+.article:not(:first-of-type){
+    border-bottom: 1px solid #9c6b3b;
+}
+
+.article.final{
+    border: none;
+}
+
+.article > h3 > a{
+    color: inherit;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main-image{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #42302e;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.main-image > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+p.sujets {
+    text-align: center;
+
+}
+
+.article1:not(:first-of-type){
+    border-bottom: 1px solid #aba96a;
+ }
+
+.article.final1{
+    border: none;
+}
+
+.article1 > h3 > a{
+    color: inherit;
+}
+
+
+/*section sous-partie biologie du theme Science*/
+.blue.box6{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid #031f17;
+    background: #054f3b;
+  }
+  
+.line6{
+    position: relative;
+    border-bottom: 2px solid#47c4a2;
+    bottom: -18px;
+ }
+.list-description-6{
+    display: flex;
+}  
+.main-image-6{
+    width: 900px;
+    height: 800px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.main-image-6 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sommaire11{
+    list-style: none;
+}
+
+.sommaire11{
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.sommaire11 li{
+    margin-bottom: 30px;
+}
+
+.sommaire11 li{
+    display: flex;
+}
+
+.sommaire11 li > a, .sommaire11 > li > .sujet {
+    display: block;
+    padding: 20px;
+}
+
+/*section sous-partie cosmologie du theme Science*/
+.blue.box7{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid #031f17;
+    background: #054f3b;
+  }
+  
+.line7{
+    position: relative;
+    border-bottom: 2px solid#47c4a2;
+    bottom: -18px;
+ }
+.list-description-7{
+    display: flex;
+}  
+.main-image-7{
+    width: 900px;
+    height: 700px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.main-image-7 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sommaire12{
+    list-style: none;
+}
+
+.sommaire12{
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.sommaire12 li{
+    margin-bottom: 30px;
+}
+
+.sommaire12 li{
+    display: flex;
+}
+
+.sommaire12 li > a, .sommaire12 > li > .sujet {
+    display: block;
+    padding: 20px;
+}
+
+
+/*section sous-partie zoologie*/
+
+
+.blue.box8{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid #23572b;
+    background: #23572b;
+  }
+  
+.line8{
+    position: relative;
+    border-bottom: 2px solid #10753c;
+    bottom: -18px;
+  }
+
+
+.list-description-8{
+    display: flex;
+}  
+
+.main-image-8{
+    width: 400px;
+    height: 600px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+
+}
+
+.main-image-8 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.sommaire13, .sommaire-4{
+    list-style: none;
+}
+
+.sommaire13{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.sommaire13 li, .sommaire14 li{
+    margin-bottom: 30px;
+}
+
+.sommaire13 li, .sommaire14 li{
+    display: flex;
+}
+
+.sommaire13 li > a, .sommaire14 li > a {
+    display: block;
+    padding: 20px;
+}
+
+/*section sous-partie botanique*/
+
+.blue.box9{
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border: 1px solid #031f17;
+    background:#05403f;
+       
+}
+  
+.line9{
+    position: relative;
+    border-bottom: 2px solid #2c918c;
+    bottom: -18px;
+}
+
+.list-description-9{
+    display: flex;
+}
+.main-image-9{
+    width: 800px;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.main-image-9 > img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.sommaire14, .sommaire15{
+    list-style: none;
+}
+
+.sommaire14{
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.sommaire14 li, .sommaire15 li{
+    margin-bottom: 30px;
+}
+
+.sommaire14 li, .sommaire15 li{
+    display: flex;
+}
+
+.sommaire14 > li > a, .sommaire15 > li > .sujet {
+    display: block;
+    padding: 20px;
+    
+}
+
+.paragraphe{
+    max-width: 400px;
+    margin-left: 350px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo-image{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-image > img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.brand-name{
+    display: block;
+    margin-left: 20px;
+}

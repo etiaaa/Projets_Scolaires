@@ -1,0 +1,5 @@
+D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\obj\Debug\net7.0\Réalisation.csproj.AssemblyReference.cache
+D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\obj\Debug\net7.0\Réalisation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\obj\Debug\net7.0\Réalisation.AssemblyInfoInputs.cache
+D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\obj\Debug\net7.0\Réalisation.AssemblyInfo.cs
+D:\Etia\CURSUS_SCOLAIRE\YNOV\B2\C#\Examens\Réalisation\obj\Debug\net7.0\Réalisation.csproj.CoreCompileInputs.cache

@@ -1,5 +1,0 @@
-CREATE TABLE Compteur(
-idNumero INT NOT NULL AUTO_INCREMENT,
-Taux_Consomation VARCHAR(5) NOT NULL,
-PRIMARY KEY(idNumero)
-);

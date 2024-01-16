@@ -1,9 +1,0 @@
-CREATE TABLE AVION (
-
-NUMERO_ENREGISTREMENT varchar(50) not null,
-CAPACITE int,
-
-primary key (NUMERO_ENREGISTREMENT)
-
-);
-

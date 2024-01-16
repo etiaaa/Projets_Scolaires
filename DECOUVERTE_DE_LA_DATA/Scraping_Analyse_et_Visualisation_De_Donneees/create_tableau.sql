@@ -1,6 +1,0 @@
--- SQLite
-CREATE TABLE Tableau (
-    Produit INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    Nom VARCHAR(100),
-    Prix INT
-);

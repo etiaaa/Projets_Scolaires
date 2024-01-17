@@ -8,10 +8,11 @@ Malheureusement certains fichiers étant trop volumineux n'ont pas pu être dép
   - EXPLORATON DES DONNEES: 
     Collecte analyse et visualisation de données sur un sujet choisi.
 
-* TRONC COMMUN:
 
+* TRONC COMMUN:
   - HACKATON:
     Création d'une solution web pour relever les défis urbains de Paris, respectant des contraintes spécifiques.
+
 
 * YDAYS (BRANDS BUILDERS):
     Collecte et analyse de marques japonaises de vêtements et de services marketing par le biais du scrapping. Élaboration d'un portfolio à présenter aux futurs partenaires volontaires en vue du lancement d'une startup fusionnant les domaines DATA & MARKETING.

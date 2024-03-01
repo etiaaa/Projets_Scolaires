@@ -1,4 +1,3 @@
-// Importation des modules MongoDB nécessaires
 const { MongoClient, ObjectId } = require('mongodb');
 const faker = require('faker/locale/fr'); // Importez Faker.js avec la localisation française
 const moment = require('moment');
@@ -9,318 +8,311 @@ const dbName = 'FashionShop';
 
 ///// ID ENTITES  //////////////////////////////////////////////////////////////////////////////////
 
-let productIdCounter = 1; // Variable globale pour les IDs de produit
-let categoryIdCounter = 1; // Variable globale pour les IDs de catégorie
-let promotionIdCounter = 1; // Variable globale pour les IDs de promotion
-let customerIdCounter = 1; // Variable globale pour les IDs de client
-let orderIdCounter = 1; // Variable globale pour les IDs de commande
-let orderLineIdCounter = 1; // Variable globale pour les IDs de ligne de commande
+let productIdCounter = 1;
+let categoryIdCounter = 1;
+let promotionIdCounter = 1;
+let customerIdCounter = 1;
+let orderIdCounter = 1;
+let orderLineIdCounter = 1;
 
-let customers; // Déclaration de la variable customers
-let productIds; // Déclaration de la variable productIds
-let products; // Déclaration de la variable products
+let customers;
+let productIds;
+let products;
 
-const numOrders = 500; // Déclaration de la variable numOrders avec une valeur appropriée
-
-///// CATEGORY /////////////////////////////////////////////////////////////////////////////////
-
-// Fonction pour générer une catégorie aléatoire avec un nom, une description et un pourcentage de réduction associés
-function generateRandomCategory() {
-  const categoryId = categoryIdCounter++; // Incrémentation de l'ID
-  const categoryName = faker.commerce.product(); // Utilisation de Faker.js pour générer un nom de catégorie (corrigé)
-  const categoryDescription = faker.lorem.sentence(); // Utilisation de Faker.js pour générer une description de catégorie
-  const discountPercentage = Math.floor(Math.random() * 20); // Pourcentage de réduction aléatoire entre 0 et 20
-  // Retourne un objet de catégorie avec un ID généré, le nom de catégorie, la description associée et le pourcentage de réduction
-  return {
-    categoryId, // ID unique généré automatiquement pour la catégorie
-    categoryName, // Nom d'une catégorie généré aléatoirement par Faker.js
-    categoryDescription, // Description associée à une catégorie, générée aléatoirement par Faker.js
-    discountPercentage, // Pourcentage de réduction associé à la catégorie
-  };
-}
+const numOrders = 500;
 
 ///// PROMOTION ////////////////////////////////////////////////////////////////////////////////
 
-// Liste de promotions
 const promotionsList = [
-  { promoName: 'Solde Été', promoCode: 'ETE10', discountPercentage: 10 },
-  { promoName: 'Promotion Hiver', promoCode: 'HIVER15', discountPercentage: 15 },
-  { promoName: 'Black Friday', promoCode: 'BF20', discountPercentage: 20 },
-  { promoName: 'Noël', promoCode: 'NOEL12', discountPercentage: 12 },
-  { promoName: 'Rentrée Scolaire', promoCode: 'RENTREE8', discountPercentage: 8 },
-  { promoName: 'Printemps Fleuri', promoCode: 'PRINTEMPS18', discountPercentage: 18 },
-  { promoName: 'Cyber Monday', promoCode: 'CYBER25', discountPercentage: 25 },
-  { promoName: 'Fête des Mères', promoCode: 'FDM14', discountPercentage: 14 },
-  { promoName: 'Saint-Valentin', promoCode: 'LOVE15', discountPercentage: 15 },
-  { promoName: 'Spécial Anniversaire', promoCode: 'ANNIV10', discountPercentage: 10 },
-  { promoName: 'Vacances d\'été', promoCode: 'VACANCES22', discountPercentage: 22 },
-  { promoName: 'Promo Flash', promoCode: 'FLASH30', discountPercentage: 30 },
-  { promoName: 'Back to School', promoCode: 'BTS16', discountPercentage: 16 },
-  { promoName: 'Oktoberfest', promoCode: 'OKTOBER12', discountPercentage: 12 },
-  { promoName: 'Journée de la Terre', promoCode: 'TERRE20', discountPercentage: 20 },
-  { promoName: 'Halloween', promoCode: 'HALLOWEEN18', discountPercentage: 18 },
-  { promoName: 'Jour de l\'Indépendance', promoCode: '4JUILLET15', discountPercentage: 15 },
-  { promoName: 'Promo d\'Automne', promoCode: 'AUTOMNE14', discountPercentage: 14 },
-  { promoName: 'Cadeau Gratuit', promoCode: 'CADEAU0', discountPercentage: 0 },
-  { promoName: 'Soldes de Fin d\'Année', promoCode: 'FINANNEE25', discountPercentage: 25 },
-  { promoName: 'Nouvel An', promoCode: 'NOUVELAN18', discountPercentage: 18 },
-  { promoName: 'Fête du Travail', promoCode: 'TRAVAIL10', discountPercentage: 10 },
-  { promoName: 'Saint-Patrick', promoCode: 'STPATRICK17', discountPercentage: 17 },
-  { promoName: 'Journée Internationale de la Femme', promoCode: 'FEMME15', discountPercentage: 15 },
-  { promoName: 'Semaine du Client', promoCode: 'CLIENT20', discountPercentage: 20 },
-  { promoName: 'Fête du Canada', promoCode: 'CANADA12', discountPercentage: 12 },
-  { promoName: 'Spécial Étudiants', promoCode: 'ETUDIANT10', discountPercentage: 10 },
+  { promoName: 'Solde d\'été', promoCode: 'ETE10', promotionDescription: 'Profitez des nouvelles collections pour refaire votre garde-robe festive.', discountPercentage: 40 },
+  { promoName: 'Solde d\'hiver', promoCode: 'HIVER15', promotionDescription: 'Économisez sur les articles chauds et confortables pour l\'hiver.', discountPercentage: 35 },
+  { promoName: 'Black Friday', promoCode: 'BF20', promotionDescription: 'Les meilleures offres de l\'année sont là. Ne les manquez pas !', discountPercentage: 30 },
+  { promoName: 'Solde de noël', promoCode: 'NOEL12', promotionDescription: 'Célébrez les fêtes avec des remises spéciales sur une sélection festive.', discountPercentage: 40 },
+  { promoName: 'Rentrée Scolaire', promoCode: 'RENTREE8', promotionDescription: 'Préparez-vous pour une nouvelle année scolaire avec des réductions sur les essentiels.', discountPercentage: 50 },
+  { promoName: 'Printemps Fleuri', promoCode: 'PRINTEMPS18', promotionDescription: 'Égayez votre printemps avec des offres spéciales sur nos articles les plus fleuris.', discountPercentage: 20 },
+  { promoName: 'Cyber Monday', promoCode: 'CYBER25', promotionDescription: 'Les meilleures affaires en ligne vous attendent. Profitez du Cyber Monday !', discountPercentage: 25 },
+  { promoName: 'Fête des Mères', promoCode: 'FDM14', promotionDescription: 'Célébrez les mamans avec des cadeaux spéciaux à des prix réduits.', discountPercentage: 15 },
+  { promoName: 'Saint-Valentin', promoCode: 'LOVE15', promotionDescription: 'Trouvez le cadeau parfait pour votre être cher avec nos offres de la Saint-Valentin.', discountPercentage: 15 },
+  { promoName: 'Spécial Anniversaire', promoCode: 'ANNIV10', promotionDescription: 'Joyeux anniversaire ! Célébrez avec des réductions spéciales sur nos produits.', discountPercentage: 10 },
+  { promoName: 'Vacances d\'été', promoCode: 'VACANCES22', promotionDescription: 'Partez en vacances avec des économies. Découvrez nos offres estivales !', discountPercentage: 25 },
+  { promoName: 'Promo Flash', promoCode: 'FLASH30', promotionDescription: 'Économies éclair ! Saisissez nos offres flash avant qu\'elles ne disparaissent.', discountPercentage: 30 },
+  { promoName: 'Back to School', promoCode: 'BTS16', promotionDescription: 'Préparez-vous pour une nouvelle année scolaire avec des réductions exceptionnelles.', discountPercentage: 15 },
+  { promoName: 'Halloween', promoCode: 'HALLOWEEN18', promotionDescription: 'Frémissez de plaisir avec nos offres spéciales d\'Halloween.', discountPercentage: 20 },
+  { promoName: 'Promo d\'Automne', promoCode: 'AUTOMNE14', promotionDescription: 'Accueillez l\'automne avec des remises chaleureuses sur nos produits.', discountPercentage: 15 },
+  { promoName: 'Cadeau Gratuit', promoCode: 'CADEAU0', promotionDescription: 'Avec tout achat, recevez un cadeau gratuit !', discountPercentage: 5 },
+  { promoName: 'Soldes de Fin d\'Année', promoCode: 'FINANNEE25', promotionDescription: 'Terminez l\'année en beauté avec nos soldes de fin d\'année.', discountPercentage: 25 },
+  { promoName: 'Nouvel An', promoCode: 'NOUVELAN18', promotionDescription: 'Célébrez le Nouvel An avec des réductions spéciales sur une sélection festive.', discountPercentage: 18 },
+  { promoName: 'Fête du Travail', promoCode: 'TRAVAIL10', promotionDescription: 'Détendez-vous et économisez lors de la Fête du Travail.', discountPercentage: 10 },
+  { promoName: 'Saint-Patrick', promoCode: 'STPATRICK17', promotionDescription: 'Portez du vert et économisez pour la Saint-Patrick !', discountPercentage: 20 },
+  { promoName: 'Journée Internationale de la Femme', promoCode: 'FEMME15', promotionDescription: 'Célébrez la Journée Internationale de la Femme avec des offres exclusives.', discountPercentage: 15 },
+  { promoName: 'Semaine du Client', promoCode: 'CLIENT20', promotionDescription: 'Merci à nos clients ! Profitez de réductions spéciales cette semaine.', discountPercentage: 20 },
+  { promoName: 'Spécial Étudiants', promoCode: 'ETUDIANT10', promotionDescription: 'Économisez sur vos achats étudiants avec notre promotion spéciale.', discountPercentage: 10 },
 ];
 
-// Fonction pour générer des données aléatoires pour une promotion
 function generateRandomPromotion() {
-  const promotionId = promotionIdCounter++; // Utilisation de l'incrémentation pour générer l'ID
-
-  // Sélectionner une promotion aléatoire à partir de la liste prédéfinie
+  const promotionId = promotionIdCounter++;
   const randomPromo = faker.random.arrayElement(promotionsList);
-
-  // Générer des dates aléatoires pour le début et la fin de la promotion
-  const startDate = faker.date.past(); // Promotion peut commencer à une date passée
+  const startDate = faker.date.past();
   const endDate = faker.date.between(startDate, moment(startDate).add(Math.floor(Math.random() * 30) + 1, 'days').toDate());
 
+  // Générez aléatoirement le pourcentage de réduction entre 5% et le pourcentage spécifié dans promotionsList
+  const minDiscountPercentage = 5;
+  const maxDiscountPercentage = randomPromo.discountPercentage;
+  const discountPercentage = Math.floor(Math.random() * (maxDiscountPercentage - minDiscountPercentage + 1) + minDiscountPercentage);
+
   return {
-    promotionId, // Génère un ID unique et automatique pour la promotion
-    promotionName: randomPromo.promoName, // Nom de la promotion aléatoire
-    promotionDescription: faker.lorem.sentence(), // Ajoutez une description de la promotion appropriée ici
-    promotionStart: startDate, // Date de début de la promotion
-    promotionEnd: endDate, // Date de fin de la promotion
-    profitAmount: parseFloat((Math.random() * 50).toFixed(2)), // Montant de profit aléatoire entre 0 et 50
-    discountPercentage: randomPromo.discountPercentage, // Pourcentage de réduction de la promotion prédéfinie
+    promotionId,
+    promotionName: randomPromo.promoName,
+    promoCode: randomPromo.promoCode,
+    promotionDescription: randomPromo.promotionDescription,
+    promotionStart: startDate,
+    promotionEnd: endDate,
+    discountPercentage,
   };
 }
 
 ///// PRODUIT //////////////////////////////////////////////////////////////////////////////////
 
-const existingCategories = new Set(); // Pour stocker les catégories existantes
-// Fonction pour obtenir une catégorie en fonction du type de produit
-function getCategoryForType(productType) {
-  const firstWord = productType.split(' ')[0].toLowerCase(); // Prend le premier mot en minuscules
-
-  if (!existingCategories.has(firstWord)) {
-    existingCategories.add(firstWord);
-
-    return {
-      categoryId: firstWord,
-      categoryName: firstWord.charAt(0).toUpperCase() + firstWord.slice(1), // Met en majuscule la première lettre
-      categoryDescription: faker.lorem.sentence(),
-      discountPercentage: Math.floor(Math.random() * 20),
-    };
-  }
-
-  return null; // Retourne null si la catégorie existe déjà
-}
+const productsList = [
+  { category: 'T-shirt', style: 'Décontracté', type: 'T-shirt basique', colors: ['Bleu', 'Blanc', 'Gris', 'Vert', 'Jaune'], sizes: ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'], fabrics: 'Coton', description: 'T-shirt décontracté en coton pour un look confortable.' },
+  { category: 'Robe', style: 'Élégant', type: 'Robe de soirée', colors: ['Noir', 'Rouge', 'Bleu marine', 'Argent', 'Or'], sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Soie', description: 'Robe de soirée élégante en soie pour une allure sophistiquée.' },
+  { category: 'Blazer', style: 'Chic', type: 'Blazer ajusté', colors: ['Gris anthracite', 'Noir', 'Blanc', 'Bleu marine', 'Bordeaux'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Polyester', description: 'Blazer ajusté chic pour un look professionnel.' },
+  { category: 'Pull', style: 'Oversize', type: 'Pull en tricot oversize', colors: ['Gris clair', 'Beige', 'Rose poudré', 'Bleu ciel', 'Mauve'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Acrylique', description: 'Pull en tricot oversize pour un confort maximal.' },
+  { category: 'Sportswear', style: 'Sportif', type: 'Pantalon de survêtement', colors: ['Noir', 'Bleu roi', 'Vert kaki', 'Gris', 'Rouge'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Polyester', description: 'Pantalon de survêtement sportif pour un look décontracté.' },
+  { category: 'Chemise', style: 'Classe', type: 'Chemise élégante', colors: ['Blanc', 'Bleu clair', 'Rose pâle', 'Rayures fines', 'Noir'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Coton', description: 'Chemise élégante en coton pour un style raffiné.' },
+  { category: 'Denim', style: 'Vintage', type: 'Veste en jean', colors: ['Bleu délavé', 'Noir', 'Marron', 'Rose', 'Vert'], sizes: ['M', 'L', 'XL', 'XXL'], fabrics: 'Denim', description: 'Veste en jean vintage pour un look rétro.' },
+  { category: 'Robe', style: 'Bohème', type: 'Robe longue fluide', colors: ['Jaune moutarde', 'Vert olive', 'Bleu ciel', 'Rose saumon', 'Violet'], sizes: ['S', 'M', 'L'], fabrics: 'Viscose', description: 'Robe longue fluide pour un style bohème décontracté.' },
+  { category: 'Manteau', style: 'Chaud', type: 'Parka imperméable', colors: ['Noir', 'Vert foncé', 'Bleu marine', 'Gris', 'Rouge'], sizes: ['M', 'L', 'XL', 'XXL'], fabrics: 'Nylon', description: 'Parka imperméable pour rester au chaud par temps humide.' },
+  { category: 'Pyjama', style: 'Confortable', type: 'Pyjama en flanelle', colors: ['Gris à carreaux', 'Rose pâle', 'Bleu ciel', 'Vert pastel', 'Violet clair'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Flanelle', description: 'Pyjama en flanelle pour une nuit de sommeil confortable.' },
+  { category: 'Short', style: 'Décontracté', type: 'Short en lin', colors: ['Beige', 'Bleu clair', 'Blanc', 'Kaki', 'Rose pâle'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Lin', description: 'Short décontracté en lin pour les journées ensoleillées.' },
+  { category: 'Robe', style: 'Élégant', type: 'Robe cocktail', colors: ['Noir', 'Rouge vif', 'Bleu nuit', 'Doré', 'Argenté'], sizes: ['XS', 'S', 'M', 'L', 'XL'], fabrics: 'Polyester', description: 'Robe cocktail élégante pour les occasions spéciales.' },
+  { category: 'Jupe', style: 'Chic', type: 'Jupe crayon', colors: ['Noir', 'Blanc', 'Gris', 'Bleu marine', 'Bordeaux'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Coton mélangé', description: 'Jupe crayon chic pour un look féminin et sophistiqué.' },
+  { category: 'Pull', style: 'Oversize', type: 'Sweat à capuche oversize', colors: ['Gris chiné', 'Bleu marine', 'Rose pâle', 'Vert kaki', 'Noir'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Coton', description: 'Sweat à capuche oversize pour un confort maximal.' },
+  { category: 'Sportswear', style: 'Sportif', type: 'Ensemble de jogging', colors: ['Bleu marine', 'Gris', 'Noir', 'Rouge', 'Blanc'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Polyester', description: 'Ensemble de jogging sportif pour un style décontracté.' },
+  { category: 'Chemisier', style: 'Classe', type: 'Chemisier à col lavallière', colors: ['Blanc', 'Bleu ciel', 'Rose poudré', 'Noir', 'Imprimé floral'], sizes: ['S', 'M', 'L'], fabrics: 'Soie', description: 'Chemisier à col lavallière classe pour un look féminin.' },
+  { category: 'Pantalon', style: 'Vintage', type: 'Pantalon taille haute', colors: ['Marron', 'Vert forêt', 'Bleu marine', 'Carreaux rétro', 'Jaune moutarde'], sizes: ['M', 'L', 'XL', 'XXL'], fabrics: 'Velours côtelé', description: 'Pantalon taille haute vintage pour une touche rétro.' },
+  { category: 'Short', style: 'Décontracté', type: 'Short en jean', colors: ['Bleu délavé', 'Blanc', 'Rose', 'Vert', 'Jaune'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Denim', description: 'Short en jean décontracté pour un look estival.' },
+  { category: 'Costume', style: 'Élégant', type: 'Costume deux pièces', colors: ['Noir', 'Gris anthracite', 'Bleu marine', 'Bordeaux', 'Marron'], sizes: ['M', 'L', 'XL', 'XXL'], fabrics: 'Laine mélangée', description: 'Costume deux pièces élégant pour une allure sophistiquée.' },
+  { category: 'Jupe', style: 'Chic', type: 'Jupe plissée', colors: ['Rose poudré', 'Vert émeraude', 'Bleu marine', 'Noir', 'Blanc'], sizes: ['S', 'M', 'L'], fabrics: 'Polyester', description: 'Jupe plissée chic pour un look féminin.' },
+  { category: 'Chemise', style: 'Oversize', type: 'Chemise oversize', colors: ['Gris chiné', 'Blanc', 'Bleu clair', 'Rose pâle', 'Kaki'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Coton', description: 'Chemise oversize pour un style décontracté.' },
+  { category: 'Sportswear', style: 'Sportif', type: 'Short de sport', colors: ['Noir', 'Bleu roi', 'Gris', 'Rouge', 'Blanc'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Polyester', description: 'Short de sport pour un look dynamique.' },
+  { category: 'Chemisier', style: 'Classe', type: 'Blouse en soie', colors: ['Blanc', 'Noir', 'Rouge', 'Bleu marine', 'Imprimé floral'], sizes: ['S', 'M', 'L'], fabrics: 'Soie', description: 'Blouse en soie pour un look classe et féminin.' },
+  { category: 'Veste', style: 'Vintage', type: 'Veste en velours', colors: ['Bleu nuit', 'Bordeaux', 'Vert forêt', 'Marron', 'Rose antique'], sizes: ['M', 'L', 'XL', 'XXL'], fabrics: 'Velours', description: 'Veste en velours vintage pour une touche rétro.' },
+  { category: 'Tunique', style: 'Bohème', type: 'Tunique brodée', colors: ['Ivoire', 'Bleu ciel', 'Rose poudré', 'Moutarde', 'Vert sauge'], sizes: ['S', 'M', 'L'], fabrics: 'Coton', description: 'Tunique brodée bohème pour un style décontracté.' },
+  { category: 'Manteau', style: 'Chaud', type: 'Manteau en laine', colors: ['Noir', 'Gris', 'Camel', 'Rouge', 'Bleu marine'], sizes: ['M', 'L', 'XL', 'XXL'], fabrics: 'Laine', description: 'Manteau en laine pour rester au chaud avec style.' },
+  { category: 'Pyjama', style: 'Confortable', type: 'Pyjama en jersey', colors: ['Gris chiné', 'Bleu clair', 'Rose pâle', 'Vert menthe', 'Rayures fines'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Jersey', description: 'Pyjama en jersey pour une nuit confortable.' },
+  { category: 'T-shirt', style: 'Décontracté', type: 'T-shirt à manches longues', colors: ['Noir', 'Blanc', 'Gris', 'Bleu marine', 'Rouge'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Coton', description: 'T-shirt à manches longues décontracté pour un style polyvalent.' },
+  { category: 'Robe', style: 'Élégant', type: 'Robe midi', colors: ['Noir', 'Rouge', 'Bleu marine', 'Blanc', 'Imprimé géométrique'], sizes: ['XS', 'S', 'M', 'L', 'XL'], fabrics: 'Polyester', description: 'Robe midi élégante pour un look tendance.' },
+  { category: 'Chemisier', style: 'Chic', type: 'Chemisier à volants', colors: ['Blanc', 'Bleu ciel', 'Rose pâle', 'Noir', 'Imprimé floral'], sizes: ['S', 'M', 'L'], fabrics: 'Coton', description: 'Chemisier à volants chic pour une allure féminine.' },
+  { category: 'Pull', style: 'Oversize', type: 'Pull en tricot oversize', colors: ['Gris clair', 'Beige', 'Rose poudré', 'Bleu ciel', 'Mauve'], sizes: ['S', 'M', 'L', 'XL', 'XXL'], fabrics: 'Acrylique', description: 'Pull en tricot oversize pour un confort maximal.' },
+  { category: 'Sportswear', style: 'Sportif', type: 'Legging de sport', colors: ['Noir', 'Bleu marine', 'Gris', 'Rouge', 'Rose', 'Imprimé camouflage'], sizes: ['S', 'M', 'L', 'XL'], fabrics: 'Spandex', description: 'Legging de sport pour un look dynamique.' },
+];
 
 function getPromotionForType(type) {
-  // Choisissez aléatoirement une promotion parmi les éléments de la liste prédéfinie
+  const product = productsList.find((product) => product.type === type);
   const randomPromo = faker.random.arrayElement(promotionsList);
   return {
-    promotionName: randomPromo.promoName,
+    promoName: randomPromo.promoName,
     discountPercentage: randomPromo.discountPercentage,
   };
 }
 
-// Fonction pour générer des données aléatoires pour un produit
-function generateRandomProduct() {
-  const productId = productIdCounter++; // Utilisation de la variable globale pour les IDs de produit    
-
-  // Fonction pour obtenir un élément aléatoire d'un tableau
-  function getRandomElement(array) {
-    return array[Math.floor(Math.random() * array.length)];
-  }
-
-  // Sélectionne aléatoirement un type de produit et une couleur
-  const type = getRandomElement(types);
-  const color = getRandomElement(colors);
-
-  // Obtenir la catégorie et la promotion en fonction du type de produit
-  const category = getCategoryForType(type);
-  const promotion = getPromotionForType(type);
+function generateRandomProduct(productsList) {
+  const product = faker.random.arrayElement(productsList);
+  const promotion = getPromotionForType(product.type);
 
   return {
-    productId, // ID unique généré automatiquement pour le produit
-    productName: faker.commerce.productName(), // Utilisation de Faker.js pour générer un nom de produit
-    price: Number((Math.random() * 100).toFixed(2)), // Prix généré aléatoirement entre 0 et 100€
-    size: faker.random.arrayElement(sizes), // Utilisation de Faker.js pour générer une taille
-    color: faker.random.arrayElement(colors), // Utilisation de Faker.js pour générer une couleur
-    fabric: getRandomElement(fabrics), // Utilisation de Faker.js pour générer un tissu
-    productDescription: faker.lorem.sentence(), // Utilisation de Faker.js pour générer une description
-    availableStock: faker.random.number({ min: 0, max: 100 }), // Utilisation de Faker.js pour générer le stock
-    averageRating: Number((Math.random() * 5).toFixed(2)), // Évaluation générée aléatoirement entre 0 et 5
-    productCategory: {
-      categoryName: category ? category.categoryName : null,
-    },
-    promotion: {
-      promotionName: promotion.promotionName,
-      discountPercentage: promotion.discountPercentage,
-    },
+    productId: productIdCounter++,
+    productName: `${product.type} - ${product.style}`,
+    price: Number((Math.random() * 100).toFixed(2)),
+    size: faker.random.arrayElement(product.sizes),
+    color: faker.random.arrayElement(product.colors),
+    fabric: product.fabrics,
+    productDescription: product.description,
+    availableStock: faker.datatype.number({ min: 0, max: 100 }),
+    averageRating: Number((Math.random() * 4) + 0.5), // La note est maintenant entre 1 et 5 inclus
+    categoryName: product.category,
+    promoName: promotion.promoName,
+    discountPercentage: promotion.discountPercentage,
+  };
+}
+
+///// CATEGORY /////////////////////////////////////////////////////////////////////////////////
+
+function generateRandomCategory() {
+  const categoryId = categoryIdCounter++;
+  const categoryName = faker.random.arrayElement(productsList.map(product => product.category));
+  const categoryDescription = `Explorez notre collection de vêtements ${categoryName.toLowerCase()} offrant un mélange exquis de styles pour tous les goûts.`;
+
+  return {
+    categoryId,
+    categoryName,
+    categoryDescription,
   };
 }
 
 ///// CUSTOMER /////////////////////////////////////////////////////////////////////////////////
 
-// Fonction pour générer des données aléatoires pour un client
 function generateRandomCustomer() {
-  const customerId = customerIdCounter++; // Incrémentation de l'ID
+  const customerId = customerIdCounter++;
+  const firstName = faker.name.firstName();
+  const lastName = faker.name.lastName();
+  const emailDomain = faker.random.arrayElement(['gmail.com', 'yahoo.com', 'hotmail.com']);
+  const emailAddress = `${firstName}${lastName}@${emailDomain}`;
+  const mailingAddress = faker.address.streetAddress(true).replace(/\b\d{3,}/, (match) => match.slice(0, 2)).replace(/(?:Suite|Apt\.) \d+/i, '').trim() + ' ' + faker.address.city() + ' ' + faker.address.zipCode();
+  const phoneNumber = faker.phone.phoneNumber(`0${faker.random.arrayElement(['6', '7'])}########`);
+  const creditCard = faker.finance.creditCardNumber().replace(/(\d{4})(\d{4})(\d{4})(\d{4})/, '$1 $2 $3 $4');
+
   return {
     customerId,
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
-    emailAddress: faker.internet.email(),
+    firstName,
+    lastName,
+    emailAddress,
     password: faker.internet.password(),
-    mailingAddress: faker.address.streetAddress(),
-    phoneNumber: faker.phone.phoneNumberFormat(),
-    creditCard: faker.finance.creditCardNumber(),
+    mailingAddress,
+    phoneNumber,
+    creditCard,
     purchaseHistory: [],
   };
 }
 
-///// ORDER ////////////////////////////////////////////////////////////////////////////////////
+///// ORDERLINE ////////////////////////////////////////////////////////////////////////////////
 
-// Fonction pour générer un tableau de produits commandés
-// Fonction pour générer un tableau de produits commandés
-function generateRandomProductsOrdered(products) {
+function generateRandomOrderLine(orderId, products) {
+  const orderLineId = orderLineIdCounter++;
   const numProducts = Math.floor(Math.random() * 5) + 1;
-  const productsOrdered = [];
+  const orderLines = [];
 
-  if (products && products.length > 0) { // Vérifiez que products est défini et non vide
+  if (products && products.length > 0) {
     for (let i = 0; i < numProducts; i++) {
       const productId = faker.random.arrayElement(products.map(product => product.productId));
       const selectedProduct = products.find(product => product.productId === productId);
 
       if (selectedProduct) {
         const quantity = Math.floor(Math.random() * 5) + 1;
-        productsOrdered.push({
-          productId,
-          quantity,
-          price: selectedProduct.price,
+
+        // Calcul du prix en tenant compte de la promotion
+        const discountedPrice = selectedProduct.price - (selectedProduct.price * selectedProduct.discountPercentage / 100);
+        const discountAmount = selectedProduct.discountPercentage; // Maintenant, c'est le pourcentage de réduction
+        const discountedAmount = selectedProduct.price * (selectedProduct.discountPercentage / 100);
+        const totalProductPrice = discountedPrice * quantity;
+
+        orderLines.push({
+          orderLineId,
+          productId: productId,
+          quantity: quantity,
+          originalPrice: selectedProduct.price,
+          discountedPrice: discountedPrice,
+          discountAmount: discountAmount,
+          totalProductPrice: totalProductPrice,
+          orderId: orderId,
         });
       }
     }
   }
-
-  return productsOrdered;
+  return orderLines;
 }
 
-// Fonction pour générer des données aléatoires pour une commande
-function generateRandomOrder(customerId, productIds, orderLines) {
-  const orderId = orderIdCounter++; // Incrémentation de l'ID
-  // Liste des statuts de commande disponibles
-  const orderStatusOptions = ['En cours', 'En préparation', 'En cours d\'expédition', 'Expédiée', 'En cours de livraison', 'Livrée', 'En cours d\'annulation', 'Annulée', 'Remboursée'];
-  const paymentMethodOptions = ['Carte de crédit', 'PayPal', 'Virement bancaire', 'Chèque']; // Liste des moyens de paiement disponibles
-  const productsOrdered = generateRandomProductsOrdered(productIds);
-  const orderTotalCost = productsOrdered.reduce((total, product) => total + product.price * product.quantity, 0);
-  return {
-    orderId, // Utilisation de l'ID incrémental
-    orderDate: faker.date.past(), // Utilisation de faker pour générer une date passée
-    orderStatus: faker.random.arrayElement(orderStatusOptions), // Utilisation de faker pour un statut de commande aléatoire
-    orderTotalCost, // Utilisation du prix total calculé
-    paymentMethod: faker.random.arrayElement(paymentMethodOptions), // Utilisation de faker pour un moyen de paiement aléatoire
-    productsOrdered,
-    customerOrder: customerId,
-    orderLines,
-  };
-}
-const orders = Array.from({ length: numOrders }, () => {
-  const randomCustomer = faker.random.arrayElement(customers);
-  return generateRandomOrder(randomCustomer.customerId, productIds);
-});
+///// ORDER ////////////////////////////////////////////////////////////////////////////////////
 
-///// ORDERLINE ////////////////////////////////////////////////////////////////////////////////
+function generateRandomOrder(customerId, products) {
+  const orderId = orderIdCounter++;
+  const orderStatusOptions = ['En cours de préparation', 'En cours d\'expédition', 'Expédiée', 'En cours de livraison', 'Livrée', 'En cours de remboursement', 'Remboursée'];
+  const paymentMethodOptions = ['Carte de crédit', 'PayPal', 'Virement bancaire', 'Chèque'];
   
-// Fonction pour générer des données aléatoires pour une ligne de commande
-function generateRandomOrderLine(orderId, productId) {
-  const orderLineId = orderLineIdCounter++; // Incrémentation de l'ID
-  const selectedProduct = products.find(product => product.productId === productId);
+  // Générer des lignes de commande avant de créer la commande
+  const orderLines = generateRandomOrderLine(orderId, products); 
+  const orderTotalCost = orderLines.reduce((total, orderLine) => total + orderLine.totalProductPrice, 0);
+  const TotalProducts = orderLines.reduce((totalItems, orderLine) => totalItems + orderLine.quantity, 0);
+
+  const orderDate = faker.date.past();
+  const deliveryDate = new Date(orderDate.getTime() + Math.floor(Math.random() * (7 * 24 * 60 * 60 * 1000))); // Livraison dans les 7 jours
+  const deliveryTime = `${Math.floor(Math.random() * 24)}:${Math.floor(Math.random() * 60)}`;
+
+  // Générer des dates pour chaque étape jusqu'à "Livrée"
+  const datesByStatus = {};
+  const chosenStatus = faker.random.arrayElement(orderStatusOptions.slice(0, orderStatusOptions.indexOf('Livrée') + 1));
+
+  orderStatusOptions.slice(0, orderStatusOptions.indexOf(chosenStatus) + 1).forEach((status, index) => {
+    datesByStatus[status] = new Date(orderDate.getTime() + (index * 24 * 60 * 60 * 1000)); // Ajouter un jour pour chaque étape
+  });
+
+  // Si "En cours de remboursement" est choisi aléatoirement, ajouter la date de remboursement
+  if (['En cours de remboursement', 'Remboursée'].includes(chosenStatus)) {
+    datesByStatus['En cours de remboursement'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('En cours de remboursement') + 1) * 24 * 60 * 60 * 1000));
+    datesByStatus['Remboursée'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('Remboursée') + 1) * 24 * 60 * 60 * 1000));
+  }
+
+  // Générer l'état de la commande
+  const orderStatus = chosenStatus;
 
   return {
-    orderLineId, // Génère un ID unique et automatique pour la ligne de commande
-    orderDate: faker.date.past(), // Utilise faker pour générer une date passée
-    productOrdered: productId, // Utilise l'ID du produit comme clé étrangère
-    orderedQuantity: faker.random.number({ min: 1, max: 10 }), // Utilise faker pour une quantité aléatoire entre 1 et 10
-    costSubtotalLine: selectedProduct.price * faker.random.number({ min: 1, max: 10 }), // Utilise le prix réel du produit multiplié par une quantité aléatoire
-    orderId: orderId, // L'ID de la commande à laquelle cette ligne appartient
+    orderId,
+    orderDate: orderDate.toISOString().split('T')[0],
+    orderStatus,
+    orderTotalCost: Number(orderTotalCost.toFixed(2)),  // Limiter à 2 chiffres après la virgule
+    paymentMethod: faker.random.arrayElement(paymentMethodOptions),
+    customerOrder: customerId,
+    TotalProducts,
+    deliveryDate: deliveryDate.toISOString().split('T')[0],
+    deliveryTime,
+    datesByStatus: Object.fromEntries(
+      Object.entries(datesByStatus).map(([key, value]) => [key, value.toISOString().split('T')[0]])
+    ),
   };
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-// Fonction principale pour insérer des données aléatoires dans la base de données
 async function insertRandomData() {
-  // Connexion à la base de données
-  const client = new MongoClient(url, { useUnifiedTopology: true });
+  const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
 
   try {
     await client.connect();
     const db = client.db(dbName);
 
-    // Insérer des catégories aléatoires
-    const categoriesCollection = db.collection('categories');
-    const numCategories = 10;
-    const categories = Array.from({ length: numCategories }, generateRandomCategory);
-    await categoriesCollection.insertMany(categories);
-
-    // Insérer des promotions aléatoires à partir de la liste prédéfinie
     const promotionsCollection = db.collection('promotions');
-    const numPromotions = 30; // ou le nombre que vous souhaitez
-    const promotions = Array.from({ length: numPromotions }, () => {
-      const randomPromo = faker.random.arrayElement(promotionsList);
-      return {
-        promotionId: faker.random.uuid(),
-        promotionName: randomPromo.promoName,
-        promotionDescription: faker.lorem.sentence(),
-        promotionStart: faker.date.future(0.1, new Date()),
-        promotionEnd: faker.date.future(0.3, new Date()),
-        profitAmount: parseFloat((Math.random() * 50).toFixed(2)),
-        discountPercentage: randomPromo.discountPercentage,
-      };
-    });
+    const numPromotions = 30;
+    const promotions = Array.from({ length: numPromotions }, generateRandomPromotion);
     await promotionsCollection.insertMany(promotions);
-    
-    // Insérer des produits aléatoires
+
     const productsCollection = db.collection('products');
-    const numProducts = 100;
-    products = Array.from({ length: numProducts }, generateRandomProduct);
+    const numProducts = 500;
+    const products = Array.from({ length: numProducts }, () => generateRandomProduct(productsList));
     const insertProductsResult = await productsCollection.insertMany(products);
+    const productIds = insertProductsResult.insertedIds;
 
-    // Récupérer les IDs des produits insérés
-    productIds = insertProductsResult.insertedIds;
+    const categoriesCollection = db.collection('categories');
+    const categories = Array.from({ length: productsList.length }, generateRandomCategory);
+    const uniqueCategories = Array.from(new Set(categories.map(category => category.categoryName)))
+      .map(categoryName => categories.find(category => category.categoryName === categoryName));
+    await categoriesCollection.insertMany(uniqueCategories);
 
-    // Insérer des clients aléatoires
     const customersCollection = db.collection('customers');
     const numCustomers = 500;
-    customers = Array.from({ length: numCustomers }, generateRandomCustomer);
+    const customers = Array.from({ length: numCustomers }, generateRandomCustomer);
     await customersCollection.insertMany(customers);
 
-    // Insérer des commandes aléatoires
     const ordersCollection = db.collection('orders');
     const numOrders = 500;
     const orders = Array.from({ length: numOrders }, () => {
       const randomCustomer = faker.random.arrayElement(customers);
-      const numOrderLines = Math.floor(Math.random() * 5) + 1; // Nombre aléatoire de lignes de commande par commande
-
-      const orderLines = Array.from({ length: numOrderLines }, () => {
-        const randomProduct = faker.random.arrayElement(products);
-        return generateRandomOrderLine(randomCustomer.customerId, randomProduct.productId);
-      });
-
-      return generateRandomOrder(randomCustomer.customerId, productIds, orderLines);
+      return generateRandomOrder(randomCustomer.customerId, products);
     });
     await ordersCollection.insertMany(orders);
-    
-    // Afficher un message de confirmation
+
+    const orderLinesCollection = db.collection('orderlines');
+    const orderLines = orders.flatMap(order => generateRandomOrderLine(order.orderId, products));
+    await orderLinesCollection.insertMany(orderLines);
+
     console.log('Données générées et insérées avec succès dans la base de données.');
+  } catch (error) {
+    console.error('Erreur lors de l\'insertion des données :', error);
   } finally {
-    // Fermer la connexion à la base de données
     await client.close();
   }
 }
 
-// Appelez la fonction pour insérer les données
 (async () => {
   await insertRandomData();
 })();

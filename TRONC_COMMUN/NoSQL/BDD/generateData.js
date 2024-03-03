@@ -176,12 +176,12 @@ function generateRandomCustomer() {
   };
 }
 
-///// ORDERLINE ////////////////////////////////////////////////////////////////////////////////
+///// PROCESS ORDER LINES DETAILS //////////////////////////////////////////////////////////////
 
-function generateRandomOrderLine(orderId, products) {
+function processOrderLinesDetails(orderId, products) {
   const orderLineId = orderLineIdCounter++;
   const numProducts = Math.floor(Math.random() * 5) + 1;
-  const orderLines = [];
+  const productsLines = [];
 
   if (products && products.length > 0) {
     for (let i = 0; i < numProducts; i++) {
@@ -197,33 +197,42 @@ function generateRandomOrderLine(orderId, products) {
         const discountedAmount = selectedProduct.price * (selectedProduct.discountPercentage / 100);
         const totalProductPrice = discountedPrice * quantity;
 
-        orderLines.push({
-          orderLineId,
+        productsLines.push({
           productId: productId,
           quantity: quantity,
           originalPrice: selectedProduct.price,
           discountedPrice: discountedPrice,
           discountAmount: discountAmount,
           totalProductPrice: totalProductPrice,
-          orderId: orderId,
         });
       }
     }
   }
-  return orderLines;
+
+  return {
+    orderLineId, // Assurez-vous que l'ID commence à 1
+    orderId,
+    productsLines,
+  };
 }
 
-///// ORDER ////////////////////////////////////////////////////////////////////////////////////
+///// PROCESS ORDER STATUS /////////////////////////////////////////////////////////////////////
 
-function generateRandomOrder(customerId, products) {
+function processOrderStatus(customerId, products) {
   const orderId = orderIdCounter++;
   const orderStatusOptions = ['En cours de préparation', 'En cours d\'expédition', 'Expédiée', 'En cours de livraison', 'Livrée', 'En cours de remboursement', 'Remboursée'];
   const paymentMethodOptions = ['Carte de crédit', 'PayPal', 'Virement bancaire', 'Chèque'];
   
   // Générer des lignes de commande avant de créer la commande
-  const orderLines = generateRandomOrderLine(orderId, products); 
-  const orderTotalCost = orderLines.reduce((total, orderLine) => total + orderLine.totalProductPrice, 0);
-  const TotalProducts = orderLines.reduce((totalItems, orderLine) => totalItems + orderLine.quantity, 0);
+  const orderLines = processOrderLinesDetails(orderId, products);
+
+  let orderTotalCost = 0;
+  let TotalProducts = 0;
+
+  if (Array.isArray(orderLines.productsLines)) {
+    orderTotalCost = orderLines.productsLines.reduce((total, orderLine) => total + orderLine.totalProductPrice, 0);
+    TotalProducts = orderLines.productsLines.length; // Utilisez la longueur de la liste
+  }
 
   const orderDate = faker.date.past();
   const deliveryDate = new Date(orderDate.getTime() + Math.floor(Math.random() * (7 * 24 * 60 * 60 * 1000))); // Livraison dans les 7 jours
@@ -262,7 +271,7 @@ function generateRandomOrder(customerId, products) {
   };
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+///// INSERT DATA //////////////////////////////////////////////////////////////////////////////
 
 async function insertRandomData() {
   const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -293,17 +302,17 @@ async function insertRandomData() {
     const customers = Array.from({ length: numCustomers }, generateRandomCustomer);
     await customersCollection.insertMany(customers);
 
-    const ordersCollection = db.collection('orders');
+    const processOrderStatusCollection = db.collection('processOrderStatus');
     const numOrders = 500;
     const orders = Array.from({ length: numOrders }, () => {
       const randomCustomer = faker.random.arrayElement(customers);
-      return generateRandomOrder(randomCustomer.customerId, products);
+      return processOrderStatus(randomCustomer.customerId, products);
     });
-    await ordersCollection.insertMany(orders);
+    await processOrderStatusCollection.insertMany(orders);
 
-    const orderLinesCollection = db.collection('orderlines');
-    const orderLines = orders.flatMap(order => generateRandomOrderLine(order.orderId, products));
-    await orderLinesCollection.insertMany(orderLines);
+    const processOrderLinesDetailsCollection = db.collection('processOrderLinesDetails');
+    const orderLines = orders.flatMap(order => processOrderLinesDetails(order.orderId, products));
+    await processOrderLinesDetailsCollection.insertMany(orderLines);
 
     console.log('Données générées et insérées avec succès dans la base de données.');
   } catch (error) {

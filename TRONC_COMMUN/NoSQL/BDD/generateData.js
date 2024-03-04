@@ -6,21 +6,6 @@ const moment = require('moment');
 const url = 'mongodb://localhost:27017';
 const dbName = 'FashionShop';
 
-///// ID ENTITES  //////////////////////////////////////////////////////////////////////////////////
-
-let productIdCounter = 1;
-let categoryIdCounter = 1;
-let promotionIdCounter = 1;
-let customerIdCounter = 1;
-let orderIdCounter = 1;
-let orderLineIdCounter = 1;
-
-let customers;
-let productIds;
-let products;
-
-const numOrders = 500;
-
 ///// PROMOTION ////////////////////////////////////////////////////////////////////////////////
 
 const promotionsList = [
@@ -49,6 +34,7 @@ const promotionsList = [
   { promoName: 'Spécial Étudiants', promoCode: 'ETUDIANT10', promotionDescription: 'Économisez sur vos achats étudiants avec notre promotion spéciale.', discountPercentage: 10 },
 ];
 
+let promotionIdCounter = 1;
 function generateRandomPromotion() {
   const promotionId = promotionIdCounter++;
   const randomPromo = faker.random.arrayElement(promotionsList);
@@ -117,6 +103,7 @@ function getPromotionForType(type) {
   };
 }
 
+let productIdCounter = 1;
 function generateRandomProduct(productsList) {
   const product = faker.random.arrayElement(productsList);
   const promotion = getPromotionForType(product.type);
@@ -130,7 +117,7 @@ function generateRandomProduct(productsList) {
     fabric: product.fabrics,
     productDescription: product.description,
     availableStock: faker.datatype.number({ min: 0, max: 100 }),
-    averageRating: Number((Math.random() * 4) + 0.5), // La note est maintenant entre 1 et 5 inclus
+    averageRating: Math.round((Math.random() * 4 + 0.5) * 100) / 100,
     categoryName: product.category,
     promoName: promotion.promoName,
     discountPercentage: promotion.discountPercentage,
@@ -139,6 +126,7 @@ function generateRandomProduct(productsList) {
 
 ///// CATEGORY /////////////////////////////////////////////////////////////////////////////////
 
+let categoryIdCounter = 1;
 function generateRandomCategory() {
   const categoryId = categoryIdCounter++;
   const categoryName = faker.random.arrayElement(productsList.map(product => product.category));
@@ -153,6 +141,7 @@ function generateRandomCategory() {
 
 ///// CUSTOMER /////////////////////////////////////////////////////////////////////////////////
 
+let customerIdCounter = 1;
 function generateRandomCustomer() {
   const customerId = customerIdCounter++;
   const firstName = faker.name.firstName();
@@ -178,6 +167,7 @@ function generateRandomCustomer() {
 
 ///// PROCESS ORDER LINES DETAILS //////////////////////////////////////////////////////////////
 
+let orderLineIdCounter = 1;
 function processOrderLinesDetails(orderId, products) {
   const orderLineId = orderLineIdCounter++;
   const numProducts = Math.floor(Math.random() * 5) + 1;
@@ -201,9 +191,9 @@ function processOrderLinesDetails(orderId, products) {
           productId: productId,
           quantity: quantity,
           originalPrice: selectedProduct.price,
-          discountedPrice: discountedPrice,
-          discountAmount: discountAmount,
-          totalProductPrice: totalProductPrice,
+          discountedPrice: Number(discountedPrice.toFixed(2)),
+          discountAmount: Number(discountAmount.toFixed(2)),
+          totalProductPrice: Number(totalProductPrice.toFixed(2)),
         });
       }
     }
@@ -218,6 +208,7 @@ function processOrderLinesDetails(orderId, products) {
 
 ///// PROCESS ORDER STATUS /////////////////////////////////////////////////////////////////////
 
+let orderIdCounter = 1;
 function processOrderStatus(customerId, products) {
   const orderId = orderIdCounter++;
   const orderStatusOptions = ['En cours de préparation', 'En cours d\'expédition', 'Expédiée', 'En cours de livraison', 'Livrée', 'En cours de remboursement', 'Remboursée'];

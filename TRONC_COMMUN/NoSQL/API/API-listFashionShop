@@ -1,0 +1,6 @@
+http://localhost:27018/api/products
+http://localhost:27018/api/categories
+http://localhost:27018/api/promotions
+http://localhost:27018/api/customers
+http://localhost:27018/api/processOrderLinesDetails
+http://localhost:27018/api/processOrderStatus

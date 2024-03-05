@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"FashionShop.processOrderLinesDetails"}],"uuid":"56b4c762954f460d8856db1827c4999d"}

@@ -167,7 +167,7 @@ function generateRandomCustomer() {
 
 ///// PROCESS ORDER LINES DETAILS //////////////////////////////////////////////////////////////
 
-let orderLineIdCounter = 1;
+let orderLineIdCounter = -499; // Changer le compteur pour qu'il commence à 1
 function processOrderLinesDetails(orderId, products) {
   const orderLineId = orderLineIdCounter++;
   const numProducts = Math.floor(Math.random() * 5) + 1;
@@ -188,6 +188,7 @@ function processOrderLinesDetails(orderId, products) {
         const totalProductPrice = discountedPrice * quantity;
 
         productsLines.push({
+          orderLineId,
           productId: productId,
           quantity: quantity,
           originalPrice: selectedProduct.price,
@@ -209,20 +210,20 @@ function processOrderLinesDetails(orderId, products) {
 ///// PROCESS ORDER STATUS /////////////////////////////////////////////////////////////////////
 
 let orderIdCounter = 1;
-function processOrderStatus(customerId, products) {
+function processOrderStatus(customerId, productsList) {
   const orderId = orderIdCounter++;
   const orderStatusOptions = ['En cours de préparation', 'En cours d\'expédition', 'Expédiée', 'En cours de livraison', 'Livrée', 'En cours de remboursement', 'Remboursée'];
   const paymentMethodOptions = ['Carte de crédit', 'PayPal', 'Virement bancaire', 'Chèque'];
-  
+
   // Générer des lignes de commande avant de créer la commande
-  const orderLines = processOrderLinesDetails(orderId, products);
+  const orderLines = processOrderLinesDetails(orderId, productsList);
 
   let orderTotalCost = 0;
-  let TotalProducts = 0;
+  let totalProducts = 0;
 
   if (Array.isArray(orderLines.productsLines)) {
     orderTotalCost = orderLines.productsLines.reduce((total, orderLine) => total + orderLine.totalProductPrice, 0);
-    TotalProducts = orderLines.productsLines.length; // Utilisez la longueur de la liste
+    totalProducts = orderLines.productsLines.reduce((total, orderLine) => total + orderLine.quantity, 0);
   }
 
   const orderDate = faker.date.past();
@@ -250,18 +251,19 @@ function processOrderStatus(customerId, products) {
     orderId,
     orderDate: orderDate.toISOString().split('T')[0],
     orderStatus,
-    orderTotalCost: Number(orderTotalCost.toFixed(2)),  // Limiter à 2 chiffres après la virgule
+    orderTotalCost: Number(orderTotalCost.toFixed(2)),
     paymentMethod: faker.random.arrayElement(paymentMethodOptions),
     customerOrder: customerId,
-    TotalProducts,
+    totalProducts,
     deliveryDate: deliveryDate.toISOString().split('T')[0],
     deliveryTime,
     datesByStatus: Object.fromEntries(
       Object.entries(datesByStatus).map(([key, value]) => [key, value.toISOString().split('T')[0]])
     ),
+    orderLines, // Ajouter les lignes de commande à l'objet de la commande
   };
 }
-
+  
 ///// INSERT DATA //////////////////////////////////////////////////////////////////////////////
 
 async function insertRandomData() {
@@ -271,6 +273,16 @@ async function insertRandomData() {
     await client.connect();
     const db = client.db(dbName);
 
+    // Supprimer les collections existantes
+    await Promise.all([
+      db.collection('promotions').deleteMany({}),
+      db.collection('products').deleteMany({}),
+      db.collection('categories').deleteMany({}),
+      db.collection('customers').deleteMany({}),
+      db.collection('processOrderStatus').deleteMany({}),
+      db.collection('processOrderLinesDetails').deleteMany({}),
+    ]);
+    
     const promotionsCollection = db.collection('promotions');
     const numPromotions = 30;
     const promotions = Array.from({ length: numPromotions }, generateRandomPromotion);

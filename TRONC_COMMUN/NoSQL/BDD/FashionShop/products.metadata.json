@@ -1,1 +1,1 @@
-{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"FashionShop.products"}],"uuid":"910cdc02685f4b1d85a35b46236cacbc"}
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"FashionShop.products"}],"uuid":"47acc3912b3c471f8dac362ef002503a"}

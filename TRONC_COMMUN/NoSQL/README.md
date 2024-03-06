@@ -1,2 +1,0 @@
-# Projet-NoSQL
-Projet NoSQL

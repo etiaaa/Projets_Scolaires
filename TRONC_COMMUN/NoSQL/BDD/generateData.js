@@ -212,8 +212,8 @@ function processOrderLinesDetails(orderId, products) {
 let orderIdCounter = 1;
 function processOrderStatus(customerId, productsList) {
   const orderId = orderIdCounter++;
-  const orderStatusOptions = ['En cours de préparation', 'En cours d\'expédition', 'Expédiée', 'En cours de livraison', 'Livrée', 'En cours de remboursement', 'Remboursée'];
-  const paymentMethodOptions = ['Carte de crédit', 'PayPal', 'Virement bancaire', 'Chèque'];
+  const orderStatusOptions = ['In preparation', 'In shipment', 'Shipped', 'In delivery', 'Delivered', 'In refund', 'Refunded'];
+  const paymentMethodOptions = ['Credit card', 'PayPal', 'Bank transfer', 'Cheque'];
 
   // Générer des lignes de commande avant de créer la commande
   const orderLines = processOrderLinesDetails(orderId, productsList);
@@ -232,16 +232,16 @@ function processOrderStatus(customerId, productsList) {
 
   // Générer des dates pour chaque étape jusqu'à "Livrée"
   const datesByStatus = {};
-  const chosenStatus = faker.random.arrayElement(orderStatusOptions.slice(0, orderStatusOptions.indexOf('Livrée') + 1));
+  const chosenStatus = faker.random.arrayElement(orderStatusOptions.slice(0, orderStatusOptions.indexOf('Delivered') + 1));
 
   orderStatusOptions.slice(0, orderStatusOptions.indexOf(chosenStatus) + 1).forEach((status, index) => {
     datesByStatus[status] = new Date(orderDate.getTime() + (index * 24 * 60 * 60 * 1000)); // Ajouter un jour pour chaque étape
   });
 
   // Si "En cours de remboursement" est choisi aléatoirement, ajouter la date de remboursement
-  if (['En cours de remboursement', 'Remboursée'].includes(chosenStatus)) {
-    datesByStatus['En cours de remboursement'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('En cours de remboursement') + 1) * 24 * 60 * 60 * 1000));
-    datesByStatus['Remboursée'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('Remboursée') + 1) * 24 * 60 * 60 * 1000));
+  if (['In refund', 'Refunded'].includes(chosenStatus)) {
+    datesByStatus['In refund'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('In refund') + 1) * 24 * 60 * 60 * 1000));
+    datesByStatus['Refunded'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('Refunded') + 1) * 24 * 60 * 60 * 1000));
   }
 
   // Générer l'état de la commande

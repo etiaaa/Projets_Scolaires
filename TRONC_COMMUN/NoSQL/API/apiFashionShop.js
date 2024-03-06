@@ -54,7 +54,7 @@ app.get('/api/customers', async (req, res) => {
 
 app.get('/api/processOrderLinesDetails', async (req, res) => {
   try {
-    const processOrderLinesDetails = await processOrderLinesDetailsModel.find(); // Utilisez le modèle correct
+    const processOrderLinesDetails = await processOrderLinesDetailsModel.find(); 
     res.json(processOrderLinesDetails);
   } catch (error) {
     console.error('Erreur lors de la récupération des lignes de commande :', error);
@@ -64,7 +64,7 @@ app.get('/api/processOrderLinesDetails', async (req, res) => {
 
 app.get('/api/processOrderStatus', async (req, res) => {
   try {
-    const processOrderStatus = await processOrderStatusModel.find(); // Utilisez le modèle correct
+    const processOrderStatus = await processOrderStatusModel.find(); 
     res.json(processOrderStatus);
   } catch (error) {
     console.error('Erreur lors de la récupération des statuts de commande :', error);

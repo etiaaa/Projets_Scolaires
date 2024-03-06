@@ -1,3 +1,6 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
-    background: url(C:\\Users\\sonia\\Documents\\GitHub\\Projet-NoSQL\\Shop\\Shop.jpg) no-repeat;
+    background: url(C:\\Users\\sonia\\Documents\\GitHub\\Projet-NoSQL\\Site\\Shop\\Shop.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -40,6 +43,7 @@ header {
     text-decoration: none;
     font-weight: 300px;
     margin-left: 35px;
+    transition: color 0.3s ease-in-out;
 }
 
 .navigation a::after,
@@ -88,6 +92,15 @@ header {
    color: gray;
 }
 
+
+.navigation a:nth-last-child(-n+6) {
+    margin-left: 20px; 
+}
+
+.navigation a:hover {
+    color: #ffa500; 
+}
+
 .home {
     text-align: center;
     margin-top: 100px;
@@ -103,7 +116,4 @@ header {
     font-size: 18px;
     margin-bottom: 10px;
 }
-
-
-
-
+</style>

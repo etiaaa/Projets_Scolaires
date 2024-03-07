@@ -1,0 +1,31 @@
+_id,promotionId,promotionName,promoCode,promotionDescription,promotionStart,promotionEnd,discountPercentage
+65e723db2b05f3456f8e39ca,1,Soldes de Fin d'Année,FINANNEE25,Terminez l'année en beauté avec nos soldes de fin d'année.,2023-04-02T00:08:19.343Z,2023-04-13T09:18:57.901Z,22
+65e723db2b05f3456f8e39cb,2,Semaine du Client,CLIENT20,Merci à nos clients ! Profitez de réductions spéciales cette semaine.,2023-10-29T06:51:38.363Z,2023-11-02T18:38:19.228Z,5
+65e723db2b05f3456f8e39cc,3,Semaine du Client,CLIENT20,Merci à nos clients ! Profitez de réductions spéciales cette semaine.,2023-05-13T08:50:15.877Z,2023-05-15T17:16:24.818Z,19
+65e723db2b05f3456f8e39cd,4,Spécial Anniversaire,ANNIV10,Joyeux anniversaire ! Célébrez avec des réductions spéciales sur nos produits.,2024-03-02T22:19:41.503Z,2024-03-16T06:30:45.877Z,8
+65e723db2b05f3456f8e39ce,5,Spécial Anniversaire,ANNIV10,Joyeux anniversaire ! Célébrez avec des réductions spéciales sur nos produits.,2024-02-16T01:40:19.014Z,2024-02-24T00:38:44.343Z,10
+65e723db2b05f3456f8e39cf,6,Nouvel An,NOUVELAN18,Célébrez le Nouvel An avec des réductions spéciales sur une sélection festive.,2023-07-15T06:54:07.133Z,2023-07-15T19:09:54.520Z,15
+65e723db2b05f3456f8e39d0,7,Cyber Monday,CYBER25,Les meilleures affaires en ligne vous attendent. Profitez du Cyber Monday !,2023-04-11T01:44:30.465Z,2023-04-26T07:40:17.542Z,15
+65e723db2b05f3456f8e39d1,8,Spécial Anniversaire,ANNIV10,Joyeux anniversaire ! Célébrez avec des réductions spéciales sur nos produits.,2023-08-29T18:10:32.160Z,2023-09-05T11:25:18.308Z,7
+65e723db2b05f3456f8e39d2,9,Vacances d'été,VACANCES22,Partez en vacances avec des économies. Découvrez nos offres estivales !,2023-10-08T23:44:11.061Z,2023-10-13T09:56:40.533Z,20
+65e723db2b05f3456f8e39d3,10,Spécial Étudiants,ETUDIANT10,Économisez sur vos achats étudiants avec notre promotion spéciale.,2024-01-23T06:33:23.169Z,2024-01-25T17:23:04.044Z,7
+65e723db2b05f3456f8e39d4,11,Saint-Valentin,LOVE15,Trouvez le cadeau parfait pour votre être cher avec nos offres de la Saint-Valentin.,2023-08-11T13:12:09.887Z,2023-08-11T21:35:06.194Z,10
+65e723db2b05f3456f8e39d5,12,Semaine du Client,CLIENT20,Merci à nos clients ! Profitez de réductions spéciales cette semaine.,2023-07-18T15:48:10.610Z,2023-07-21T19:16:59.202Z,10
+65e723db2b05f3456f8e39d6,13,Semaine du Client,CLIENT20,Merci à nos clients ! Profitez de réductions spéciales cette semaine.,2023-06-19T15:18:33.675Z,2023-07-04T14:42:42.882Z,19
+65e723db2b05f3456f8e39d7,14,Back to School,BTS16,Préparez-vous pour une nouvelle année scolaire avec des réductions exceptionnelles.,2023-03-29T23:40:23.242Z,2023-04-02T00:21:42.483Z,5
+65e723db2b05f3456f8e39d8,15,Saint-Patrick,STPATRICK17,Portez du vert et économisez pour la Saint-Patrick !,2023-11-13T07:01:28.602Z,2023-11-30T06:15:37.757Z,11
+65e723db2b05f3456f8e39d9,16,Cadeau Gratuit,CADEAU0,"Avec tout achat, recevez un cadeau gratuit !",2023-12-14T23:29:17.921Z,2023-12-17T03:38:21.965Z,5
+65e723db2b05f3456f8e39da,17,Printemps Fleuri,PRINTEMPS18,Égayez votre printemps avec des offres spéciales sur nos articles les plus fleuris.,2023-05-15T15:09:08.116Z,2023-05-16T05:14:42.235Z,19
+65e723db2b05f3456f8e39db,18,Black Friday,BF20,Les meilleures offres de l'année sont là. Ne les manquez pas !,2024-02-05T15:38:58.316Z,2024-02-06T10:54:13.892Z,12
+65e723db2b05f3456f8e39dc,19,Saint-Patrick,STPATRICK17,Portez du vert et économisez pour la Saint-Patrick !,2023-06-05T19:09:06.518Z,2023-06-12T11:18:23.443Z,17
+65e723db2b05f3456f8e39dd,20,Fête des Mères,FDM14,Célébrez les mamans avec des cadeaux spéciaux à des prix réduits.,2024-02-07T15:25:59.609Z,2024-02-14T15:31:47.069Z,8
+65e723db2b05f3456f8e39de,21,Soldes de Fin d'Année,FINANNEE25,Terminez l'année en beauté avec nos soldes de fin d'année.,2023-12-30T04:09:25.269Z,2023-12-30T15:39:33.440Z,10
+65e723db2b05f3456f8e39df,22,Solde d'été,ETE10,Profitez des nouvelles collections pour refaire votre garde-robe festive.,2023-03-11T17:13:11.285Z,2023-03-17T15:07:10.941Z,34
+65e723db2b05f3456f8e39e0,23,Journée Internationale de la Femme,FEMME15,Célébrez la Journée Internationale de la Femme avec des offres exclusives.,2024-01-23T00:41:03.397Z,2024-02-16T13:30:46.764Z,14
+65e723db2b05f3456f8e39e1,24,Rentrée Scolaire,RENTREE8,Préparez-vous pour une nouvelle année scolaire avec des réductions sur les essentiels.,2023-08-17T14:36:48.203Z,2023-08-18T21:29:55.726Z,39
+65e723db2b05f3456f8e39e2,25,Printemps Fleuri,PRINTEMPS18,Égayez votre printemps avec des offres spéciales sur nos articles les plus fleuris.,2024-02-19T20:30:29.968Z,2024-02-24T09:49:37.193Z,17
+65e723db2b05f3456f8e39e3,26,Soldes de Fin d'Année,FINANNEE25,Terminez l'année en beauté avec nos soldes de fin d'année.,2023-03-09T16:10:24.104Z,2023-03-24T19:27:19.970Z,5
+65e723db2b05f3456f8e39e4,27,Halloween,HALLOWEEN18,Frémissez de plaisir avec nos offres spéciales d'Halloween.,2023-07-11T12:56:10.237Z,2023-07-14T23:48:44.298Z,9
+65e723db2b05f3456f8e39e5,28,Promo Flash,FLASH30,Économies éclair ! Saisissez nos offres flash avant qu'elles ne disparaissent.,2023-08-16T06:14:56.014Z,2023-09-06T00:44:24.629Z,15
+65e723db2b05f3456f8e39e6,29,Back to School,BTS16,Préparez-vous pour une nouvelle année scolaire avec des réductions exceptionnelles.,2024-02-22T02:33:35.091Z,2024-02-22T07:07:48.962Z,5
+65e723db2b05f3456f8e39e7,30,Solde d'hiver,HIVER15,Économisez sur les articles chauds et confortables pour l'hiver.,2024-02-09T03:23:54.954Z,2024-02-10T02:39:58.201Z,31

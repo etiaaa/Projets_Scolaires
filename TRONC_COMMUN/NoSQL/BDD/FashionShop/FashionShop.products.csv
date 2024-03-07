@@ -1,0 +1,501 @@
+_id,productId,productName,price,size,color,fabric,productDescription,availableStock,averageRating,categoryName,promoName,discountPercentage
+65e723db2b05f3456f8e39e8,1,Pyjama en jersey - Confortable,36.95,S,Vert menthe,Jersey,Pyjama en jersey pour une nuit confortable.,33,2.51,Pyjama,Rentrée Scolaire,50
+65e723db2b05f3456f8e39e9,2,Veste en velours - Vintage,86.07,XXL,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,74,2.41,Veste,Black Friday,30
+65e723db2b05f3456f8e39ea,3,Short de sport - Sportif,77.98,S,Blanc,Polyester,Short de sport pour un look dynamique.,3,1.34,Sportswear,Promo d'Automne,15
+65e723db2b05f3456f8e39eb,4,Short en lin - Décontracté,40.51,S,Bleu clair,Lin,Short décontracté en lin pour les journées ensoleillées.,78,1.43,Short,Back to School,15
+65e723db2b05f3456f8e39ec,5,Costume deux pièces - Élégant,36.99,M,Gris anthracite,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,57,4.43,Costume,Saint-Patrick,20
+65e723db2b05f3456f8e39ed,6,Veste en jean - Vintage,27.79,XXL,Vert,Denim,Veste en jean vintage pour un look rétro.,49,1.49,Denim,Printemps Fleuri,20
+65e723db2b05f3456f8e39ee,7,Chemise élégante - Classe,34.64,S,Rose pâle,Coton,Chemise élégante en coton pour un style raffiné.,24,0.7,Chemise,Printemps Fleuri,20
+65e723db2b05f3456f8e39ef,8,Robe midi - Élégant,19.4,M,Blanc,Polyester,Robe midi élégante pour un look tendance.,47,3.36,Robe,Rentrée Scolaire,50
+65e723db2b05f3456f8e39f0,9,Robe de soirée - Élégant,90.45,XS,Argent,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,48,2.59,Robe,Spécial Étudiants,10
+65e723db2b05f3456f8e39f1,10,Legging de sport - Sportif,7.78,M,Imprimé camouflage,Spandex,Legging de sport pour un look dynamique.,8,1.95,Sportswear,Spécial Étudiants,10
+65e723db2b05f3456f8e39f2,11,Robe cocktail - Élégant,73.54,S,Rouge vif,Polyester,Robe cocktail élégante pour les occasions spéciales.,12,3.57,Robe,Semaine du Client,20
+65e723db2b05f3456f8e39f3,12,Chemisier à col lavallière - Classe,73.41,M,Rose poudré,Soie,Chemisier à col lavallière classe pour un look féminin.,92,1.57,Chemisier,Promo Flash,30
+65e723db2b05f3456f8e39f4,13,Pull en tricot oversize - Oversize,52.87,S,Bleu ciel,Acrylique,Pull en tricot oversize pour un confort maximal.,66,2.11,Pull,Solde d'hiver,35
+65e723db2b05f3456f8e39f5,14,T-shirt basique - Décontracté,93.53,M,Blanc,Coton,T-shirt décontracté en coton pour un look confortable.,52,4.08,T-shirt,Fête du Travail,10
+65e723db2b05f3456f8e39f6,15,Robe cocktail - Élégant,96.42,XS,Bleu nuit,Polyester,Robe cocktail élégante pour les occasions spéciales.,28,1.21,Robe,Vacances d'été,25
+65e723db2b05f3456f8e39f7,16,Blazer ajusté - Chic,3.71,L,Noir,Polyester,Blazer ajusté chic pour un look professionnel.,38,2.34,Blazer,Semaine du Client,20
+65e723db2b05f3456f8e39f8,17,Robe midi - Élégant,79.63,L,Imprimé géométrique,Polyester,Robe midi élégante pour un look tendance.,49,2.04,Robe,Semaine du Client,20
+65e723db2b05f3456f8e39f9,18,Blazer ajusté - Chic,69.85,M,Bleu marine,Polyester,Blazer ajusté chic pour un look professionnel.,40,1.94,Blazer,Promo d'Automne,15
+65e723db2b05f3456f8e39fa,19,Jupe plissée - Chic,77.55,L,Bleu marine,Polyester,Jupe plissée chic pour un look féminin.,7,0.86,Jupe,Semaine du Client,20
+65e723db2b05f3456f8e39fb,20,T-shirt basique - Décontracté,48.56,S,Vert,Coton,T-shirt décontracté en coton pour un look confortable.,0,2.14,T-shirt,Vacances d'été,25
+65e723db2b05f3456f8e39fc,21,Parka imperméable - Chaud,83.7,XL,Bleu marine,Nylon,Parka imperméable pour rester au chaud par temps humide.,73,1.9,Manteau,Solde d'hiver,35
+65e723db2b05f3456f8e39fd,22,Blazer ajusté - Chic,63.79,S,Gris anthracite,Polyester,Blazer ajusté chic pour un look professionnel.,86,2.06,Blazer,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e39fe,23,Pyjama en jersey - Confortable,27.02,S,Rayures fines,Jersey,Pyjama en jersey pour une nuit confortable.,63,3.97,Pyjama,Black Friday,30
+65e723db2b05f3456f8e39ff,24,Pyjama en jersey - Confortable,40.44,L,Rayures fines,Jersey,Pyjama en jersey pour une nuit confortable.,67,1.41,Pyjama,Halloween,20
+65e723db2b05f3456f8e3a00,25,Manteau en laine - Chaud,84.4,M,Gris,Laine,Manteau en laine pour rester au chaud avec style.,14,1.99,Manteau,Promo d'Automne,15
+65e723db2b05f3456f8e3a01,26,Pull en tricot oversize - Oversize,32.51,XL,Rose poudré,Acrylique,Pull en tricot oversize pour un confort maximal.,97,4.18,Pull,Halloween,20
+65e723db2b05f3456f8e3a02,27,Jupe crayon - Chic,80.71,XL,Noir,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,82,3.79,Jupe,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a03,28,Blouse en soie - Classe,60.83,M,Noir,Soie,Blouse en soie pour un look classe et féminin.,76,2.13,Chemisier,Solde de noël,40
+65e723db2b05f3456f8e3a04,29,Pantalon taille haute - Vintage,11.05,M,Vert forêt,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,68,3.3,Pantalon,Saint-Valentin,15
+65e723db2b05f3456f8e3a05,30,Jupe crayon - Chic,9.38,S,Gris,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,2,0.56,Jupe,Spécial Étudiants,10
+65e723db2b05f3456f8e3a06,31,Blouse en soie - Classe,9.19,L,Imprimé floral,Soie,Blouse en soie pour un look classe et féminin.,76,2.31,Chemisier,Promo d'Automne,15
+65e723db2b05f3456f8e3a07,32,Pyjama en jersey - Confortable,33.55,XL,Bleu clair,Jersey,Pyjama en jersey pour une nuit confortable.,55,1.04,Pyjama,Promo Flash,30
+65e723db2b05f3456f8e3a08,33,Short en lin - Décontracté,25.42,M,Beige,Lin,Short décontracté en lin pour les journées ensoleillées.,34,3.33,Short,Saint-Patrick,20
+65e723db2b05f3456f8e3a09,34,Blouse en soie - Classe,5.34,S,Noir,Soie,Blouse en soie pour un look classe et féminin.,66,3.23,Chemisier,Fête du Travail,10
+65e723db2b05f3456f8e3a0a,35,Chemise oversize - Oversize,91.76,M,Gris chiné,Coton,Chemise oversize pour un style décontracté.,46,1.39,Chemise,Semaine du Client,20
+65e723db2b05f3456f8e3a0b,36,Veste en velours - Vintage,34.82,XL,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,32,3.2,Veste,Cyber Monday,25
+65e723db2b05f3456f8e3a0c,37,Pyjama en flanelle - Confortable,9.46,XL,Vert pastel,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,78,3.22,Pyjama,Back to School,15
+65e723db2b05f3456f8e3a0d,38,Chemise oversize - Oversize,1.51,M,Blanc,Coton,Chemise oversize pour un style décontracté.,1,3.44,Chemise,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a0e,39,Sweat à capuche oversize - Oversize,20.73,M,Gris chiné,Coton,Sweat à capuche oversize pour un confort maximal.,97,1.16,Pull,Solde de noël,40
+65e723db2b05f3456f8e3a0f,40,Pantalon de survêtement - Sportif,43.26,S,Rouge,Polyester,Pantalon de survêtement sportif pour un look décontracté.,54,2.18,Sportswear,Solde de noël,40
+65e723db2b05f3456f8e3a10,41,Chemise oversize - Oversize,67.86,L,Blanc,Coton,Chemise oversize pour un style décontracté.,13,0.57,Chemise,Solde de noël,40
+65e723db2b05f3456f8e3a11,42,Robe cocktail - Élégant,15.23,XL,Doré,Polyester,Robe cocktail élégante pour les occasions spéciales.,32,2.12,Robe,Solde d'été,40
+65e723db2b05f3456f8e3a12,43,Short en lin - Décontracté,82.48,M,Blanc,Lin,Short décontracté en lin pour les journées ensoleillées.,82,2.42,Short,Halloween,20
+65e723db2b05f3456f8e3a13,44,Pantalon de survêtement - Sportif,61.17,XL,Rouge,Polyester,Pantalon de survêtement sportif pour un look décontracté.,73,1.37,Sportswear,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a14,45,Ensemble de jogging - Sportif,29.6,XXL,Noir,Polyester,Ensemble de jogging sportif pour un style décontracté.,38,0.97,Sportswear,Solde d'hiver,35
+65e723db2b05f3456f8e3a15,46,Pantalon taille haute - Vintage,76.87,L,Carreaux rétro,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,50,3.3,Pantalon,Solde d'hiver,35
+65e723db2b05f3456f8e3a16,47,Chemise oversize - Oversize,11.3,M,Bleu clair,Coton,Chemise oversize pour un style décontracté.,25,2.8,Chemise,Fête des Mères,15
+65e723db2b05f3456f8e3a17,48,Robe cocktail - Élégant,42.64,S,Bleu nuit,Polyester,Robe cocktail élégante pour les occasions spéciales.,93,3.13,Robe,Back to School,15
+65e723db2b05f3456f8e3a18,49,Pull en tricot oversize - Oversize,47.1,L,Mauve,Acrylique,Pull en tricot oversize pour un confort maximal.,9,2.93,Pull,Nouvel An,18
+65e723db2b05f3456f8e3a19,50,T-shirt basique - Décontracté,99.78,XS,Vert,Coton,T-shirt décontracté en coton pour un look confortable.,6,0.69,T-shirt,Cadeau Gratuit,5
+65e723db2b05f3456f8e3a1a,51,Pantalon taille haute - Vintage,82.36,M,Jaune moutarde,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,57,4.32,Pantalon,Saint-Patrick,20
+65e723db2b05f3456f8e3a1b,52,Pyjama en flanelle - Confortable,23.05,M,Violet clair,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,61,4.14,Pyjama,Printemps Fleuri,20
+65e723db2b05f3456f8e3a1c,53,Robe cocktail - Élégant,33.05,L,Rouge vif,Polyester,Robe cocktail élégante pour les occasions spéciales.,62,2.04,Robe,Solde d'été,40
+65e723db2b05f3456f8e3a1d,54,Sweat à capuche oversize - Oversize,40.98,XL,Gris chiné,Coton,Sweat à capuche oversize pour un confort maximal.,7,1.88,Pull,Printemps Fleuri,20
+65e723db2b05f3456f8e3a1e,55,Tunique brodée - Bohème,85.37,M,Ivoire,Coton,Tunique brodée bohème pour un style décontracté.,84,0.91,Tunique,Promo Flash,30
+65e723db2b05f3456f8e3a1f,56,Short en lin - Décontracté,34.67,XL,Rose pâle,Lin,Short décontracté en lin pour les journées ensoleillées.,28,0.85,Short,Saint-Patrick,20
+65e723db2b05f3456f8e3a20,57,Pantalon de survêtement - Sportif,29.49,XXL,Noir,Polyester,Pantalon de survêtement sportif pour un look décontracté.,61,1.56,Sportswear,Saint-Valentin,15
+65e723db2b05f3456f8e3a21,58,Legging de sport - Sportif,77.85,XL,Noir,Spandex,Legging de sport pour un look dynamique.,4,3.04,Sportswear,Printemps Fleuri,20
+65e723db2b05f3456f8e3a22,59,Parka imperméable - Chaud,78.08,M,Bleu marine,Nylon,Parka imperméable pour rester au chaud par temps humide.,46,1.09,Manteau,Cyber Monday,25
+65e723db2b05f3456f8e3a23,60,T-shirt basique - Décontracté,18.7,XXL,Blanc,Coton,T-shirt décontracté en coton pour un look confortable.,77,4.5,T-shirt,Black Friday,30
+65e723db2b05f3456f8e3a24,61,Veste en jean - Vintage,29.76,XXL,Noir,Denim,Veste en jean vintage pour un look rétro.,14,1.35,Denim,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3a25,62,Pantalon taille haute - Vintage,43.68,L,Carreaux rétro,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,51,1.78,Pantalon,Cyber Monday,25
+65e723db2b05f3456f8e3a26,63,Manteau en laine - Chaud,84.12,L,Noir,Laine,Manteau en laine pour rester au chaud avec style.,75,3.25,Manteau,Cadeau Gratuit,5
+65e723db2b05f3456f8e3a27,64,Robe longue fluide - Bohème,51.4,M,Violet,Viscose,Robe longue fluide pour un style bohème décontracté.,69,2.46,Robe,Solde d'hiver,35
+65e723db2b05f3456f8e3a28,65,Robe cocktail - Élégant,30.34,M,Argenté,Polyester,Robe cocktail élégante pour les occasions spéciales.,10,3.68,Robe,Solde de noël,40
+65e723db2b05f3456f8e3a29,66,Chemise élégante - Classe,88.1,M,Blanc,Coton,Chemise élégante en coton pour un style raffiné.,89,0.79,Chemise,Halloween,20
+65e723db2b05f3456f8e3a2a,67,Veste en velours - Vintage,10.75,XXL,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,54,1.76,Veste,Solde d'été,40
+65e723db2b05f3456f8e3a2b,68,Pyjama en flanelle - Confortable,32.65,XL,Rose pâle,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,91,3.2,Pyjama,Vacances d'été,25
+65e723db2b05f3456f8e3a2c,69,Manteau en laine - Chaud,24.1,L,Camel,Laine,Manteau en laine pour rester au chaud avec style.,66,4.31,Manteau,Printemps Fleuri,20
+65e723db2b05f3456f8e3a2d,70,Blouse en soie - Classe,62.34,L,Bleu marine,Soie,Blouse en soie pour un look classe et féminin.,60,2.52,Chemisier,Saint-Valentin,15
+65e723db2b05f3456f8e3a2e,71,Ensemble de jogging - Sportif,38.85,M,Gris,Polyester,Ensemble de jogging sportif pour un style décontracté.,27,0.79,Sportswear,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a2f,72,Legging de sport - Sportif,71.62,S,Noir,Spandex,Legging de sport pour un look dynamique.,87,2.63,Sportswear,Cadeau Gratuit,5
+65e723db2b05f3456f8e3a30,73,Ensemble de jogging - Sportif,87.17,XXL,Gris,Polyester,Ensemble de jogging sportif pour un style décontracté.,21,3.76,Sportswear,Fête des Mères,15
+65e723db2b05f3456f8e3a31,74,Sweat à capuche oversize - Oversize,85.65,M,Gris chiné,Coton,Sweat à capuche oversize pour un confort maximal.,78,3.83,Pull,Spécial Étudiants,10
+65e723db2b05f3456f8e3a32,75,Chemise élégante - Classe,92.55,S,Rayures fines,Coton,Chemise élégante en coton pour un style raffiné.,81,0.97,Chemise,Vacances d'été,25
+65e723db2b05f3456f8e3a33,76,Jupe plissée - Chic,39.38,S,Bleu marine,Polyester,Jupe plissée chic pour un look féminin.,10,3.05,Jupe,Black Friday,30
+65e723db2b05f3456f8e3a34,77,Costume deux pièces - Élégant,23.44,XL,Bordeaux,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,79,1.38,Costume,Vacances d'été,25
+65e723db2b05f3456f8e3a35,78,Pantalon de survêtement - Sportif,23.87,XL,Gris,Polyester,Pantalon de survêtement sportif pour un look décontracté.,82,1.89,Sportswear,Solde d'été,40
+65e723db2b05f3456f8e3a36,79,Jupe crayon - Chic,84.15,M,Bleu marine,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,19,4.17,Jupe,Black Friday,30
+65e723db2b05f3456f8e3a37,80,Pyjama en flanelle - Confortable,11.79,M,Rose pâle,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,37,1.5,Pyjama,Fête du Travail,10
+65e723db2b05f3456f8e3a38,81,T-shirt à manches longues - Décontracté,19.65,XL,Noir,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,11,2.44,T-shirt,Fête des Mères,15
+65e723db2b05f3456f8e3a39,82,T-shirt à manches longues - Décontracté,52.19,S,Noir,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,36,2.14,T-shirt,Nouvel An,18
+65e723db2b05f3456f8e3a3a,83,Veste en velours - Vintage,17.34,XXL,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,64,0.81,Veste,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3a3b,84,Pull en tricot oversize - Oversize,56.61,M,Mauve,Acrylique,Pull en tricot oversize pour un confort maximal.,87,1.94,Pull,Fête des Mères,15
+65e723db2b05f3456f8e3a3c,85,Pantalon de survêtement - Sportif,16.96,XXL,Rouge,Polyester,Pantalon de survêtement sportif pour un look décontracté.,86,2.82,Sportswear,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3a3d,86,Chemise élégante - Classe,85.71,S,Rayures fines,Coton,Chemise élégante en coton pour un style raffiné.,10,1.51,Chemise,Spécial Étudiants,10
+65e723db2b05f3456f8e3a3e,87,Robe longue fluide - Bohème,2.1,L,Jaune moutarde,Viscose,Robe longue fluide pour un style bohème décontracté.,74,0.52,Robe,Solde d'hiver,35
+65e723db2b05f3456f8e3a3f,88,T-shirt basique - Décontracté,31.34,M,Gris,Coton,T-shirt décontracté en coton pour un look confortable.,86,2.53,T-shirt,Solde d'été,40
+65e723db2b05f3456f8e3a40,89,Jupe crayon - Chic,66.55,XL,Bordeaux,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,23,1.57,Jupe,Solde d'été,40
+65e723db2b05f3456f8e3a41,90,Legging de sport - Sportif,87.31,S,Imprimé camouflage,Spandex,Legging de sport pour un look dynamique.,74,3.39,Sportswear,Fête du Travail,10
+65e723db2b05f3456f8e3a42,91,Jupe crayon - Chic,16.54,XL,Gris,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,91,2.17,Jupe,Rentrée Scolaire,50
+65e723db2b05f3456f8e3a43,92,Sweat à capuche oversize - Oversize,71.39,L,Rose pâle,Coton,Sweat à capuche oversize pour un confort maximal.,39,4.2,Pull,Cyber Monday,25
+65e723db2b05f3456f8e3a44,93,Costume deux pièces - Élégant,15.74,L,Marron,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,69,3.26,Costume,Cadeau Gratuit,5
+65e723db2b05f3456f8e3a45,94,Robe midi - Élégant,99.35,M,Bleu marine,Polyester,Robe midi élégante pour un look tendance.,43,1,Robe,Saint-Valentin,15
+65e723db2b05f3456f8e3a46,95,Short en lin - Décontracté,89.05,S,Rose pâle,Lin,Short décontracté en lin pour les journées ensoleillées.,22,0.79,Short,Fête du Travail,10
+65e723db2b05f3456f8e3a47,96,Ensemble de jogging - Sportif,88.65,M,Rouge,Polyester,Ensemble de jogging sportif pour un style décontracté.,5,2.25,Sportswear,Saint-Valentin,15
+65e723db2b05f3456f8e3a48,97,Legging de sport - Sportif,24.53,XL,Rose,Spandex,Legging de sport pour un look dynamique.,37,3.73,Sportswear,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3a49,98,Short de sport - Sportif,31.56,S,Gris,Polyester,Short de sport pour un look dynamique.,79,4.09,Sportswear,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3a4a,99,T-shirt basique - Décontracté,23.08,XS,Bleu,Coton,T-shirt décontracté en coton pour un look confortable.,93,2.54,T-shirt,Saint-Valentin,15
+65e723db2b05f3456f8e3a4b,100,Veste en velours - Vintage,87,M,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,1,4.09,Veste,Saint-Valentin,15
+65e723db2b05f3456f8e3a4c,101,Veste en velours - Vintage,87.87,XL,Bordeaux,Velours,Veste en velours vintage pour une touche rétro.,51,3.09,Veste,Printemps Fleuri,20
+65e723db2b05f3456f8e3a4d,102,T-shirt basique - Décontracté,75.44,XL,Vert,Coton,T-shirt décontracté en coton pour un look confortable.,32,2.07,T-shirt,Cyber Monday,25
+65e723db2b05f3456f8e3a4e,103,Pyjama en flanelle - Confortable,16.61,M,Violet clair,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,23,2.56,Pyjama,Semaine du Client,20
+65e723db2b05f3456f8e3a4f,104,Pyjama en jersey - Confortable,97.26,L,Bleu clair,Jersey,Pyjama en jersey pour une nuit confortable.,99,3.03,Pyjama,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a50,105,Manteau en laine - Chaud,40.18,XXL,Rouge,Laine,Manteau en laine pour rester au chaud avec style.,8,1.53,Manteau,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3a51,106,Jupe plissée - Chic,69.82,L,Noir,Polyester,Jupe plissée chic pour un look féminin.,1,2.58,Jupe,Vacances d'été,25
+65e723db2b05f3456f8e3a52,107,Jupe crayon - Chic,65.9,S,Noir,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,92,2.6,Jupe,Solde d'hiver,35
+65e723db2b05f3456f8e3a53,108,Chemise oversize - Oversize,31.2,M,Blanc,Coton,Chemise oversize pour un style décontracté.,82,1.18,Chemise,Solde de noël,40
+65e723db2b05f3456f8e3a54,109,T-shirt basique - Décontracté,4.87,XXS,Bleu,Coton,T-shirt décontracté en coton pour un look confortable.,18,3.79,T-shirt,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a55,110,Pull en tricot oversize - Oversize,36.02,S,Gris clair,Acrylique,Pull en tricot oversize pour un confort maximal.,33,2.64,Pull,Fête des Mères,15
+65e723db2b05f3456f8e3a56,111,Robe midi - Élégant,73.88,M,Noir,Polyester,Robe midi élégante pour un look tendance.,6,4.01,Robe,Back to School,15
+65e723db2b05f3456f8e3a57,112,Robe midi - Élégant,49.51,S,Bleu marine,Polyester,Robe midi élégante pour un look tendance.,98,1.94,Robe,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a58,113,Blouse en soie - Classe,32.27,M,Imprimé floral,Soie,Blouse en soie pour un look classe et féminin.,19,2.35,Chemisier,Semaine du Client,20
+65e723db2b05f3456f8e3a59,114,Legging de sport - Sportif,29.57,S,Gris,Spandex,Legging de sport pour un look dynamique.,90,2.52,Sportswear,Solde d'hiver,35
+65e723db2b05f3456f8e3a5a,115,Short de sport - Sportif,35.2,S,Gris,Polyester,Short de sport pour un look dynamique.,78,2.27,Sportswear,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3a5b,116,Robe midi - Élégant,62.89,XS,Blanc,Polyester,Robe midi élégante pour un look tendance.,38,2.26,Robe,Saint-Valentin,15
+65e723db2b05f3456f8e3a5c,117,Robe longue fluide - Bohème,28.08,L,Vert olive,Viscose,Robe longue fluide pour un style bohème décontracté.,67,3.45,Robe,Promo d'Automne,15
+65e723db2b05f3456f8e3a5d,118,Blazer ajusté - Chic,32.73,XL,Blanc,Polyester,Blazer ajusté chic pour un look professionnel.,6,1.74,Blazer,Solde de noël,40
+65e723db2b05f3456f8e3a5e,119,Chemise élégante - Classe,98.2,S,Blanc,Coton,Chemise élégante en coton pour un style raffiné.,74,3.67,Chemise,Fête du Travail,10
+65e723db2b05f3456f8e3a5f,120,Sweat à capuche oversize - Oversize,40.69,L,Noir,Coton,Sweat à capuche oversize pour un confort maximal.,81,0.7,Pull,Rentrée Scolaire,50
+65e723db2b05f3456f8e3a60,121,Sweat à capuche oversize - Oversize,33.49,M,Rose pâle,Coton,Sweat à capuche oversize pour un confort maximal.,2,2.47,Pull,Fête du Travail,10
+65e723db2b05f3456f8e3a61,122,Chemise élégante - Classe,76.71,L,Blanc,Coton,Chemise élégante en coton pour un style raffiné.,50,3.41,Chemise,Black Friday,30
+65e723db2b05f3456f8e3a62,123,Short en jean - Décontracté,25.14,XL,Blanc,Denim,Short en jean décontracté pour un look estival.,56,3.21,Short,Solde d'été,40
+65e723db2b05f3456f8e3a63,124,Legging de sport - Sportif,27.36,L,Noir,Spandex,Legging de sport pour un look dynamique.,58,1.96,Sportswear,Halloween,20
+65e723db2b05f3456f8e3a64,125,Jupe crayon - Chic,48.38,M,Noir,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,59,3.02,Jupe,Fête des Mères,15
+65e723db2b05f3456f8e3a65,126,Pull en tricot oversize - Oversize,81.47,M,Rose poudré,Acrylique,Pull en tricot oversize pour un confort maximal.,83,2.95,Pull,Fête des Mères,15
+65e723db2b05f3456f8e3a66,127,Pyjama en jersey - Confortable,1.86,M,Rose pâle,Jersey,Pyjama en jersey pour une nuit confortable.,100,4.2,Pyjama,Vacances d'été,25
+65e723db2b05f3456f8e3a67,128,T-shirt à manches longues - Décontracté,6.18,XL,Rouge,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,92,1.19,T-shirt,Promo Flash,30
+65e723db2b05f3456f8e3a68,129,Robe longue fluide - Bohème,51.48,S,Bleu ciel,Viscose,Robe longue fluide pour un style bohème décontracté.,37,4.21,Robe,Solde de noël,40
+65e723db2b05f3456f8e3a69,130,Manteau en laine - Chaud,33.15,XL,Noir,Laine,Manteau en laine pour rester au chaud avec style.,34,1.54,Manteau,Promo d'Automne,15
+65e723db2b05f3456f8e3a6a,131,Chemisier à col lavallière - Classe,85.91,S,Noir,Soie,Chemisier à col lavallière classe pour un look féminin.,45,1.11,Chemisier,Cyber Monday,25
+65e723db2b05f3456f8e3a6b,132,Tunique brodée - Bohème,1.66,S,Vert sauge,Coton,Tunique brodée bohème pour un style décontracté.,100,1.03,Tunique,Printemps Fleuri,20
+65e723db2b05f3456f8e3a6c,133,Veste en jean - Vintage,53.16,XL,Noir,Denim,Veste en jean vintage pour un look rétro.,84,0.8,Denim,Solde d'hiver,35
+65e723db2b05f3456f8e3a6d,134,Legging de sport - Sportif,68.35,S,Imprimé camouflage,Spandex,Legging de sport pour un look dynamique.,79,2.23,Sportswear,Cyber Monday,25
+65e723db2b05f3456f8e3a6e,135,Parka imperméable - Chaud,74.73,XL,Gris,Nylon,Parka imperméable pour rester au chaud par temps humide.,39,4.47,Manteau,Rentrée Scolaire,50
+65e723db2b05f3456f8e3a6f,136,Tunique brodée - Bohème,70.12,L,Rose poudré,Coton,Tunique brodée bohème pour un style décontracté.,94,1.29,Tunique,Vacances d'été,25
+65e723db2b05f3456f8e3a70,137,Tunique brodée - Bohème,15.63,M,Moutarde,Coton,Tunique brodée bohème pour un style décontracté.,98,2.97,Tunique,Nouvel An,18
+65e723db2b05f3456f8e3a71,138,Manteau en laine - Chaud,3.11,XL,Camel,Laine,Manteau en laine pour rester au chaud avec style.,99,2.36,Manteau,Halloween,20
+65e723db2b05f3456f8e3a72,139,Jupe plissée - Chic,24.53,M,Blanc,Polyester,Jupe plissée chic pour un look féminin.,53,1.96,Jupe,Back to School,15
+65e723db2b05f3456f8e3a73,140,Chemise oversize - Oversize,2.13,XL,Rose pâle,Coton,Chemise oversize pour un style décontracté.,33,0.7,Chemise,Halloween,20
+65e723db2b05f3456f8e3a74,141,T-shirt à manches longues - Décontracté,66.4,XL,Bleu marine,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,44,2.42,T-shirt,Nouvel An,18
+65e723db2b05f3456f8e3a75,142,Chemisier à volants - Chic,26.59,M,Bleu ciel,Coton,Chemisier à volants chic pour une allure féminine.,55,2.7,Chemisier,Black Friday,30
+65e723db2b05f3456f8e3a76,143,Pantalon de survêtement - Sportif,41.82,M,Vert kaki,Polyester,Pantalon de survêtement sportif pour un look décontracté.,73,3.49,Sportswear,Promo Flash,30
+65e723db2b05f3456f8e3a77,144,Short en lin - Décontracté,52.88,M,Bleu clair,Lin,Short décontracté en lin pour les journées ensoleillées.,34,4.24,Short,Black Friday,30
+65e723db2b05f3456f8e3a78,145,Manteau en laine - Chaud,99.17,XL,Noir,Laine,Manteau en laine pour rester au chaud avec style.,26,2.9,Manteau,Fête des Mères,15
+65e723db2b05f3456f8e3a79,146,Blouse en soie - Classe,0.95,S,Blanc,Soie,Blouse en soie pour un look classe et féminin.,3,2.27,Chemisier,Vacances d'été,25
+65e723db2b05f3456f8e3a7a,147,Robe cocktail - Élégant,4.87,M,Bleu nuit,Polyester,Robe cocktail élégante pour les occasions spéciales.,70,4.18,Robe,Rentrée Scolaire,50
+65e723db2b05f3456f8e3a7b,148,Pyjama en jersey - Confortable,62.9,M,Bleu clair,Jersey,Pyjama en jersey pour une nuit confortable.,39,1.22,Pyjama,Semaine du Client,20
+65e723db2b05f3456f8e3a7c,149,T-shirt à manches longues - Décontracté,97.18,M,Gris,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,41,2.14,T-shirt,Cyber Monday,25
+65e723db2b05f3456f8e3a7d,150,Pyjama en jersey - Confortable,28.94,XL,Gris chiné,Jersey,Pyjama en jersey pour une nuit confortable.,80,4.44,Pyjama,Promo d'Automne,15
+65e723db2b05f3456f8e3a7e,151,Robe de soirée - Élégant,12.6,XS,Or,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,51,0.94,Robe,Solde d'été,40
+65e723db2b05f3456f8e3a7f,152,Chemisier à col lavallière - Classe,4.8,M,Rose poudré,Soie,Chemisier à col lavallière classe pour un look féminin.,19,2.41,Chemisier,Cadeau Gratuit,5
+65e723db2b05f3456f8e3a80,153,Tunique brodée - Bohème,63.48,S,Rose poudré,Coton,Tunique brodée bohème pour un style décontracté.,37,3.39,Tunique,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3a81,154,Pyjama en jersey - Confortable,66.15,XL,Gris chiné,Jersey,Pyjama en jersey pour une nuit confortable.,47,1.14,Pyjama,Fête du Travail,10
+65e723db2b05f3456f8e3a82,155,Robe longue fluide - Bohème,31.69,S,Vert olive,Viscose,Robe longue fluide pour un style bohème décontracté.,6,2.46,Robe,Promo Flash,30
+65e723db2b05f3456f8e3a83,156,Pyjama en flanelle - Confortable,43.64,S,Bleu ciel,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,83,2.31,Pyjama,Saint-Patrick,20
+65e723db2b05f3456f8e3a84,157,Parka imperméable - Chaud,5.72,XL,Bleu marine,Nylon,Parka imperméable pour rester au chaud par temps humide.,32,3.37,Manteau,Solde de noël,40
+65e723db2b05f3456f8e3a85,158,Legging de sport - Sportif,96.12,XL,Gris,Spandex,Legging de sport pour un look dynamique.,72,1.71,Sportswear,Solde d'été,40
+65e723db2b05f3456f8e3a86,159,Robe longue fluide - Bohème,17.99,S,Jaune moutarde,Viscose,Robe longue fluide pour un style bohème décontracté.,80,1.6,Robe,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3a87,160,Chemisier à volants - Chic,74.44,L,Bleu ciel,Coton,Chemisier à volants chic pour une allure féminine.,98,2.06,Chemisier,Cyber Monday,25
+65e723db2b05f3456f8e3a88,161,Short en jean - Décontracté,98.33,S,Rose,Denim,Short en jean décontracté pour un look estival.,50,1.48,Short,Back to School,15
+65e723db2b05f3456f8e3a89,162,Robe de soirée - Élégant,1.67,S,Or,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,31,3.64,Robe,Printemps Fleuri,20
+65e723db2b05f3456f8e3a8a,163,Pyjama en jersey - Confortable,26.29,S,Gris chiné,Jersey,Pyjama en jersey pour une nuit confortable.,13,3.62,Pyjama,Black Friday,30
+65e723db2b05f3456f8e3a8b,164,Robe midi - Élégant,22.11,M,Rouge,Polyester,Robe midi élégante pour un look tendance.,97,1.76,Robe,Rentrée Scolaire,50
+65e723db2b05f3456f8e3a8c,165,Chemise élégante - Classe,92.36,L,Rayures fines,Coton,Chemise élégante en coton pour un style raffiné.,63,2.09,Chemise,Solde de noël,40
+65e723db2b05f3456f8e3a8d,166,Robe longue fluide - Bohème,31.7,M,Vert olive,Viscose,Robe longue fluide pour un style bohème décontracté.,24,4.09,Robe,Halloween,20
+65e723db2b05f3456f8e3a8e,167,Blouse en soie - Classe,98.52,S,Blanc,Soie,Blouse en soie pour un look classe et féminin.,8,4.21,Chemisier,Promo Flash,30
+65e723db2b05f3456f8e3a8f,168,Chemisier à volants - Chic,67.57,M,Bleu ciel,Coton,Chemisier à volants chic pour une allure féminine.,8,1.98,Chemisier,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3a90,169,Blouse en soie - Classe,7.38,M,Blanc,Soie,Blouse en soie pour un look classe et féminin.,25,2.68,Chemisier,Cyber Monday,25
+65e723db2b05f3456f8e3a91,170,Jupe plissée - Chic,16.83,M,Vert émeraude,Polyester,Jupe plissée chic pour un look féminin.,25,0.97,Jupe,Black Friday,30
+65e723db2b05f3456f8e3a92,171,Robe cocktail - Élégant,93.95,S,Argenté,Polyester,Robe cocktail élégante pour les occasions spéciales.,39,0.51,Robe,Spécial Anniversaire,10
+65e723db2b05f3456f8e3a93,172,Tunique brodée - Bohème,74.44,S,Bleu ciel,Coton,Tunique brodée bohème pour un style décontracté.,79,4.29,Tunique,Saint-Patrick,20
+65e723db2b05f3456f8e3a94,173,T-shirt basique - Décontracté,68.26,XXL,Gris,Coton,T-shirt décontracté en coton pour un look confortable.,5,3.25,T-shirt,Cadeau Gratuit,5
+65e723db2b05f3456f8e3a95,174,Robe de soirée - Élégant,29.09,L,Bleu marine,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,99,4.42,Robe,Black Friday,30
+65e723db2b05f3456f8e3a96,175,Parka imperméable - Chaud,78.13,M,Rouge,Nylon,Parka imperméable pour rester au chaud par temps humide.,36,3.83,Manteau,Promo Flash,30
+65e723db2b05f3456f8e3a97,176,Robe cocktail - Élégant,99.09,M,Rouge vif,Polyester,Robe cocktail élégante pour les occasions spéciales.,72,3,Robe,Solde d'été,40
+65e723db2b05f3456f8e3a98,177,Manteau en laine - Chaud,23.29,XXL,Camel,Laine,Manteau en laine pour rester au chaud avec style.,13,1.74,Manteau,Back to School,15
+65e723db2b05f3456f8e3a99,178,Robe longue fluide - Bohème,94.11,M,Violet,Viscose,Robe longue fluide pour un style bohème décontracté.,17,4.1,Robe,Spécial Étudiants,10
+65e723db2b05f3456f8e3a9a,179,Robe cocktail - Élégant,22.9,M,Rouge vif,Polyester,Robe cocktail élégante pour les occasions spéciales.,81,3.19,Robe,Printemps Fleuri,20
+65e723db2b05f3456f8e3a9b,180,Ensemble de jogging - Sportif,68.69,M,Gris,Polyester,Ensemble de jogging sportif pour un style décontracté.,33,3.43,Sportswear,Spécial Étudiants,10
+65e723db2b05f3456f8e3a9c,181,Blouse en soie - Classe,79.36,M,Rouge,Soie,Blouse en soie pour un look classe et féminin.,91,4.06,Chemisier,Spécial Étudiants,10
+65e723db2b05f3456f8e3a9d,182,Robe de soirée - Élégant,66.37,M,Argent,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,49,1.88,Robe,Black Friday,30
+65e723db2b05f3456f8e3a9e,183,Chemise élégante - Classe,50.98,L,Bleu clair,Coton,Chemise élégante en coton pour un style raffiné.,43,2.16,Chemise,Cadeau Gratuit,5
+65e723db2b05f3456f8e3a9f,184,Jupe crayon - Chic,42.34,XL,Bleu marine,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,93,2.97,Jupe,Spécial Étudiants,10
+65e723db2b05f3456f8e3aa0,185,Chemise oversize - Oversize,18.9,XL,Blanc,Coton,Chemise oversize pour un style décontracté.,97,2.99,Chemise,Promo Flash,30
+65e723db2b05f3456f8e3aa1,186,Sweat à capuche oversize - Oversize,62.41,S,Vert kaki,Coton,Sweat à capuche oversize pour un confort maximal.,3,2.83,Pull,Spécial Étudiants,10
+65e723db2b05f3456f8e3aa2,187,Jupe crayon - Chic,54.09,S,Noir,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,73,3.98,Jupe,Printemps Fleuri,20
+65e723db2b05f3456f8e3aa3,188,Short en jean - Décontracté,36.4,XL,Vert,Denim,Short en jean décontracté pour un look estival.,31,0.89,Short,Black Friday,30
+65e723db2b05f3456f8e3aa4,189,Chemisier à col lavallière - Classe,81.86,S,Bleu ciel,Soie,Chemisier à col lavallière classe pour un look féminin.,34,2.98,Chemisier,Black Friday,30
+65e723db2b05f3456f8e3aa5,190,Legging de sport - Sportif,70.35,XL,Noir,Spandex,Legging de sport pour un look dynamique.,9,2.13,Sportswear,Promo d'Automne,15
+65e723db2b05f3456f8e3aa6,191,T-shirt à manches longues - Décontracté,60.57,M,Rouge,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,88,3.52,T-shirt,Cadeau Gratuit,5
+65e723db2b05f3456f8e3aa7,192,T-shirt à manches longues - Décontracté,33.49,XL,Blanc,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,60,2.12,T-shirt,Fête du Travail,10
+65e723db2b05f3456f8e3aa8,193,Pantalon de survêtement - Sportif,66.66,XXL,Vert kaki,Polyester,Pantalon de survêtement sportif pour un look décontracté.,53,1.65,Sportswear,Vacances d'été,25
+65e723db2b05f3456f8e3aa9,194,Sweat à capuche oversize - Oversize,18.07,M,Bleu marine,Coton,Sweat à capuche oversize pour un confort maximal.,23,0.53,Pull,Spécial Étudiants,10
+65e723db2b05f3456f8e3aaa,195,Blouse en soie - Classe,6.91,M,Noir,Soie,Blouse en soie pour un look classe et féminin.,69,1.98,Chemisier,Printemps Fleuri,20
+65e723db2b05f3456f8e3aab,196,Short en jean - Décontracté,82.65,M,Bleu délavé,Denim,Short en jean décontracté pour un look estival.,5,3.12,Short,Solde de noël,40
+65e723db2b05f3456f8e3aac,197,Pyjama en flanelle - Confortable,67.99,S,Gris à carreaux,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,68,0.56,Pyjama,Black Friday,30
+65e723db2b05f3456f8e3aad,198,Blazer ajusté - Chic,90.05,L,Bleu marine,Polyester,Blazer ajusté chic pour un look professionnel.,1,0.76,Blazer,Spécial Étudiants,10
+65e723db2b05f3456f8e3aae,199,Legging de sport - Sportif,56.39,L,Gris,Spandex,Legging de sport pour un look dynamique.,32,1.36,Sportswear,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3aaf,200,Manteau en laine - Chaud,52.28,L,Gris,Laine,Manteau en laine pour rester au chaud avec style.,49,0.53,Manteau,Promo d'Automne,15
+65e723db2b05f3456f8e3ab0,201,Robe midi - Élégant,57.11,L,Imprimé géométrique,Polyester,Robe midi élégante pour un look tendance.,15,3.8,Robe,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3ab1,202,Short en jean - Décontracté,38.57,S,Rose,Denim,Short en jean décontracté pour un look estival.,10,3.86,Short,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3ab2,203,Veste en velours - Vintage,81.05,L,Bleu nuit,Velours,Veste en velours vintage pour une touche rétro.,84,3.5,Veste,Spécial Étudiants,10
+65e723db2b05f3456f8e3ab3,204,Robe midi - Élégant,47.68,XL,Rouge,Polyester,Robe midi élégante pour un look tendance.,9,3.86,Robe,Spécial Anniversaire,10
+65e723db2b05f3456f8e3ab4,205,Veste en velours - Vintage,66.73,L,Bordeaux,Velours,Veste en velours vintage pour une touche rétro.,50,4.07,Veste,Vacances d'été,25
+65e723db2b05f3456f8e3ab5,206,Pantalon de survêtement - Sportif,65.27,S,Noir,Polyester,Pantalon de survêtement sportif pour un look décontracté.,66,1.45,Sportswear,Fête du Travail,10
+65e723db2b05f3456f8e3ab6,207,Veste en velours - Vintage,3.25,L,Marron,Velours,Veste en velours vintage pour une touche rétro.,45,3.72,Veste,Back to School,15
+65e723db2b05f3456f8e3ab7,208,Parka imperméable - Chaud,36.38,M,Noir,Nylon,Parka imperméable pour rester au chaud par temps humide.,34,0.68,Manteau,Rentrée Scolaire,50
+65e723db2b05f3456f8e3ab8,209,Robe midi - Élégant,92.03,S,Noir,Polyester,Robe midi élégante pour un look tendance.,57,1.63,Robe,Saint-Valentin,15
+65e723db2b05f3456f8e3ab9,210,Pantalon taille haute - Vintage,17.38,XL,Vert forêt,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,17,3.75,Pantalon,Spécial Étudiants,10
+65e723db2b05f3456f8e3aba,211,Veste en jean - Vintage,11.58,L,Vert,Denim,Veste en jean vintage pour un look rétro.,16,1.26,Denim,Promo Flash,30
+65e723db2b05f3456f8e3abb,212,Legging de sport - Sportif,36.31,XL,Rose,Spandex,Legging de sport pour un look dynamique.,94,1.28,Sportswear,Semaine du Client,20
+65e723db2b05f3456f8e3abc,213,T-shirt à manches longues - Décontracté,3.18,XXL,Blanc,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,38,0.84,T-shirt,Spécial Anniversaire,10
+65e723db2b05f3456f8e3abd,214,Pyjama en flanelle - Confortable,26.62,XL,Violet clair,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,100,1.75,Pyjama,Spécial Anniversaire,10
+65e723db2b05f3456f8e3abe,215,T-shirt basique - Décontracté,94.43,XXS,Jaune,Coton,T-shirt décontracté en coton pour un look confortable.,66,1.95,T-shirt,Vacances d'été,25
+65e723db2b05f3456f8e3abf,216,Jupe plissée - Chic,87.25,M,Blanc,Polyester,Jupe plissée chic pour un look féminin.,53,1.23,Jupe,Saint-Valentin,15
+65e723db2b05f3456f8e3ac0,217,Sweat à capuche oversize - Oversize,56.68,XXL,Vert kaki,Coton,Sweat à capuche oversize pour un confort maximal.,44,4.15,Pull,Cyber Monday,25
+65e723db2b05f3456f8e3ac1,218,Legging de sport - Sportif,66.5,M,Bleu marine,Spandex,Legging de sport pour un look dynamique.,40,1.07,Sportswear,Rentrée Scolaire,50
+65e723db2b05f3456f8e3ac2,219,Ensemble de jogging - Sportif,70.59,M,Gris,Polyester,Ensemble de jogging sportif pour un style décontracté.,36,3.42,Sportswear,Saint-Valentin,15
+65e723db2b05f3456f8e3ac3,220,Chemise oversize - Oversize,45.28,L,Gris chiné,Coton,Chemise oversize pour un style décontracté.,61,1.4,Chemise,Solde de noël,40
+65e723db2b05f3456f8e3ac4,221,Robe longue fluide - Bohème,52.57,S,Rose saumon,Viscose,Robe longue fluide pour un style bohème décontracté.,73,2.65,Robe,Nouvel An,18
+65e723db2b05f3456f8e3ac5,222,Chemise élégante - Classe,5.33,S,Noir,Coton,Chemise élégante en coton pour un style raffiné.,56,3.82,Chemise,Nouvel An,18
+65e723db2b05f3456f8e3ac6,223,Chemise élégante - Classe,97.05,L,Blanc,Coton,Chemise élégante en coton pour un style raffiné.,43,2.32,Chemise,Rentrée Scolaire,50
+65e723db2b05f3456f8e3ac7,224,Pull en tricot oversize - Oversize,23.12,L,Bleu ciel,Acrylique,Pull en tricot oversize pour un confort maximal.,62,1.14,Pull,Saint-Valentin,15
+65e723db2b05f3456f8e3ac8,225,Blazer ajusté - Chic,61.38,L,Bordeaux,Polyester,Blazer ajusté chic pour un look professionnel.,97,2.56,Blazer,Spécial Anniversaire,10
+65e723db2b05f3456f8e3ac9,226,Blouse en soie - Classe,65.16,L,Imprimé floral,Soie,Blouse en soie pour un look classe et féminin.,94,0.57,Chemisier,Promo d'Automne,15
+65e723db2b05f3456f8e3aca,227,Jupe crayon - Chic,25.03,M,Bleu marine,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,22,0.7,Jupe,Spécial Étudiants,10
+65e723db2b05f3456f8e3acb,228,Ensemble de jogging - Sportif,11.77,XL,Gris,Polyester,Ensemble de jogging sportif pour un style décontracté.,88,0.53,Sportswear,Semaine du Client,20
+65e723db2b05f3456f8e3acc,229,Pantalon taille haute - Vintage,92.65,M,Bleu marine,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,97,1.05,Pantalon,Vacances d'été,25
+65e723db2b05f3456f8e3acd,230,Tunique brodée - Bohème,36.93,M,Vert sauge,Coton,Tunique brodée bohème pour un style décontracté.,90,2.32,Tunique,Solde d'été,40
+65e723db2b05f3456f8e3ace,231,Manteau en laine - Chaud,57.92,XL,Noir,Laine,Manteau en laine pour rester au chaud avec style.,48,4.08,Manteau,Solde d'été,40
+65e723db2b05f3456f8e3acf,232,Pyjama en jersey - Confortable,80.3,L,Gris chiné,Jersey,Pyjama en jersey pour une nuit confortable.,94,2.37,Pyjama,Cadeau Gratuit,5
+65e723db2b05f3456f8e3ad0,233,Pyjama en flanelle - Confortable,45.63,L,Violet clair,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,29,2.81,Pyjama,Saint-Patrick,20
+65e723db2b05f3456f8e3ad1,234,Pantalon taille haute - Vintage,98.38,M,Jaune moutarde,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,92,0.79,Pantalon,Fête du Travail,10
+65e723db2b05f3456f8e3ad2,235,Robe cocktail - Élégant,78.03,XS,Bleu nuit,Polyester,Robe cocktail élégante pour les occasions spéciales.,14,4.37,Robe,Solde d'hiver,35
+65e723db2b05f3456f8e3ad3,236,Veste en velours - Vintage,35.85,L,Marron,Velours,Veste en velours vintage pour une touche rétro.,26,3.23,Veste,Promo Flash,30
+65e723db2b05f3456f8e3ad4,237,Pantalon taille haute - Vintage,75.16,XL,Carreaux rétro,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,38,4.05,Pantalon,Spécial Étudiants,10
+65e723db2b05f3456f8e3ad5,238,Jupe plissée - Chic,9.74,S,Noir,Polyester,Jupe plissée chic pour un look féminin.,2,0.96,Jupe,Cyber Monday,25
+65e723db2b05f3456f8e3ad6,239,Robe cocktail - Élégant,36.8,S,Argenté,Polyester,Robe cocktail élégante pour les occasions spéciales.,50,3.71,Robe,Promo Flash,30
+65e723db2b05f3456f8e3ad7,240,Blouse en soie - Classe,41.22,L,Imprimé floral,Soie,Blouse en soie pour un look classe et féminin.,65,3.03,Chemisier,Spécial Anniversaire,10
+65e723db2b05f3456f8e3ad8,241,Pull en tricot oversize - Oversize,23,S,Gris clair,Acrylique,Pull en tricot oversize pour un confort maximal.,59,3.3,Pull,Saint-Patrick,20
+65e723db2b05f3456f8e3ad9,242,Legging de sport - Sportif,39.88,L,Bleu marine,Spandex,Legging de sport pour un look dynamique.,35,3.32,Sportswear,Solde de noël,40
+65e723db2b05f3456f8e3ada,243,Pantalon taille haute - Vintage,42.93,XL,Marron,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,83,3.4,Pantalon,Solde de noël,40
+65e723db2b05f3456f8e3adb,244,Ensemble de jogging - Sportif,25.41,M,Rouge,Polyester,Ensemble de jogging sportif pour un style décontracté.,15,1.99,Sportswear,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3adc,245,Pull en tricot oversize - Oversize,17.04,L,Mauve,Acrylique,Pull en tricot oversize pour un confort maximal.,5,2.72,Pull,Rentrée Scolaire,50
+65e723db2b05f3456f8e3add,246,Pyjama en jersey - Confortable,4.97,XL,Rayures fines,Jersey,Pyjama en jersey pour une nuit confortable.,43,2.31,Pyjama,Nouvel An,18
+65e723db2b05f3456f8e3ade,247,Pyjama en jersey - Confortable,36.88,S,Bleu clair,Jersey,Pyjama en jersey pour une nuit confortable.,89,0.95,Pyjama,Printemps Fleuri,20
+65e723db2b05f3456f8e3adf,248,Veste en velours - Vintage,85.05,M,Marron,Velours,Veste en velours vintage pour une touche rétro.,28,1.76,Veste,Saint-Patrick,20
+65e723db2b05f3456f8e3ae0,249,Parka imperméable - Chaud,1.76,XL,Gris,Nylon,Parka imperméable pour rester au chaud par temps humide.,55,1.96,Manteau,Promo Flash,30
+65e723db2b05f3456f8e3ae1,250,Chemise oversize - Oversize,11.02,L,Gris chiné,Coton,Chemise oversize pour un style décontracté.,92,3.58,Chemise,Halloween,20
+65e723db2b05f3456f8e3ae2,251,Pantalon de survêtement - Sportif,58.07,XL,Bleu roi,Polyester,Pantalon de survêtement sportif pour un look décontracté.,77,0.61,Sportswear,Saint-Valentin,15
+65e723db2b05f3456f8e3ae3,252,Short de sport - Sportif,90.12,M,Blanc,Polyester,Short de sport pour un look dynamique.,22,0.67,Sportswear,Cadeau Gratuit,5
+65e723db2b05f3456f8e3ae4,253,Chemise élégante - Classe,6.13,S,Rose pâle,Coton,Chemise élégante en coton pour un style raffiné.,30,4.01,Chemise,Back to School,15
+65e723db2b05f3456f8e3ae5,254,Pyjama en jersey - Confortable,94.65,M,Vert menthe,Jersey,Pyjama en jersey pour une nuit confortable.,71,3.09,Pyjama,Fête des Mères,15
+65e723db2b05f3456f8e3ae6,255,Legging de sport - Sportif,64.86,XL,Gris,Spandex,Legging de sport pour un look dynamique.,99,4.22,Sportswear,Halloween,20
+65e723db2b05f3456f8e3ae7,256,Blouse en soie - Classe,33.74,M,Noir,Soie,Blouse en soie pour un look classe et féminin.,21,0.64,Chemisier,Nouvel An,18
+65e723db2b05f3456f8e3ae8,257,Chemisier à volants - Chic,32.1,M,Noir,Coton,Chemisier à volants chic pour une allure féminine.,3,2.7,Chemisier,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3ae9,258,Jupe plissée - Chic,0.43,L,Noir,Polyester,Jupe plissée chic pour un look féminin.,32,1.45,Jupe,Vacances d'été,25
+65e723db2b05f3456f8e3aea,259,Short en lin - Décontracté,81.82,M,Beige,Lin,Short décontracté en lin pour les journées ensoleillées.,1,1.01,Short,Nouvel An,18
+65e723db2b05f3456f8e3aeb,260,Tunique brodée - Bohème,79.12,M,Bleu ciel,Coton,Tunique brodée bohème pour un style décontracté.,11,2.39,Tunique,Cyber Monday,25
+65e723db2b05f3456f8e3aec,261,Chemisier à volants - Chic,28.98,M,Imprimé floral,Coton,Chemisier à volants chic pour une allure féminine.,90,2.24,Chemisier,Semaine du Client,20
+65e723db2b05f3456f8e3aed,262,Sweat à capuche oversize - Oversize,97.35,L,Gris chiné,Coton,Sweat à capuche oversize pour un confort maximal.,24,1.69,Pull,Saint-Patrick,20
+65e723db2b05f3456f8e3aee,263,Chemisier à volants - Chic,23.94,S,Blanc,Coton,Chemisier à volants chic pour une allure féminine.,65,3.5,Chemisier,Semaine du Client,20
+65e723db2b05f3456f8e3aef,264,Jupe crayon - Chic,45.32,M,Blanc,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,52,3.05,Jupe,Promo Flash,30
+65e723db2b05f3456f8e3af0,265,Jupe plissée - Chic,28.71,L,Rose poudré,Polyester,Jupe plissée chic pour un look féminin.,13,4.11,Jupe,Cyber Monday,25
+65e723db2b05f3456f8e3af1,266,Manteau en laine - Chaud,2.15,XXL,Rouge,Laine,Manteau en laine pour rester au chaud avec style.,82,1.61,Manteau,Spécial Anniversaire,10
+65e723db2b05f3456f8e3af2,267,Chemisier à volants - Chic,30.82,M,Noir,Coton,Chemisier à volants chic pour une allure féminine.,79,1.76,Chemisier,Saint-Patrick,20
+65e723db2b05f3456f8e3af3,268,Robe midi - Élégant,66.6,L,Bleu marine,Polyester,Robe midi élégante pour un look tendance.,8,4.4,Robe,Back to School,15
+65e723db2b05f3456f8e3af4,269,Ensemble de jogging - Sportif,42.67,XL,Rouge,Polyester,Ensemble de jogging sportif pour un style décontracté.,81,2.71,Sportswear,Solde de noël,40
+65e723db2b05f3456f8e3af5,270,Pyjama en jersey - Confortable,80.75,S,Gris chiné,Jersey,Pyjama en jersey pour une nuit confortable.,71,0.68,Pyjama,Nouvel An,18
+65e723db2b05f3456f8e3af6,271,Manteau en laine - Chaud,77.55,XXL,Rouge,Laine,Manteau en laine pour rester au chaud avec style.,41,1.63,Manteau,Spécial Étudiants,10
+65e723db2b05f3456f8e3af7,272,T-shirt basique - Décontracté,21.72,XS,Jaune,Coton,T-shirt décontracté en coton pour un look confortable.,73,3.67,T-shirt,Solde d'hiver,35
+65e723db2b05f3456f8e3af8,273,Manteau en laine - Chaud,89.72,L,Bleu marine,Laine,Manteau en laine pour rester au chaud avec style.,27,1.91,Manteau,Halloween,20
+65e723db2b05f3456f8e3af9,274,Sweat à capuche oversize - Oversize,8.11,XXL,Bleu marine,Coton,Sweat à capuche oversize pour un confort maximal.,63,3.64,Pull,Cyber Monday,25
+65e723db2b05f3456f8e3afa,275,T-shirt à manches longues - Décontracté,64.61,XXL,Gris,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,30,3.16,T-shirt,Spécial Étudiants,10
+65e723db2b05f3456f8e3afb,276,Jupe plissée - Chic,38.63,S,Noir,Polyester,Jupe plissée chic pour un look féminin.,3,2.9,Jupe,Black Friday,30
+65e723db2b05f3456f8e3afc,277,Chemisier à col lavallière - Classe,73.74,S,Blanc,Soie,Chemisier à col lavallière classe pour un look féminin.,22,0.9,Chemisier,Saint-Patrick,20
+65e723db2b05f3456f8e3afd,278,Robe longue fluide - Bohème,87.88,M,Vert olive,Viscose,Robe longue fluide pour un style bohème décontracté.,0,0.77,Robe,Promo d'Automne,15
+65e723db2b05f3456f8e3afe,279,Chemise élégante - Classe,91.18,M,Rose pâle,Coton,Chemise élégante en coton pour un style raffiné.,93,1.91,Chemise,Fête du Travail,10
+65e723db2b05f3456f8e3aff,280,Manteau en laine - Chaud,10.47,XXL,Bleu marine,Laine,Manteau en laine pour rester au chaud avec style.,27,0.6,Manteau,Fête du Travail,10
+65e723db2b05f3456f8e3b00,281,Tunique brodée - Bohème,72.25,S,Rose poudré,Coton,Tunique brodée bohème pour un style décontracté.,26,2.3,Tunique,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b01,282,T-shirt à manches longues - Décontracté,69.08,XXL,Bleu marine,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,28,0.83,T-shirt,Halloween,20
+65e723db2b05f3456f8e3b02,283,Blazer ajusté - Chic,11.81,S,Noir,Polyester,Blazer ajusté chic pour un look professionnel.,37,2.53,Blazer,Promo d'Automne,15
+65e723db2b05f3456f8e3b03,284,Blouse en soie - Classe,92.56,L,Rouge,Soie,Blouse en soie pour un look classe et féminin.,81,3.07,Chemisier,Cyber Monday,25
+65e723db2b05f3456f8e3b04,285,Sweat à capuche oversize - Oversize,0.63,M,Rose pâle,Coton,Sweat à capuche oversize pour un confort maximal.,97,0.83,Pull,Printemps Fleuri,20
+65e723db2b05f3456f8e3b05,286,Robe midi - Élégant,51.76,M,Blanc,Polyester,Robe midi élégante pour un look tendance.,49,2.61,Robe,Spécial Étudiants,10
+65e723db2b05f3456f8e3b06,287,Short de sport - Sportif,21.87,M,Bleu roi,Polyester,Short de sport pour un look dynamique.,67,1.88,Sportswear,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b07,288,Manteau en laine - Chaud,83.05,XXL,Rouge,Laine,Manteau en laine pour rester au chaud avec style.,96,3.15,Manteau,Cadeau Gratuit,5
+65e723db2b05f3456f8e3b08,289,Sweat à capuche oversize - Oversize,5.56,L,Gris chiné,Coton,Sweat à capuche oversize pour un confort maximal.,67,1.75,Pull,Saint-Patrick,20
+65e723db2b05f3456f8e3b09,290,Pyjama en jersey - Confortable,42.98,L,Bleu clair,Jersey,Pyjama en jersey pour une nuit confortable.,26,1.98,Pyjama,Black Friday,30
+65e723db2b05f3456f8e3b0a,291,Veste en velours - Vintage,43.71,XXL,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,44,1.53,Veste,Promo Flash,30
+65e723db2b05f3456f8e3b0b,292,Pyjama en jersey - Confortable,75.17,S,Rayures fines,Jersey,Pyjama en jersey pour une nuit confortable.,67,0.67,Pyjama,Saint-Valentin,15
+65e723db2b05f3456f8e3b0c,293,Veste en velours - Vintage,27.59,M,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,82,2.63,Veste,Cyber Monday,25
+65e723db2b05f3456f8e3b0d,294,Costume deux pièces - Élégant,15.7,M,Bordeaux,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,62,4.35,Costume,Spécial Étudiants,10
+65e723db2b05f3456f8e3b0e,295,Costume deux pièces - Élégant,55.39,XXL,Marron,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,77,4,Costume,Vacances d'été,25
+65e723db2b05f3456f8e3b0f,296,Robe longue fluide - Bohème,55.58,M,Rose saumon,Viscose,Robe longue fluide pour un style bohème décontracté.,88,0.91,Robe,Black Friday,30
+65e723db2b05f3456f8e3b10,297,Veste en velours - Vintage,34.39,XXL,Bordeaux,Velours,Veste en velours vintage pour une touche rétro.,83,2.71,Veste,Saint-Valentin,15
+65e723db2b05f3456f8e3b11,298,Robe midi - Élégant,77.14,XS,Noir,Polyester,Robe midi élégante pour un look tendance.,88,4.46,Robe,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b12,299,Chemisier à volants - Chic,12.84,S,Noir,Coton,Chemisier à volants chic pour une allure féminine.,33,0.96,Chemisier,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b13,300,Veste en jean - Vintage,53.11,XL,Vert,Denim,Veste en jean vintage pour un look rétro.,63,1.01,Denim,Vacances d'été,25
+65e723db2b05f3456f8e3b14,301,Pantalon taille haute - Vintage,15.35,M,Vert forêt,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,43,3.44,Pantalon,Promo Flash,30
+65e723db2b05f3456f8e3b15,302,Chemisier à col lavallière - Classe,4.48,S,Bleu ciel,Soie,Chemisier à col lavallière classe pour un look féminin.,22,2.8,Chemisier,Cyber Monday,25
+65e723db2b05f3456f8e3b16,303,Chemise élégante - Classe,91.09,L,Rayures fines,Coton,Chemise élégante en coton pour un style raffiné.,56,3.1,Chemise,Nouvel An,18
+65e723db2b05f3456f8e3b17,304,Pantalon de survêtement - Sportif,79.75,XL,Bleu roi,Polyester,Pantalon de survêtement sportif pour un look décontracté.,80,4.31,Sportswear,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b18,305,T-shirt basique - Décontracté,40.62,XXS,Jaune,Coton,T-shirt décontracté en coton pour un look confortable.,40,1.01,T-shirt,Promo d'Automne,15
+65e723db2b05f3456f8e3b19,306,Parka imperméable - Chaud,61.41,XXL,Noir,Nylon,Parka imperméable pour rester au chaud par temps humide.,46,1.5,Manteau,Cyber Monday,25
+65e723db2b05f3456f8e3b1a,307,Chemisier à col lavallière - Classe,50.24,S,Imprimé floral,Soie,Chemisier à col lavallière classe pour un look féminin.,39,4.44,Chemisier,Solde de noël,40
+65e723db2b05f3456f8e3b1b,308,Short en jean - Décontracté,23.23,L,Bleu délavé,Denim,Short en jean décontracté pour un look estival.,60,1.76,Short,Halloween,20
+65e723db2b05f3456f8e3b1c,309,Pantalon de survêtement - Sportif,31.8,M,Noir,Polyester,Pantalon de survêtement sportif pour un look décontracté.,61,4.18,Sportswear,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b1d,310,Parka imperméable - Chaud,77.2,M,Vert foncé,Nylon,Parka imperméable pour rester au chaud par temps humide.,43,2.95,Manteau,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b1e,311,Blazer ajusté - Chic,79.98,M,Noir,Polyester,Blazer ajusté chic pour un look professionnel.,21,3.09,Blazer,Saint-Patrick,20
+65e723db2b05f3456f8e3b1f,312,Blazer ajusté - Chic,13.27,L,Blanc,Polyester,Blazer ajusté chic pour un look professionnel.,64,3.73,Blazer,Solde d'été,40
+65e723db2b05f3456f8e3b20,313,Manteau en laine - Chaud,25.1,L,Noir,Laine,Manteau en laine pour rester au chaud avec style.,92,4.33,Manteau,Spécial Étudiants,10
+65e723db2b05f3456f8e3b21,314,Sweat à capuche oversize - Oversize,1.11,XXL,Rose pâle,Coton,Sweat à capuche oversize pour un confort maximal.,68,0.87,Pull,Promo Flash,30
+65e723db2b05f3456f8e3b22,315,Parka imperméable - Chaud,85.33,M,Noir,Nylon,Parka imperméable pour rester au chaud par temps humide.,67,4.13,Manteau,Back to School,15
+65e723db2b05f3456f8e3b23,316,Pyjama en jersey - Confortable,99.75,S,Gris chiné,Jersey,Pyjama en jersey pour une nuit confortable.,54,3.8,Pyjama,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b24,317,Legging de sport - Sportif,49.42,L,Noir,Spandex,Legging de sport pour un look dynamique.,70,3.54,Sportswear,Black Friday,30
+65e723db2b05f3456f8e3b25,318,Pantalon taille haute - Vintage,56.73,XXL,Carreaux rétro,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,21,0.95,Pantalon,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b26,319,Legging de sport - Sportif,11.87,S,Imprimé camouflage,Spandex,Legging de sport pour un look dynamique.,51,2.94,Sportswear,Cyber Monday,25
+65e723db2b05f3456f8e3b27,320,T-shirt basique - Décontracté,79.34,L,Blanc,Coton,T-shirt décontracté en coton pour un look confortable.,40,1.96,T-shirt,Black Friday,30
+65e723db2b05f3456f8e3b28,321,T-shirt à manches longues - Décontracté,11.42,XL,Blanc,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,31,3.86,T-shirt,Saint-Patrick,20
+65e723db2b05f3456f8e3b29,322,Veste en velours - Vintage,44.93,XXL,Marron,Velours,Veste en velours vintage pour une touche rétro.,21,1.7,Veste,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b2a,323,Short de sport - Sportif,43.63,L,Gris,Polyester,Short de sport pour un look dynamique.,6,0.75,Sportswear,Promo d'Automne,15
+65e723db2b05f3456f8e3b2b,324,Chemise oversize - Oversize,40.49,L,Rose pâle,Coton,Chemise oversize pour un style décontracté.,86,3.08,Chemise,Solde d'hiver,35
+65e723db2b05f3456f8e3b2c,325,Blouse en soie - Classe,20.02,S,Rouge,Soie,Blouse en soie pour un look classe et féminin.,17,3.34,Chemisier,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b2d,326,Jupe crayon - Chic,94.61,M,Gris,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,49,0.91,Jupe,Fête du Travail,10
+65e723db2b05f3456f8e3b2e,327,Jupe plissée - Chic,93.73,L,Blanc,Polyester,Jupe plissée chic pour un look féminin.,67,2.65,Jupe,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b2f,328,Pyjama en jersey - Confortable,78.41,XL,Rayures fines,Jersey,Pyjama en jersey pour une nuit confortable.,16,1.56,Pyjama,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b30,329,Pyjama en jersey - Confortable,63.51,L,Vert menthe,Jersey,Pyjama en jersey pour une nuit confortable.,55,4.34,Pyjama,Saint-Patrick,20
+65e723db2b05f3456f8e3b31,330,Blouse en soie - Classe,32.7,L,Blanc,Soie,Blouse en soie pour un look classe et féminin.,24,1.69,Chemisier,Cyber Monday,25
+65e723db2b05f3456f8e3b32,331,Pantalon taille haute - Vintage,62.08,M,Vert forêt,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,91,3.41,Pantalon,Back to School,15
+65e723db2b05f3456f8e3b33,332,Sweat à capuche oversize - Oversize,75.25,L,Bleu marine,Coton,Sweat à capuche oversize pour un confort maximal.,98,3.37,Pull,Nouvel An,18
+65e723db2b05f3456f8e3b34,333,Veste en jean - Vintage,68.19,M,Marron,Denim,Veste en jean vintage pour un look rétro.,92,2.84,Denim,Saint-Patrick,20
+65e723db2b05f3456f8e3b35,334,Robe cocktail - Élégant,91.26,XS,Noir,Polyester,Robe cocktail élégante pour les occasions spéciales.,32,1.93,Robe,Semaine du Client,20
+65e723db2b05f3456f8e3b36,335,Veste en velours - Vintage,47.95,XXL,Bordeaux,Velours,Veste en velours vintage pour une touche rétro.,2,4.2,Veste,Solde d'hiver,35
+65e723db2b05f3456f8e3b37,336,Chemisier à col lavallière - Classe,78.51,M,Noir,Soie,Chemisier à col lavallière classe pour un look féminin.,93,4.01,Chemisier,Halloween,20
+65e723db2b05f3456f8e3b38,337,Parka imperméable - Chaud,28.36,L,Gris,Nylon,Parka imperméable pour rester au chaud par temps humide.,1,4.26,Manteau,Cyber Monday,25
+65e723db2b05f3456f8e3b39,338,Pantalon taille haute - Vintage,95.05,XXL,Bleu marine,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,62,1.56,Pantalon,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b3a,339,Legging de sport - Sportif,53.96,XL,Imprimé camouflage,Spandex,Legging de sport pour un look dynamique.,66,0.75,Sportswear,Semaine du Client,20
+65e723db2b05f3456f8e3b3b,340,Robe cocktail - Élégant,20.58,XL,Noir,Polyester,Robe cocktail élégante pour les occasions spéciales.,47,1.59,Robe,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b3c,341,Pantalon de survêtement - Sportif,95,XXL,Vert kaki,Polyester,Pantalon de survêtement sportif pour un look décontracté.,69,3.37,Sportswear,Nouvel An,18
+65e723db2b05f3456f8e3b3d,342,Veste en velours - Vintage,83.53,M,Bleu nuit,Velours,Veste en velours vintage pour une touche rétro.,26,1.72,Veste,Back to School,15
+65e723db2b05f3456f8e3b3e,343,Chemisier à col lavallière - Classe,83.09,S,Bleu ciel,Soie,Chemisier à col lavallière classe pour un look féminin.,84,0.55,Chemisier,Printemps Fleuri,20
+65e723db2b05f3456f8e3b3f,344,Chemise oversize - Oversize,84.88,S,Bleu clair,Coton,Chemise oversize pour un style décontracté.,56,1,Chemise,Solde d'été,40
+65e723db2b05f3456f8e3b40,345,Pantalon taille haute - Vintage,75.15,L,Carreaux rétro,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,16,2.34,Pantalon,Vacances d'été,25
+65e723db2b05f3456f8e3b41,346,Tunique brodée - Bohème,60.81,M,Ivoire,Coton,Tunique brodée bohème pour un style décontracté.,4,1.59,Tunique,Semaine du Client,20
+65e723db2b05f3456f8e3b42,347,Pull en tricot oversize - Oversize,3.72,XXL,Beige,Acrylique,Pull en tricot oversize pour un confort maximal.,20,2.5,Pull,Saint-Patrick,20
+65e723db2b05f3456f8e3b43,348,Chemise oversize - Oversize,92.79,XL,Rose pâle,Coton,Chemise oversize pour un style décontracté.,94,1.69,Chemise,Promo d'Automne,15
+65e723db2b05f3456f8e3b44,349,Ensemble de jogging - Sportif,8.26,L,Blanc,Polyester,Ensemble de jogging sportif pour un style décontracté.,56,3.33,Sportswear,Promo d'Automne,15
+65e723db2b05f3456f8e3b45,350,Pull en tricot oversize - Oversize,30.36,S,Gris clair,Acrylique,Pull en tricot oversize pour un confort maximal.,95,4.26,Pull,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b46,351,Pull en tricot oversize - Oversize,11.99,L,Gris clair,Acrylique,Pull en tricot oversize pour un confort maximal.,67,0.65,Pull,Halloween,20
+65e723db2b05f3456f8e3b47,352,Robe cocktail - Élégant,0.21,M,Noir,Polyester,Robe cocktail élégante pour les occasions spéciales.,54,0.88,Robe,Saint-Valentin,15
+65e723db2b05f3456f8e3b48,353,Pantalon de survêtement - Sportif,4.6,L,Rouge,Polyester,Pantalon de survêtement sportif pour un look décontracté.,59,1.87,Sportswear,Solde de noël,40
+65e723db2b05f3456f8e3b49,354,Short en jean - Décontracté,89.71,L,Vert,Denim,Short en jean décontracté pour un look estival.,46,2.02,Short,Back to School,15
+65e723db2b05f3456f8e3b4a,355,T-shirt basique - Décontracté,67.52,XXL,Gris,Coton,T-shirt décontracté en coton pour un look confortable.,9,1.98,T-shirt,Printemps Fleuri,20
+65e723db2b05f3456f8e3b4b,356,Chemisier à col lavallière - Classe,0.73,M,Rose poudré,Soie,Chemisier à col lavallière classe pour un look féminin.,57,3.66,Chemisier,Solde d'hiver,35
+65e723db2b05f3456f8e3b4c,357,Veste en velours - Vintage,13.32,M,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,77,2.47,Veste,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b4d,358,Pyjama en flanelle - Confortable,60.16,M,Rose pâle,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,36,4.46,Pyjama,Nouvel An,18
+65e723db2b05f3456f8e3b4e,359,Parka imperméable - Chaud,65.17,L,Noir,Nylon,Parka imperméable pour rester au chaud par temps humide.,22,0.95,Manteau,Vacances d'été,25
+65e723db2b05f3456f8e3b4f,360,Pull en tricot oversize - Oversize,75.83,L,Mauve,Acrylique,Pull en tricot oversize pour un confort maximal.,77,1.28,Pull,Promo d'Automne,15
+65e723db2b05f3456f8e3b50,361,Blazer ajusté - Chic,99.08,XL,Bordeaux,Polyester,Blazer ajusté chic pour un look professionnel.,92,4.1,Blazer,Black Friday,30
+65e723db2b05f3456f8e3b51,362,Chemise élégante - Classe,62.9,XL,Noir,Coton,Chemise élégante en coton pour un style raffiné.,48,3.59,Chemise,Solde d'été,40
+65e723db2b05f3456f8e3b52,363,T-shirt basique - Décontracté,97.28,XXL,Gris,Coton,T-shirt décontracté en coton pour un look confortable.,24,2.93,T-shirt,Spécial Étudiants,10
+65e723db2b05f3456f8e3b53,364,T-shirt basique - Décontracté,62.87,S,Blanc,Coton,T-shirt décontracté en coton pour un look confortable.,39,1.75,T-shirt,Nouvel An,18
+65e723db2b05f3456f8e3b54,365,Short en jean - Décontracté,4.02,M,Jaune,Denim,Short en jean décontracté pour un look estival.,46,2.44,Short,Semaine du Client,20
+65e723db2b05f3456f8e3b55,366,Legging de sport - Sportif,25.4,L,Rouge,Spandex,Legging de sport pour un look dynamique.,96,1.4,Sportswear,Fête du Travail,10
+65e723db2b05f3456f8e3b56,367,Short en lin - Décontracté,60.97,S,Beige,Lin,Short décontracté en lin pour les journées ensoleillées.,56,2.05,Short,Semaine du Client,20
+65e723db2b05f3456f8e3b57,368,Pyjama en flanelle - Confortable,8.62,S,Bleu ciel,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,27,0.69,Pyjama,Back to School,15
+65e723db2b05f3456f8e3b58,369,Robe cocktail - Élégant,25.6,XS,Argenté,Polyester,Robe cocktail élégante pour les occasions spéciales.,1,4.21,Robe,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b59,370,Short en lin - Décontracté,49.2,S,Kaki,Lin,Short décontracté en lin pour les journées ensoleillées.,52,0.66,Short,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b5a,371,Robe de soirée - Élégant,40.24,M,Or,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,34,3.2,Robe,Solde de noël,40
+65e723db2b05f3456f8e3b5b,372,Veste en velours - Vintage,20.43,L,Vert forêt,Velours,Veste en velours vintage pour une touche rétro.,88,0.5,Veste,Promo Flash,30
+65e723db2b05f3456f8e3b5c,373,Pull en tricot oversize - Oversize,65.84,XL,Mauve,Acrylique,Pull en tricot oversize pour un confort maximal.,60,4.03,Pull,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b5d,374,Chemisier à col lavallière - Classe,26.26,L,Blanc,Soie,Chemisier à col lavallière classe pour un look féminin.,68,0.82,Chemisier,Back to School,15
+65e723db2b05f3456f8e3b5e,375,Ensemble de jogging - Sportif,64.8,M,Rouge,Polyester,Ensemble de jogging sportif pour un style décontracté.,73,4.44,Sportswear,Fête du Travail,10
+65e723db2b05f3456f8e3b5f,376,Pantalon taille haute - Vintage,99.06,XL,Bleu marine,Velours côtelé,Pantalon taille haute vintage pour une touche rétro.,88,1.8,Pantalon,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b60,377,Costume deux pièces - Élégant,79.91,XXL,Gris anthracite,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,25,0.85,Costume,Printemps Fleuri,20
+65e723db2b05f3456f8e3b61,378,Robe midi - Élégant,22.8,XS,Noir,Polyester,Robe midi élégante pour un look tendance.,68,3.34,Robe,Promo d'Automne,15
+65e723db2b05f3456f8e3b62,379,Pyjama en flanelle - Confortable,18.76,L,Vert pastel,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,11,4.46,Pyjama,Halloween,20
+65e723db2b05f3456f8e3b63,380,Chemise oversize - Oversize,49.9,L,Gris chiné,Coton,Chemise oversize pour un style décontracté.,14,2.48,Chemise,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b64,381,Robe de soirée - Élégant,80.89,XL,Noir,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,0,4.17,Robe,Solde d'hiver,35
+65e723db2b05f3456f8e3b65,382,Veste en velours - Vintage,1.06,L,Bordeaux,Velours,Veste en velours vintage pour une touche rétro.,47,3.02,Veste,Semaine du Client,20
+65e723db2b05f3456f8e3b66,383,Manteau en laine - Chaud,85.13,XL,Bleu marine,Laine,Manteau en laine pour rester au chaud avec style.,63,2.25,Manteau,Printemps Fleuri,20
+65e723db2b05f3456f8e3b67,384,Chemisier à volants - Chic,80.23,S,Bleu ciel,Coton,Chemisier à volants chic pour une allure féminine.,67,4.34,Chemisier,Black Friday,30
+65e723db2b05f3456f8e3b68,385,Costume deux pièces - Élégant,21.89,XL,Bordeaux,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,13,2.94,Costume,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b69,386,T-shirt basique - Décontracté,23.21,XXXL,Vert,Coton,T-shirt décontracté en coton pour un look confortable.,75,3.13,T-shirt,Fête des Mères,15
+65e723db2b05f3456f8e3b6a,387,Blouse en soie - Classe,22.22,S,Noir,Soie,Blouse en soie pour un look classe et féminin.,10,3.17,Chemisier,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b6b,388,Pantalon de survêtement - Sportif,11.41,XXL,Gris,Polyester,Pantalon de survêtement sportif pour un look décontracté.,30,3.18,Sportswear,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b6c,389,Chemise oversize - Oversize,84.2,XL,Bleu clair,Coton,Chemise oversize pour un style décontracté.,98,3.31,Chemise,Promo d'Automne,15
+65e723db2b05f3456f8e3b6d,390,Short de sport - Sportif,5.32,S,Blanc,Polyester,Short de sport pour un look dynamique.,50,2.34,Sportswear,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b6e,391,Jupe crayon - Chic,70.86,L,Blanc,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,0,1.5,Jupe,Vacances d'été,25
+65e723db2b05f3456f8e3b6f,392,Pyjama en flanelle - Confortable,26.78,M,Bleu ciel,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,30,4.39,Pyjama,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b70,393,Jupe plissée - Chic,10.05,S,Noir,Polyester,Jupe plissée chic pour un look féminin.,99,2.76,Jupe,Semaine du Client,20
+65e723db2b05f3456f8e3b71,394,Robe midi - Élégant,72.01,L,Imprimé géométrique,Polyester,Robe midi élégante pour un look tendance.,42,2.11,Robe,Cadeau Gratuit,5
+65e723db2b05f3456f8e3b72,395,Blazer ajusté - Chic,4.55,L,Bordeaux,Polyester,Blazer ajusté chic pour un look professionnel.,48,1.19,Blazer,Spécial Étudiants,10
+65e723db2b05f3456f8e3b73,396,Manteau en laine - Chaud,96.54,M,Gris,Laine,Manteau en laine pour rester au chaud avec style.,12,1.26,Manteau,Vacances d'été,25
+65e723db2b05f3456f8e3b74,397,Blouse en soie - Classe,14.8,L,Rouge,Soie,Blouse en soie pour un look classe et féminin.,64,1.41,Chemisier,Vacances d'été,25
+65e723db2b05f3456f8e3b75,398,Chemisier à volants - Chic,68.55,S,Imprimé floral,Coton,Chemisier à volants chic pour une allure féminine.,59,4.03,Chemisier,Back to School,15
+65e723db2b05f3456f8e3b76,399,Pyjama en flanelle - Confortable,36.2,XL,Vert pastel,Flanelle,Pyjama en flanelle pour une nuit de sommeil confortable.,1,3.08,Pyjama,Spécial Étudiants,10
+65e723db2b05f3456f8e3b77,400,Robe longue fluide - Bohème,68.24,L,Jaune moutarde,Viscose,Robe longue fluide pour un style bohème décontracté.,61,1.69,Robe,Promo Flash,30
+65e723db2b05f3456f8e3b78,401,Chemise oversize - Oversize,10.41,XL,Rose pâle,Coton,Chemise oversize pour un style décontracté.,6,1.18,Chemise,Fête des Mères,15
+65e723db2b05f3456f8e3b79,402,Chemise élégante - Classe,88.35,S,Rose pâle,Coton,Chemise élégante en coton pour un style raffiné.,77,2.38,Chemise,Cyber Monday,25
+65e723db2b05f3456f8e3b7a,403,Pull en tricot oversize - Oversize,51.48,M,Mauve,Acrylique,Pull en tricot oversize pour un confort maximal.,55,3.69,Pull,Spécial Étudiants,10
+65e723db2b05f3456f8e3b7b,404,Robe longue fluide - Bohème,97.13,M,Violet,Viscose,Robe longue fluide pour un style bohème décontracté.,44,3.19,Robe,Nouvel An,18
+65e723db2b05f3456f8e3b7c,405,Robe de soirée - Élégant,37.45,XL,Noir,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,51,4.31,Robe,Nouvel An,18
+65e723db2b05f3456f8e3b7d,406,Chemisier à col lavallière - Classe,52.01,L,Rose poudré,Soie,Chemisier à col lavallière classe pour un look féminin.,0,2.12,Chemisier,Promo d'Automne,15
+65e723db2b05f3456f8e3b7e,407,Pull en tricot oversize - Oversize,74.93,L,Beige,Acrylique,Pull en tricot oversize pour un confort maximal.,91,0.5,Pull,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b7f,408,Pull en tricot oversize - Oversize,24.86,M,Gris clair,Acrylique,Pull en tricot oversize pour un confort maximal.,72,1.63,Pull,Halloween,20
+65e723db2b05f3456f8e3b80,409,Chemise oversize - Oversize,51.68,M,Gris chiné,Coton,Chemise oversize pour un style décontracté.,4,1.09,Chemise,Spécial Étudiants,10
+65e723db2b05f3456f8e3b81,410,Robe longue fluide - Bohème,78.5,M,Bleu ciel,Viscose,Robe longue fluide pour un style bohème décontracté.,31,3.04,Robe,Nouvel An,18
+65e723db2b05f3456f8e3b82,411,Chemise élégante - Classe,15.11,M,Rayures fines,Coton,Chemise élégante en coton pour un style raffiné.,44,2.16,Chemise,Solde d'hiver,35
+65e723db2b05f3456f8e3b83,412,Blouse en soie - Classe,93.65,L,Rouge,Soie,Blouse en soie pour un look classe et féminin.,2,3.61,Chemisier,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b84,413,Chemisier à col lavallière - Classe,67.98,S,Blanc,Soie,Chemisier à col lavallière classe pour un look féminin.,50,3.1,Chemisier,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b85,414,Chemisier à volants - Chic,64.3,S,Blanc,Coton,Chemisier à volants chic pour une allure féminine.,29,3.48,Chemisier,Solde d'hiver,35
+65e723db2b05f3456f8e3b86,415,Robe longue fluide - Bohème,6.19,S,Vert olive,Viscose,Robe longue fluide pour un style bohème décontracté.,27,0.71,Robe,Spécial Anniversaire,10
+65e723db2b05f3456f8e3b87,416,Robe de soirée - Élégant,11.99,XXL,Argent,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,11,1.21,Robe,Saint-Patrick,20
+65e723db2b05f3456f8e3b88,417,Robe midi - Élégant,10.59,S,Noir,Polyester,Robe midi élégante pour un look tendance.,64,3.69,Robe,Back to School,15
+65e723db2b05f3456f8e3b89,418,Pull en tricot oversize - Oversize,25.51,L,Bleu ciel,Acrylique,Pull en tricot oversize pour un confort maximal.,83,0.69,Pull,Black Friday,30
+65e723db2b05f3456f8e3b8a,419,Blouse en soie - Classe,80.94,S,Noir,Soie,Blouse en soie pour un look classe et féminin.,71,1.27,Chemisier,Vacances d'été,25
+65e723db2b05f3456f8e3b8b,420,Tunique brodée - Bohème,77.48,S,Ivoire,Coton,Tunique brodée bohème pour un style décontracté.,68,2.01,Tunique,Halloween,20
+65e723db2b05f3456f8e3b8c,421,Manteau en laine - Chaud,4.78,XL,Rouge,Laine,Manteau en laine pour rester au chaud avec style.,29,4.5,Manteau,Printemps Fleuri,20
+65e723db2b05f3456f8e3b8d,422,Blazer ajusté - Chic,44.19,XXL,Noir,Polyester,Blazer ajusté chic pour un look professionnel.,74,3.43,Blazer,Solde d'été,40
+65e723db2b05f3456f8e3b8e,423,Chemise oversize - Oversize,63.25,S,Gris chiné,Coton,Chemise oversize pour un style décontracté.,75,1.48,Chemise,Cadeau Gratuit,5
+65e723db2b05f3456f8e3b8f,424,Robe longue fluide - Bohème,23.48,L,Bleu ciel,Viscose,Robe longue fluide pour un style bohème décontracté.,100,3.6,Robe,Promo Flash,30
+65e723db2b05f3456f8e3b90,425,Short en lin - Décontracté,70.98,S,Kaki,Lin,Short décontracté en lin pour les journées ensoleillées.,33,3.79,Short,Solde de noël,40
+65e723db2b05f3456f8e3b91,426,Chemisier à col lavallière - Classe,30.17,L,Bleu ciel,Soie,Chemisier à col lavallière classe pour un look féminin.,11,2.93,Chemisier,Promo d'Automne,15
+65e723db2b05f3456f8e3b92,427,Chemise élégante - Classe,61.05,M,Rose pâle,Coton,Chemise élégante en coton pour un style raffiné.,25,0.91,Chemise,Halloween,20
+65e723db2b05f3456f8e3b93,428,T-shirt à manches longues - Décontracté,82.05,L,Blanc,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,19,3.91,T-shirt,Spécial Étudiants,10
+65e723db2b05f3456f8e3b94,429,Pull en tricot oversize - Oversize,51.23,S,Rose poudré,Acrylique,Pull en tricot oversize pour un confort maximal.,66,4.17,Pull,Nouvel An,18
+65e723db2b05f3456f8e3b95,430,Costume deux pièces - Élégant,71.23,XL,Bordeaux,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,8,3.76,Costume,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3b96,431,Chemise élégante - Classe,7.21,S,Rayures fines,Coton,Chemise élégante en coton pour un style raffiné.,1,2.97,Chemise,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b97,432,Jupe plissée - Chic,68.79,M,Blanc,Polyester,Jupe plissée chic pour un look féminin.,9,4.39,Jupe,Rentrée Scolaire,50
+65e723db2b05f3456f8e3b98,433,Robe cocktail - Élégant,15.69,S,Argenté,Polyester,Robe cocktail élégante pour les occasions spéciales.,35,1.25,Robe,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3b99,434,Short en lin - Décontracté,71.41,XL,Blanc,Lin,Short décontracté en lin pour les journées ensoleillées.,62,2.89,Short,Printemps Fleuri,20
+65e723db2b05f3456f8e3b9a,435,Robe de soirée - Élégant,30.3,S,Noir,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,62,3.18,Robe,Fête des Mères,15
+65e723db2b05f3456f8e3b9b,436,Jupe plissée - Chic,99.41,M,Rose poudré,Polyester,Jupe plissée chic pour un look féminin.,78,1.33,Jupe,Fête du Travail,10
+65e723db2b05f3456f8e3b9c,437,Jupe plissée - Chic,18.89,S,Vert émeraude,Polyester,Jupe plissée chic pour un look féminin.,19,4.31,Jupe,Fête des Mères,15
+65e723db2b05f3456f8e3b9d,438,Robe longue fluide - Bohème,73.6,M,Vert olive,Viscose,Robe longue fluide pour un style bohème décontracté.,35,3,Robe,Black Friday,30
+65e723db2b05f3456f8e3b9e,439,Costume deux pièces - Élégant,75.78,XL,Marron,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,8,1.6,Costume,Fête du Travail,10
+65e723db2b05f3456f8e3b9f,440,Veste en jean - Vintage,31.92,L,Noir,Denim,Veste en jean vintage pour un look rétro.,25,1.46,Denim,Saint-Patrick,20
+65e723db2b05f3456f8e3ba0,441,Robe longue fluide - Bohème,85.91,S,Bleu ciel,Viscose,Robe longue fluide pour un style bohème décontracté.,8,2.71,Robe,Black Friday,30
+65e723db2b05f3456f8e3ba1,442,Chemise oversize - Oversize,93.87,L,Bleu clair,Coton,Chemise oversize pour un style décontracté.,86,4.25,Chemise,Promo d'Automne,15
+65e723db2b05f3456f8e3ba2,443,Veste en velours - Vintage,34.51,M,Bordeaux,Velours,Veste en velours vintage pour une touche rétro.,77,2.61,Veste,Saint-Patrick,20
+65e723db2b05f3456f8e3ba3,444,Chemise élégante - Classe,92.97,L,Noir,Coton,Chemise élégante en coton pour un style raffiné.,90,1.06,Chemise,Saint-Patrick,20
+65e723db2b05f3456f8e3ba4,445,Robe de soirée - Élégant,59.62,S,Rouge,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,84,2.16,Robe,Spécial Anniversaire,10
+65e723db2b05f3456f8e3ba5,446,Veste en velours - Vintage,54.76,L,Bordeaux,Velours,Veste en velours vintage pour une touche rétro.,35,1.72,Veste,Rentrée Scolaire,50
+65e723db2b05f3456f8e3ba6,447,Robe longue fluide - Bohème,2.66,L,Rose saumon,Viscose,Robe longue fluide pour un style bohème décontracté.,36,2.64,Robe,Halloween,20
+65e723db2b05f3456f8e3ba7,448,Ensemble de jogging - Sportif,49.52,L,Blanc,Polyester,Ensemble de jogging sportif pour un style décontracté.,15,3.27,Sportswear,Black Friday,30
+65e723db2b05f3456f8e3ba8,449,Blazer ajusté - Chic,4.56,XXL,Gris anthracite,Polyester,Blazer ajusté chic pour un look professionnel.,30,0.83,Blazer,Semaine du Client,20
+65e723db2b05f3456f8e3ba9,450,Robe cocktail - Élégant,1.19,S,Bleu nuit,Polyester,Robe cocktail élégante pour les occasions spéciales.,91,1.7,Robe,Solde d'été,40
+65e723db2b05f3456f8e3baa,451,Chemise élégante - Classe,82.19,XL,Noir,Coton,Chemise élégante en coton pour un style raffiné.,17,4.3,Chemise,Cyber Monday,25
+65e723db2b05f3456f8e3bab,452,Robe de soirée - Élégant,89.9,XXL,Rouge,Soie,Robe de soirée élégante en soie pour une allure sophistiquée.,70,3.33,Robe,Fête du Travail,10
+65e723db2b05f3456f8e3bac,453,Blazer ajusté - Chic,5.8,L,Blanc,Polyester,Blazer ajusté chic pour un look professionnel.,29,1.56,Blazer,Spécial Anniversaire,10
+65e723db2b05f3456f8e3bad,454,Manteau en laine - Chaud,39.62,XL,Camel,Laine,Manteau en laine pour rester au chaud avec style.,38,2.09,Manteau,Fête du Travail,10
+65e723db2b05f3456f8e3bae,455,Blouse en soie - Classe,37.99,S,Rouge,Soie,Blouse en soie pour un look classe et féminin.,87,0.72,Chemisier,Black Friday,30
+65e723db2b05f3456f8e3baf,456,Short de sport - Sportif,82.85,M,Bleu roi,Polyester,Short de sport pour un look dynamique.,20,1.24,Sportswear,Halloween,20
+65e723db2b05f3456f8e3bb0,457,Chemise oversize - Oversize,78.63,L,Blanc,Coton,Chemise oversize pour un style décontracté.,36,4.25,Chemise,Halloween,20
+65e723db2b05f3456f8e3bb1,458,Short en jean - Décontracté,9.33,L,Vert,Denim,Short en jean décontracté pour un look estival.,46,2.39,Short,Back to School,15
+65e723db2b05f3456f8e3bb2,459,Pull en tricot oversize - Oversize,47.2,S,Rose poudré,Acrylique,Pull en tricot oversize pour un confort maximal.,8,2.01,Pull,Cyber Monday,25
+65e723db2b05f3456f8e3bb3,460,Chemise oversize - Oversize,53.87,XXL,Kaki,Coton,Chemise oversize pour un style décontracté.,60,0.77,Chemise,Back to School,15
+65e723db2b05f3456f8e3bb4,461,T-shirt basique - Décontracté,51.41,XXL,Vert,Coton,T-shirt décontracté en coton pour un look confortable.,62,0.57,T-shirt,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3bb5,462,Veste en velours - Vintage,87.04,L,Bleu nuit,Velours,Veste en velours vintage pour une touche rétro.,60,3.41,Veste,Halloween,20
+65e723db2b05f3456f8e3bb6,463,Robe longue fluide - Bohème,2.89,M,Bleu ciel,Viscose,Robe longue fluide pour un style bohème décontracté.,8,4.47,Robe,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3bb7,464,Veste en jean - Vintage,93.3,XXL,Vert,Denim,Veste en jean vintage pour un look rétro.,97,2.37,Denim,Solde d'été,40
+65e723db2b05f3456f8e3bb8,465,Chemisier à volants - Chic,6.83,S,Noir,Coton,Chemisier à volants chic pour une allure féminine.,94,3.07,Chemisier,Promo d'Automne,15
+65e723db2b05f3456f8e3bb9,466,Parka imperméable - Chaud,95.63,XXL,Rouge,Nylon,Parka imperméable pour rester au chaud par temps humide.,50,2.15,Manteau,Nouvel An,18
+65e723db2b05f3456f8e3bba,467,Blouse en soie - Classe,35.84,L,Bleu marine,Soie,Blouse en soie pour un look classe et féminin.,50,2.46,Chemisier,Black Friday,30
+65e723db2b05f3456f8e3bbb,468,Tunique brodée - Bohème,73.12,S,Vert sauge,Coton,Tunique brodée bohème pour un style décontracté.,30,4.02,Tunique,Back to School,15
+65e723db2b05f3456f8e3bbc,469,Chemisier à volants - Chic,95.97,S,Rose pâle,Coton,Chemisier à volants chic pour une allure féminine.,48,1.89,Chemisier,Halloween,20
+65e723db2b05f3456f8e3bbd,470,Legging de sport - Sportif,64.57,L,Gris,Spandex,Legging de sport pour un look dynamique.,13,2.13,Sportswear,Solde d'été,40
+65e723db2b05f3456f8e3bbe,471,Jupe crayon - Chic,58.93,S,Noir,Coton mélangé,Jupe crayon chic pour un look féminin et sophistiqué.,21,3.48,Jupe,Saint-Valentin,15
+65e723db2b05f3456f8e3bbf,472,Legging de sport - Sportif,20.07,M,Gris,Spandex,Legging de sport pour un look dynamique.,96,2.91,Sportswear,Cyber Monday,25
+65e723db2b05f3456f8e3bc0,473,Veste en velours - Vintage,10.36,M,Marron,Velours,Veste en velours vintage pour une touche rétro.,75,2.99,Veste,Semaine du Client,20
+65e723db2b05f3456f8e3bc1,474,Pyjama en jersey - Confortable,83.07,L,Bleu clair,Jersey,Pyjama en jersey pour une nuit confortable.,72,0.81,Pyjama,Solde de noël,40
+65e723db2b05f3456f8e3bc2,475,Short en lin - Décontracté,83.4,L,Blanc,Lin,Short décontracté en lin pour les journées ensoleillées.,50,0.51,Short,Nouvel An,18
+65e723db2b05f3456f8e3bc3,476,Short en lin - Décontracté,5.63,L,Kaki,Lin,Short décontracté en lin pour les journées ensoleillées.,15,4.16,Short,Solde d'été,40
+65e723db2b05f3456f8e3bc4,477,Jupe plissée - Chic,44.82,S,Vert émeraude,Polyester,Jupe plissée chic pour un look féminin.,66,2.58,Jupe,Journée Internationale de la Femme,15
+65e723db2b05f3456f8e3bc5,478,Tunique brodée - Bohème,93.66,L,Bleu ciel,Coton,Tunique brodée bohème pour un style décontracté.,93,2.45,Tunique,Fête des Mères,15
+65e723db2b05f3456f8e3bc6,479,Short en lin - Décontracté,50.78,L,Bleu clair,Lin,Short décontracté en lin pour les journées ensoleillées.,37,1.98,Short,Promo Flash,30
+65e723db2b05f3456f8e3bc7,480,Robe cocktail - Élégant,99.56,XS,Doré,Polyester,Robe cocktail élégante pour les occasions spéciales.,49,4.29,Robe,Cyber Monday,25
+65e723db2b05f3456f8e3bc8,481,Pyjama en jersey - Confortable,40.43,M,Rayures fines,Jersey,Pyjama en jersey pour une nuit confortable.,21,0.74,Pyjama,Promo Flash,30
+65e723db2b05f3456f8e3bc9,482,T-shirt basique - Décontracté,16.7,S,Blanc,Coton,T-shirt décontracté en coton pour un look confortable.,94,3.78,T-shirt,Printemps Fleuri,20
+65e723db2b05f3456f8e3bca,483,Short en jean - Décontracté,28.16,S,Bleu délavé,Denim,Short en jean décontracté pour un look estival.,35,2.64,Short,Solde d'hiver,35
+65e723db2b05f3456f8e3bcb,484,Pantalon de survêtement - Sportif,71.88,M,Noir,Polyester,Pantalon de survêtement sportif pour un look décontracté.,32,1.89,Sportswear,Solde d'hiver,35
+65e723db2b05f3456f8e3bcc,485,Chemisier à volants - Chic,14.66,M,Rose pâle,Coton,Chemisier à volants chic pour une allure féminine.,80,3.15,Chemisier,Saint-Valentin,15
+65e723db2b05f3456f8e3bcd,486,Short de sport - Sportif,24.68,L,Gris,Polyester,Short de sport pour un look dynamique.,53,3.72,Sportswear,Saint-Valentin,15
+65e723db2b05f3456f8e3bce,487,Jupe plissée - Chic,48.17,M,Vert émeraude,Polyester,Jupe plissée chic pour un look féminin.,97,3.65,Jupe,Nouvel An,18
+65e723db2b05f3456f8e3bcf,488,T-shirt à manches longues - Décontracté,18.7,S,Gris,Coton,T-shirt à manches longues décontracté pour un style polyvalent.,53,3.66,T-shirt,Rentrée Scolaire,50
+65e723db2b05f3456f8e3bd0,489,Jupe plissée - Chic,47.12,S,Noir,Polyester,Jupe plissée chic pour un look féminin.,44,0.66,Jupe,Soldes de Fin d'Année,25
+65e723db2b05f3456f8e3bd1,490,Costume deux pièces - Élégant,1.88,M,Bordeaux,Laine mélangée,Costume deux pièces élégant pour une allure sophistiquée.,32,1.72,Costume,Printemps Fleuri,20
+65e723db2b05f3456f8e3bd2,491,Chemise élégante - Classe,48.69,S,Noir,Coton,Chemise élégante en coton pour un style raffiné.,12,2.73,Chemise,Solde d'hiver,35
+65e723db2b05f3456f8e3bd3,492,Ensemble de jogging - Sportif,15.68,L,Rouge,Polyester,Ensemble de jogging sportif pour un style décontracté.,74,4.25,Sportswear,Semaine du Client,20
+65e723db2b05f3456f8e3bd4,493,Veste en velours - Vintage,75.63,XL,Rose antique,Velours,Veste en velours vintage pour une touche rétro.,80,2.62,Veste,Solde de noël,40
+65e723db2b05f3456f8e3bd5,494,Jupe plissée - Chic,2.37,L,Vert émeraude,Polyester,Jupe plissée chic pour un look féminin.,6,2.36,Jupe,Saint-Patrick,20
+65e723db2b05f3456f8e3bd6,495,Sweat à capuche oversize - Oversize,66.12,XXL,Gris chiné,Coton,Sweat à capuche oversize pour un confort maximal.,2,0.95,Pull,Cadeau Gratuit,5
+65e723db2b05f3456f8e3bd7,496,Ensemble de jogging - Sportif,0.16,S,Rouge,Polyester,Ensemble de jogging sportif pour un style décontracté.,34,2.56,Sportswear,Vacances d'été,25
+65e723db2b05f3456f8e3bd8,497,Pyjama en jersey - Confortable,95.33,XL,Gris chiné,Jersey,Pyjama en jersey pour une nuit confortable.,94,2.14,Pyjama,Saint-Valentin,15
+65e723db2b05f3456f8e3bd9,498,Chemisier à volants - Chic,93.24,M,Bleu ciel,Coton,Chemisier à volants chic pour une allure féminine.,60,3.74,Chemisier,Printemps Fleuri,20
+65e723db2b05f3456f8e3bda,499,Robe longue fluide - Bohème,89.88,L,Vert olive,Viscose,Robe longue fluide pour un style bohème décontracté.,16,0.92,Robe,Promo d'Automne,15
+65e723db2b05f3456f8e3bdb,500,Short de sport - Sportif,8.88,S,Noir,Polyester,Short de sport pour un look dynamique.,62,0.83,Sportswear,Fête des Mères,15

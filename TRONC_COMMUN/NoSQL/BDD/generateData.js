@@ -1,8 +1,7 @@
 const { MongoClient, ObjectId } = require('mongodb');
-const faker = require('faker/locale/fr'); // Importez Faker.js avec la localisation française
+const faker = require('faker/locale/fr'); 
 const moment = require('moment');
 
-// URL de connexion à la base de données MongoDB
 const url = 'mongodb://localhost:27017';
 const dbName = 'FashionShop';
 
@@ -41,7 +40,6 @@ function generateRandomPromotion() {
   const startDate = faker.date.past();
   const endDate = faker.date.between(startDate, moment(startDate).add(Math.floor(Math.random() * 30) + 1, 'days').toDate());
 
-  // Générez aléatoirement le pourcentage de réduction entre 5% et le pourcentage spécifié dans promotionsList
   const minDiscountPercentage = 5;
   const maxDiscountPercentage = randomPromo.discountPercentage;
   const discountPercentage = Math.floor(Math.random() * (maxDiscountPercentage - minDiscountPercentage + 1) + minDiscountPercentage);
@@ -167,7 +165,7 @@ function generateRandomCustomer() {
 
 ///// PROCESS ORDER LINES DETAILS //////////////////////////////////////////////////////////////
 
-let orderLineIdCounter = -499; // Changer le compteur pour qu'il commence à 1
+let orderLineIdCounter = 1; 
 function processOrderLinesDetails(orderId, products) {
   const orderLineId = orderLineIdCounter++;
   const numProducts = Math.floor(Math.random() * 5) + 1;
@@ -181,9 +179,8 @@ function processOrderLinesDetails(orderId, products) {
       if (selectedProduct) {
         const quantity = Math.floor(Math.random() * 5) + 1;
 
-        // Calcul du prix en tenant compte de la promotion
         const discountedPrice = selectedProduct.price - (selectedProduct.price * selectedProduct.discountPercentage / 100);
-        const discountAmount = selectedProduct.discountPercentage; // Maintenant, c'est le pourcentage de réduction
+        const discountAmount = selectedProduct.discountPercentage; 
         const discountedAmount = selectedProduct.price * (selectedProduct.discountPercentage / 100);
         const totalProductPrice = discountedPrice * quantity;
 
@@ -201,7 +198,7 @@ function processOrderLinesDetails(orderId, products) {
   }
 
   return {
-    orderLineId, // Assurez-vous que l'ID commence à 1
+    orderLineId, 
     orderId,
     productsLines,
   };
@@ -215,7 +212,6 @@ function processOrderStatus(customerId, productsList) {
   const orderStatusOptions = ['In preparation', 'In shipment', 'Shipped', 'In delivery', 'Delivered', 'In refund', 'Refunded'];
   const paymentMethodOptions = ['Credit card', 'PayPal', 'Bank transfer', 'Cheque'];
 
-  // Générer des lignes de commande avant de créer la commande
   const orderLines = processOrderLinesDetails(orderId, productsList);
 
   let orderTotalCost = 0;
@@ -230,7 +226,6 @@ function processOrderStatus(customerId, productsList) {
   const deliveryDate = new Date(orderDate.getTime() + Math.floor(Math.random() * (7 * 24 * 60 * 60 * 1000))); // Livraison dans les 7 jours
   const deliveryTime = `${Math.floor(Math.random() * 24)}:${Math.floor(Math.random() * 60)}`;
 
-  // Générer des dates pour chaque étape jusqu'à "Livrée"
   const datesByStatus = {};
   const chosenStatus = faker.random.arrayElement(orderStatusOptions.slice(0, orderStatusOptions.indexOf('Delivered') + 1));
 
@@ -238,13 +233,11 @@ function processOrderStatus(customerId, productsList) {
     datesByStatus[status] = new Date(orderDate.getTime() + (index * 24 * 60 * 60 * 1000)); // Ajouter un jour pour chaque étape
   });
 
-  // Si "En cours de remboursement" est choisi aléatoirement, ajouter la date de remboursement
   if (['In refund', 'Refunded'].includes(chosenStatus)) {
     datesByStatus['In refund'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('In refund') + 1) * 24 * 60 * 60 * 1000));
     datesByStatus['Refunded'] = new Date(orderDate.getTime() + ((orderStatusOptions.indexOf('Refunded') + 1) * 24 * 60 * 60 * 1000));
   }
 
-  // Générer l'état de la commande
   const orderStatus = chosenStatus;
 
   return {
@@ -260,7 +253,7 @@ function processOrderStatus(customerId, productsList) {
     datesByStatus: Object.fromEntries(
       Object.entries(datesByStatus).map(([key, value]) => [key, value.toISOString().split('T')[0]])
     ),
-    orderLines, // Ajouter les lignes de commande à l'objet de la commande
+    orderLines,
   };
 }
   
@@ -273,7 +266,6 @@ async function insertRandomData() {
     await client.connect();
     const db = client.db(dbName);
 
-    // Supprimer les collections existantes
     await Promise.all([
       db.collection('promotions').deleteMany({}),
       db.collection('products').deleteMany({}),

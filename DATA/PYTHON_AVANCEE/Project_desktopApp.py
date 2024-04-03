@@ -109,7 +109,7 @@ class App:
 
     def creer_base_de_donnees(self):
         try:
-            conn = sqlite3.connect("utilisateurs.db")
+            conn = sqlite3.connect("./utilisateurs.db")
             cursor = conn.cursor()
 
             cursor.execute('''CREATE TABLE IF NOT EXISTS utilisateurs (
@@ -137,7 +137,7 @@ class App:
             utilisateurs = data.get("results", [])
 
             if utilisateurs:
-                conn = sqlite3.connect("utilisateurs.db")
+                conn = sqlite3.connect("./utilisateurs.db")
                 cursor = conn.cursor()
 
                 for utilisateur in utilisateurs:
@@ -166,7 +166,7 @@ class App:
         confirmation = messagebox.askokcancel("Confirmation", "Voulez-vous vraiment supprimer le contenu de la base de données?")
         if confirmation:
             try:
-                conn = sqlite3.connect("utilisateurs.db")
+                conn = sqlite3.connect("./utilisateurs.db")
                 cursor = conn.cursor()
 
                 cursor.execute("DELETE FROM utilisateurs")
@@ -180,7 +180,7 @@ class App:
 
     def afficher_total_utilisateurs(self):
         try:
-            conn = sqlite3.connect("utilisateurs.db")
+            conn = sqlite3.connect("./utilisateurs.db")
             cursor = conn.cursor()
 
             cursor.execute("SELECT COUNT(*) FROM utilisateurs")
@@ -195,7 +195,7 @@ class App:
 
     def obtenir_et_afficher_graphiques(self):
         try:
-            conn = sqlite3.connect("utilisateurs.db")
+            conn = sqlite3.connect("./utilisateurs.db")
             cursor = conn.cursor()
             cursor.execute("SELECT genre, pays, age FROM utilisateurs")
             data = cursor.fetchall()
@@ -210,7 +210,7 @@ class App:
 
     def afficher_taux_homme_femme(self):
         try:
-            conn = sqlite3.connect("utilisateurs.db")
+            conn = sqlite3.connect("./utilisateurs.db")
             cursor = conn.cursor()
             cursor.execute("SELECT COUNT(*) FROM utilisateurs WHERE genre='male'")
             hommes = cursor.fetchone()[0]
@@ -234,7 +234,7 @@ class App:
 
     def afficher_diversite_pays(self):
         try:
-            conn = sqlite3.connect("utilisateurs.db")
+            conn = sqlite3.connect("./utilisateurs.db")
             cursor = conn.cursor()
             cursor.execute("SELECT COUNT(DISTINCT pays) FROM utilisateurs")
             diversite_pays = cursor.fetchone()[0]
